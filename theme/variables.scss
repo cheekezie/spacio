@@ -1,0 +1,144 @@
+/** Color Variables **/
+:root {
+  --primary: #212c8d;
+  --secondary: #7a1972;
+  --white: #fff;
+  --yellow: rgba(230, 208, 10, 0.925);
+  --black: #000;
+}
+
+$baseFontSizePx: 16px;
+$gutter: 1rem;
+
+// spacing
+$grid-breakpoints-up: (
+  xsm: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+//NB: Viewports less than 576px have no lower limit, any viewport
+// fits their by default unless a media query is provided
+
+$grid-breakpoints-down: (
+  xs: 575.98px,
+  sm: 767.98px,
+  md: 1199.98px,
+  lg: 1399.98px,
+) !default;
+//NB: Viewports greater greater than 1399.98px have no upper limit
+
+$infix-group: (
+  phone: sm,
+  // Small devices (landscape phones, 576px and up)
+  tablet: md,
+  // Medium devices (tablets, 768px and up)
+  ipad: lg,
+  // Large devices (desktops, 992px and up)
+  laptop: 1200px,
+  // X-Large devices (large desktops, 1200px and up)
+  desktop: xxl 1400px,
+  // XX-Large devices (larger desktops, 1400px and up)
+) !default;
+
+// ** Layout sizing variables
+$layouts: (
+  2: 16.66%,
+  3: 25%,
+  4: 33.33%,
+  5: 41.66%,
+  6: 50%,
+  7: 58.33%,
+  8: 66.66%,
+  9: 75%,
+  10: 83.33%,
+  12: 100%,
+) !default;
+
+// ** Spacing variables
+$spacers: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  8: 8px,
+  11: 11px,
+  10: 10px,
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  15: 15px,
+  16: 16px,
+  17: 17px,
+  18: 18px,
+  20: 20px,
+  21: 21px,
+  22: 22px,
+  23: 23px,
+  24: 24px,
+  25: 25px,
+  26: 26px,
+  27: 27px,
+  28: 28px,
+  29: 29px,
+  30: 30px,
+  31: 31px,
+  32: 32px,
+  33: 33px,
+  34: 34px,
+  36: 36px,
+  38: 38px,
+  40: 40px,
+  41: 41px,
+  43: 43px,
+  42: 42px,
+  44: 44px,
+  46: 46px,
+  48: 48px,
+  51: 51px,
+  52: 52px,
+  55: 55px,
+  56: 56px,
+  58: 58px,
+  60: 60px,
+  62: 62px,
+  64: 64px,
+  68: 68px,
+  72: 72px,
+  73: 73px,
+  74: 74px,
+  76: 76px,
+  79: 79px,
+  80: 80px,
+  81: 81px,
+  82: 82px,
+  83: 83px,
+  84: 84px,
+  86: 86px,
+  90: 90px,
+  91: 91px,
+  93: 93px,
+  96: 96px,
+  102: 102px,
+  104: 104px,
+  107: 107px,
+  108: 108px,
+  112: 112px,
+  114: 114px,
+  119: 119px,
+  124: 124px,
+  126: 126px,
+  128: 128px,
+  129: 129px,
+  136: 136px,
+  140: 140px,
+  154: 154px,
+  152: 152px,
+  361: 361px,
+  364: 364px,
+) !default;

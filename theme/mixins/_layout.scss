@@ -1,0 +1,12 @@
+@each $infix, $breakpoint in $grid-breakpoints-up {
+  @media screen and (min-width: $breakpoint) {
+    @each $size, $percentage in $layouts {
+      .size-#{$size} {
+        width: $percentage;
+      }
+      .size-#{$infix}-#{$size} {
+        width: $percentage !important;
+      }
+    }
+  }
+}

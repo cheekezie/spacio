@@ -1,0 +1,119 @@
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.left-0 {
+  left: 0;
+}
+.top-0 {
+  top: 0;
+}
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.absolute-full {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.index-1 {
+  z-index: 1;
+}
+.index-2 {
+  z-index: 2;
+}
+.center-pos-fixed {
+  left: calc(50% - 315px);
+}
+.text-center {
+  text-align: center;
+}
+.left-8-perc {
+  left: 8%;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.top-20-perc {
+  top: 20%;
+}
+
+.top-35-perc {
+  top: 35%;
+}
+
+.top-230 {
+  top: rem(230);
+}
+
+.top-55 {
+  top: rem(40);
+}
+
+.left-85 {
+  left: rem(85);
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.bottom-83 {
+  bottom: rem(83);
+}
+
+.bottom-n64 {
+  bottom: rem(-64);
+}
+
+.bottom-24 {
+  bottom: rem(24);
+}
+
+.right-0 {
+  right: 0;
+}
+
+.right-1 {
+  right: 1;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.v-align-middle {
+  vertical-align: middle;
+}
+

@@ -1,0 +1,19 @@
+th {
+  &:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+td {
+  &:last-child {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0 !important;
+  }
+}
+
+.progress-bar-data {
+  display: flex;
+  align-items: center;
+}

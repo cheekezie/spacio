@@ -1,0 +1,28 @@
+.bg-primary {
+  background: var(--primary);
+}
+.bg-secondary {
+  background: var(--secondary);
+}
+.bg-black {
+  background: var(--black);
+}
+.bg-white {
+  background: var(--white);
+}
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-white {
+  color: var(--white);
+}
+.text-yellow {
+  color: var(--yellow);
+}
+.text-line-through{
+  text-decoration: line-through;
+
+}
