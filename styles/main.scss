@@ -1,1 +1,6 @@
-@import '../theme/theme';
+@import '../theme/variables';
+@import '../theme/functions/function';
+@import '../theme/mixins/mixins';
+@import '../theme/mixins/spacing';
+@import '../theme/mixins/layout';
+@import '../theme/components/components';

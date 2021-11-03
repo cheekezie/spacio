@@ -1,3 +1,5 @@
+// @import '../functions/function';
+
 .hidden {
   display: none;
 }
@@ -69,7 +71,11 @@
 }
 
 .row {
-  @include row;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: breakpoint(sm)) {
+    display: block;
+  }
 }
 
 .page-padding {
@@ -78,7 +84,7 @@
 }
 .border-half-line {
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     left: 30%;
