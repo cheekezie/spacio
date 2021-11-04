@@ -3,7 +3,12 @@
 }
 
 .position-relative {
-  position: relative !important;
+  position: relative;
+  &-sm {
+    @media screen and (max-width: breakpoint(sm)) {
+      position: relative;
+    }
+  }
 }
 
 .position-fixed {
