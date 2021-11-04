@@ -4,3 +4,8 @@
 @import '../theme/mixins/spacing';
 @import '../theme/mixins/layout';
 @import '../theme/components/components';
+
+body {
+  padding: 0;
+  margin: 0;
+}

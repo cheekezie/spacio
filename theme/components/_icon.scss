@@ -1,3 +1,32 @@
-mat-icon {
-  color: initial !important;
+[class^='icon'] {
+  @extend .flex-x-center-center;
+  &::after {
+    position: absolute;
+  }
+}
+.icon {
+  &-45 {
+    height: 45px;
+    width: 45px;
+  }
+  &-13 {
+    height: 13px;
+    width: 13px;
+  }
+  &-user {
+    &::after {
+      content: url(/assets/icons/user.png);
+    }
+  }
+
+  &-briefcase {
+    &::after {
+      content: url(/assets/icons/briefcase.png);
+    }
+  }
+  &-arrow-right {
+    &::after {
+      content: url(/assets/icons/arrow-right.png);
+    }
+  }
 }

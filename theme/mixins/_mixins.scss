@@ -1,5 +1,5 @@
-@use "sass:math";
-@import "./spacing";
+@use 'sass:math';
+@import './spacing';
 
 @mixin make-row($gutter: $grid-gutter-width) {
   display: flex;
@@ -24,8 +24,8 @@
 }
 
 @mixin responsive($property, $value, $breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and (min-width: breakpoint($breakpoint)) {
+  @if map-has-key($grid-breakpoints-down, $breakpoint) {
+    @media screen and (max-width: breakpoint($breakpoint)) {
       #{$property}: $value !important;
     }
   } @else {

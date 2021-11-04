@@ -10,6 +10,9 @@
 .bg-white {
   background: var(--white);
 }
+.bg-light-blue {
+  background: var(--light-blue);
+}
 .text-primary {
   color: var(--primary);
 }
@@ -22,7 +25,10 @@
 .text-yellow {
   color: var(--yellow);
 }
-.text-line-through{
-  text-decoration: line-through;
+.text-black {
+  color: var(--black);
+}
 
+.text-dark {
+  color: var(--dark);
 }

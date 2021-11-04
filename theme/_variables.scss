@@ -1,10 +1,17 @@
 /** Color Variables **/
 :root {
-  --primary: #212c8d;
-  --secondary: #7a1972;
+  --primary: #1b75bc;
+  --secondary: #52506e;
   --white: #fff;
   --yellow: rgba(230, 208, 10, 0.925);
   --black: #000;
+  --orange: #fec545;
+  --light-green: #02a11226;
+  --green: #02a112;
+  --blue: #43abf0;
+  --light-blue: #43abf026;
+  --dark: #888888;
+  --black: #000000;
 }
 
 $baseFontSizePx: 16px;
@@ -66,20 +73,14 @@ $spacers: (
   4: 4px,
   5: 5px,
   6: 6px,
+  7: 7px,
   8: 8px,
-  11: 11px,
   10: 10px,
   12: 12px,
-  13: 13px,
   14: 14px,
   15: 15px,
   16: 16px,
-  17: 17px,
-  18: 18px,
   20: 20px,
-  21: 21px,
-  22: 22px,
-  23: 23px,
   24: 24px,
   25: 25px,
   26: 26px,
@@ -94,15 +95,10 @@ $spacers: (
   36: 36px,
   38: 38px,
   40: 40px,
-  41: 41px,
-  43: 43px,
   42: 42px,
   44: 44px,
   46: 46px,
   48: 48px,
-  51: 51px,
-  52: 52px,
-  55: 55px,
   56: 56px,
   58: 58px,
   60: 60px,
@@ -110,35 +106,19 @@ $spacers: (
   64: 64px,
   68: 68px,
   72: 72px,
-  73: 73px,
-  74: 74px,
-  76: 76px,
   79: 79px,
   80: 80px,
-  81: 81px,
   82: 82px,
   83: 83px,
   84: 84px,
   86: 86px,
-  90: 90px,
-  91: 91px,
   93: 93px,
   96: 96px,
-  102: 102px,
-  104: 104px,
-  107: 107px,
-  108: 108px,
-  112: 112px,
-  114: 114px,
-  119: 119px,
-  124: 124px,
-  126: 126px,
-  128: 128px,
-  129: 129px,
-  136: 136px,
+  100: 100px,
   140: 140px,
+  148: 148px,
   154: 154px,
-  152: 152px,
-  361: 361px,
+  158: 158px,
   364: 364px,
+  331: 331px,
 ) !default;
