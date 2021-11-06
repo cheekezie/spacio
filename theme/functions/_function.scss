@@ -1,6 +1,10 @@
 // @import '../variables';
 
-@function breakpoint($key) {
+@function breakpoint-min($key) {
+  @return map-get($grid-breakpoints-up, $key);
+}
+
+@function breakpoint-max($key) {
   @return map-get($grid-breakpoints-down, $key);
 }
 
@@ -9,5 +13,5 @@
 }
 
 @function rem($px) {
-  @return $px / 16 + rem;
+  @return ($px / 16) + rem;
 }

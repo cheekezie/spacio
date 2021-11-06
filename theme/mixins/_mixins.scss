@@ -23,9 +23,20 @@
   }
 }
 
-@mixin responsive($property, $value, $breakpoint) {
+@mixin responsive-max($property, $value, $breakpoint) {
   @if map-has-key($grid-breakpoints-down, $breakpoint) {
-    @media screen and (max-width: breakpoint($breakpoint)) {
+    @media screen and (max-width: breakpoint-max($breakpoint)) {
+      #{$property}: $value !important;
+    }
+  } @else {
+    @warn "No value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin responsive-min($property, $value, $breakpoint) {
+  @if map-has-key($grid-breakpoints-up, $breakpoint) {
+    @media screen and (min-width: breakpoint-min($breakpoint)) {
       #{$property}: $value !important;
     }
   } @else {
@@ -36,7 +47,7 @@
 
 @mixin device($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and (min-width: breakpoint($breakpoint)) {
+    @media screen and (min-width: breakpoint-min($breakpoint)) {
       @content;
     }
   } @else {

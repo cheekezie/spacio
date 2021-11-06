@@ -5,8 +5,8 @@
 .position-relative {
   position: relative;
   &-sm {
-    @media screen and (max-width: breakpoint(sm)) {
-      position: relative;
+    @media screen and (max-width: breakpoint-max(sm)) {
+      position: relative !important;
     }
   }
 }

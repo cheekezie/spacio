@@ -3,7 +3,12 @@
 .hidden {
   display: none;
   &-sm {
-    @media screen and (max-width: breakpoint(sm)) {
+    @media screen and (max-width: breakpoint-max(sm)) {
+      display: none;
+    }
+  }
+  &-lg {
+    @media screen and (max-width: breakpoint-max(lg)) {
       display: none;
     }
   }
@@ -16,6 +21,14 @@
 }
 .block {
   display: block;
+  &-sm {
+    @media screen and (max-width: breakpoint-max(sm)) {
+      display: block;
+    }
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .align-items-center {
   align-items: center;
@@ -81,7 +94,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (max-width: breakpoint(sm)) {
+  @media screen and (max-width: breakpoint-max(sm)) {
     display: block;
   }
 }

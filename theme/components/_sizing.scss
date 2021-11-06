@@ -20,7 +20,9 @@
 .h-100 {
   height: 100% !important;
 }
-
+.w-160 {
+  width: 160px;
+}
 .max-content {
   width: max-content;
 }
@@ -29,4 +31,17 @@
 }
 .h-full {
   height: 100vh;
+  &-lg {
+    @media screen and (min-width: breakpoint-min(sm)) {
+      height: auto;
+    }
+  }
+}
+.h-auto {
+  height: auto;
+  &-sm {
+    @media screen and (min-width: breakpoint-max(sm)) {
+      height: auto !important;
+    }
+  }
 }

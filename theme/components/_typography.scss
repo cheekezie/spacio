@@ -145,7 +145,7 @@ p {
 .f-85 {
   font-size: rem(85) !important;
   line-height: auto;
-  @media screen and (max-width: breakpoint(sm)) {
+  @media screen and (max-width: breakpoint-max(sm)) {
     font-size: rem(35) !important;
   }
 }
@@ -153,7 +153,7 @@ p {
   font-size: rem(35) !important;
   line-height: rem(42) !important;
   &-sm {
-    @media screen and (max-width: breakpoint(sm)) {
+    @media screen and (max-width: breakpoint-max(sm)) {
       font-size: rem(35) !important;
       line-height: rem(42) !important;
     }

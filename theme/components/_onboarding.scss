@@ -3,16 +3,25 @@
   //   background-size: cover;
   //   background-repeat: no-repeat;
   overflow-x: hidden;
+  height: 100vh;
+  @include responsive-max(height, auto, sm);
   img.logo {
-    width: 30%;
+    width: rem(629);
     margin-left: 17%;
-    @include responsive(margin-left, 7%, 'sm');
+    // @media screen and (max-width: breakpoint-max(xxl)) {
+    //   width: 4rem;
+    // }
+    @include responsive-max(width, rem(430), xxl);
+    @include responsive-max(width, rem(300), lg);
+    @include responsive-max(width, rem(200), sm);
+    @include responsive-max(margin-left, rem(16), sm);
   }
 }
 .form-container {
   position: absolute;
   padding-bottom: 10vh;
   padding-right: 5%;
+  @include responsive-max(padding, 0, sm);
   right: 0;
   left: 0;
   top: 0;
@@ -26,11 +35,14 @@
   -webkit-animation: slide 1.5s forwards;
 }
 .form-wrapper2 {
-  width: 30%;
+  width: rem(570);
+  @include responsive-max(width, rem(480), 'xxl');
+  @include responsive-max(width, 100%, sm);
   margin-left: auto;
 }
 form {
   margin-top: 10vh;
+  @include responsive-max(margin-top, 0, 'sm');
   //   @media screen and (max-width: breakpoint(sm)) {
   //     position: relative;
   //     width: 100%;
@@ -46,6 +58,7 @@ form {
       .arrow {
         display: block;
         right: 48px;
+        @include responsive-max(display, none, sm);
         @extend .flex-x-center-center;
       }
     }

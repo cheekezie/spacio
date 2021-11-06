@@ -17,20 +17,26 @@
       class="onboarding-bg
       bg-primary
       flex-x-center
-      h-full
+      px-16 px-md-24 px-lg-0
+      py-64 py-lg-0
       position-relative">
       <img
         src="/assets/images/spacio-logo-trans2.png"
         class="logo hidden-sm"
         alt="spacio logo"
         />
-      <div class="form-container">
+      <div class="form-container position-relative-sm">
         <div class="form-wrapper2">
           <form action="" class="bg-white pt-79 px-32 px-md-64 pb-34"id="form-panel">
-            <p class="text-right f18-h28 text-dark mb-100 mb-md-158">
-              Already have an account? <span class="cursor-pointer
-                text-primary">Sign In</span>
-            </p>
+            <div class="flex-x-between flex-wrap">
+              <div>
+                <img src="/assets/images/Spacio-logo-alt.png" class="w-160 hidden block-sm" alt="spacio logo">
+              </div>
+              <p class="f18-h28 text-dark mb-100 mb-md-158">
+                Already have an account? <span class="cursor-pointer
+                  text-primary">Sign In</span>
+              </p>
+            </div>
             <div class="mb-62">
               <h1 class="f30-h41 text-black mb-7 text-weight-bold">Join Us!</h1>
               <p class="f18-h28 text-dark mb-0">
@@ -40,9 +46,11 @@
             </div>
 
             <div class="mb-83 shadow-md category-card cursor-pointer
-              position-relative flex-x-center py-24 pr-79 px-31 radius-md">
-              <span class="icon-user bg-primary radius-md icon-45"></span>
-              <div class="ml-46">
+              position-relative flex-x-center py-24 pr-24 pr-md-79 px-16 px-md-31 radius-md">
+              <div>
+                <span class="icon-user bg-primary radius-md icon-45"></span>
+              </div>
+              <div class="ml-16 ml-md-46">
                 <p class="text-black text-weight-600 f16-h21">Resident</p>
                 <p class="text-dark f14-h19">Personal account to manage all you
                   activities.</p>
@@ -53,14 +61,18 @@
             </div>
 
             <div class="shadow-md category-card cursor-pointer position-relative
-              mb-148 flex-x-center py-24 pr-79 px-31 radius-md">
+              mb-148 flex-x-center py-24 pr-24 pr-md-79 px-16 px-md-31 radius-md">
+            <div>
               <span class="icon-briefcase icon-45 bg-light-blue radius-md"></span>
-              <div class="ml-46">
+            </div>
+              <div class="ml-16 ml-md-46">
                 <p class="text-black text-weight-600 f16-h21">Facility Manager</p>
                 <p class="text-dark f14-h19">Own or belong to a company, this is
                   for you.</p>
               </div>
-
+              <div class="hidden arrow position-absolute">
+                <span class="icon-arrow-right icon-13"></span>
+              </div>
 
             </div>
             <p class="f14-h28 mb-0 flex">
@@ -71,5 +83,11 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
