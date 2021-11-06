@@ -1,6 +1,6 @@
 $font-size-base: 1rem;
 $font-family-base: var(--ion-font-family);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -34,83 +34,86 @@ p {
 }
 
 .text-weight-normal {
-  font-weight: normal !important;
+  font-weight: normal;
   &-md {
     @media screen and (min-width: 768px) {
-      font-weight: normal !important;
+      font-weight: normal;
     }
   }
 }
 
 .text-weight-medium {
-  font-weight: 500 !important;
+  font-weight: 500;
 }
 .text-weight-600 {
   font-weight: 600;
 }
+.text-weight-800 {
+  font-weight: 800;
+}
 .text-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 700;
   &-sm {
     @media screen and (max-width: 768px) {
-      font-weight: 700 !important;
+      font-weight: 700;
     }
   }
 }
 
 .f10-h13 {
-  font-size: rem(10) !important;
-  line-height: rem(13) !important;
+  font-size: rem(10);
+  line-height: rem(13);
 }
 
 .f12-h13 {
-  font-size: rem(12) !important;
-  line-height: rem(13) !important;
+  font-size: rem(12);
+  line-height: rem(13);
 }
 
 .f12-h16 {
-  font-size: rem(12) !important;
-  line-height: rem(16) !important;
+  font-size: rem(12);
+  line-height: rem(16);
 }
 
 .f13-h18 {
-  font-size: rem(13) !important;
-  line-height: rem(18) !important;
+  font-size: rem(13);
+  line-height: rem(18);
 }
 
 .f15-h20 {
-  font-size: rem(15) !important;
-  line-height: rem(20) !important;
+  font-size: rem(15);
+  line-height: rem(20);
 }
 .f14-h28 {
-  font-size: rem(14) !important;
-  line-height: rem(28) !important;
+  font-size: rem(14);
+  line-height: rem(28);
 }
 
 .f15-h24 {
-  font-size: rem(15) !important;
-  line-height: rem(24) !important;
+  font-size: rem(15);
+  line-height: rem(24);
   &-md {
     @media screen and (min-width: 768px) {
-      font-size: rem(15) !important;
-      line-height: rem(24) !important;
+      font-size: rem(15);
+      line-height: rem(24);
     }
   }
 }
 .ff6-h21 {
-  font-size: rem(16) !important;
-  line-height: rem(21) !important;
+  font-size: rem(16);
+  line-height: rem(21);
 }
 .f17-h24 {
-  font-size: rem(17) !important;
-  line-height: rem(24) !important;
+  font-size: rem(17);
+  line-height: rem(24);
 }
 .f18-h28 {
-  font-size: rem(18) !important;
-  line-height: rem(28) !important;
+  font-size: rem(18);
+  line-height: rem(28);
 }
 .f30-h41 {
-  font-size: rem(30) !important;
-  line-height: rem(41) !important;
+  font-size: rem(30);
+  line-height: rem(41);
 }
 .f-18 {
   font-size: 18px;
@@ -125,41 +128,56 @@ p {
   line-height: auto;
 }
 .f18-h24 {
-  font-size: rem(18) !important;
-  line-height: rem(24) !important;
+  font-size: rem(18);
+  line-height: rem(24);
 }
 
 .f20-h24 {
-  font-size: rem(20) !important;
-  line-height: rem(24) !important;
+  font-size: rem(20);
+  line-height: rem(24);
 }
 
 .f22-h27 {
-  font-size: rem(22) !important;
-  line-height: rem(27) !important;
+  font-size: rem(22);
+  line-height: rem(27);
+}
+.f24-h33 {
+  font-size: rem(24);
+  line-height: rem(33);
+  @media screen and (max-width: breakpoint-max(xxl)) {
+    font-size: rem(20);
+    line-height: initial;
+  }
 }
 .f30-h42 {
-  font-size: rem(30) !important;
-  line-height: rem(42) !important;
+  font-size: rem(30);
+  line-height: rem(42);
 }
 .f-85 {
-  font-size: rem(85) !important;
+  font-size: rem(85);
   line-height: auto;
   @media screen and (max-width: breakpoint-max(sm)) {
-    font-size: rem(35) !important;
+    font-size: rem(35);
   }
 }
 .f35-h42 {
-  font-size: rem(35) !important;
-  line-height: rem(42) !important;
+  font-size: rem(35);
+  line-height: rem(42);
   &-sm {
-    @media screen and (max-width: breakpoint-max(sm)) {
-      font-size: rem(35) !important;
-      line-height: rem(42) !important;
+    @media screen and (max-width: breakpoint-max(xxl)) {
+      font-size: rem(35);
+      line-height: rem(42);
     }
   }
 }
-
+.f78-h98 {
+  font-size: rem(78);
+  line-height: rem(98);
+  @media screen and (max-width: breakpoint-max(xxl)) {
+    font-size: rem(48);
+    line-height: initial;
+  }
+}
 .white-space-normal {
   white-space: normal;
 }
@@ -174,8 +192,8 @@ p {
 }
 
 .text-normal-important {
-  font-size: rem(16) !important;
-  line-height: rem(22) !important;
+  font-size: rem(16);
+  line-height: rem(22);
 }
 
 .text-underline {

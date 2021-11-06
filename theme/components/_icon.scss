@@ -9,6 +9,10 @@
     height: 45px;
     width: 45px;
   }
+  &-50 {
+    height: 50px;
+    width: 50px;
+  }
   &-13 {
     height: 13px;
     width: 13px;
@@ -18,7 +22,16 @@
       content: url(/assets/icons/user.png);
     }
   }
-
+  &-plus {
+    &::after {
+      content: url(/assets/icons/plus.png);
+    }
+  }
+  &-notification {
+    &::after {
+      content: url(/assets/icons/notification.png);
+    }
+  }
   &-briefcase {
     &::after {
       content: url(/assets/icons/briefcase.png);

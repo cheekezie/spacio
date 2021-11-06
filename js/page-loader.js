@@ -6,7 +6,7 @@ fetch("../partials/menu.html")
     return response.text()
   })
   .then(data => {
-      document.querySelector("menu").innerHTML = data;
+      document.querySelector("navigation").innerHTML = data;
         // const template = document.getElementById('summary');
         // const page = document.getElementById('outlet');
         // page.appendChild(
