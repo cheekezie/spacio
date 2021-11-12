@@ -67728,6 +67728,24 @@ p {
   margin-left: 17%;
 }
 
+@media screen and (max-width: 1600px) {
+  .onboarding-bg img.logo {
+    width: 26.875rem !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .onboarding-bg img.logo {
+    width: 18.75rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .onboarding-bg img.logo {
+    width: 12.5rem !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .onboarding-bg img.logo {
     margin-left: 1rem !important;
@@ -67760,6 +67778,18 @@ p {
 .form-wrapper2 {
   width: 35.625rem;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .form-wrapper2 {
+    width: 30rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-wrapper2 {
+    width: 100% !important;
+  }
 }
 
 form {
