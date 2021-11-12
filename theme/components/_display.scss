@@ -61,12 +61,16 @@
   flex-direction: column;
   justify-content: center;
 }
-.radius-md {
-  border-radius: 8px;
-}
+
 .list-unstyled {
   list-style: none;
-  padding: 0;
+}
+.border-grey {
+  border: 1px solid var(--grey);
+}
+.page-outlet {
+  margin-left: rem(266);
+  padding: rem(62) rem(28) rem(62) rem(14);
 }
 .hover-zoom {
   img,
@@ -83,7 +87,13 @@
   }
 }
 .radius-sm {
-  border-radius: 5px;
+  border-radius: 3px;
+}
+.radius-md {
+  border-radius: 8px;
+}
+.radius-20 {
+  border-radius: 20px;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -122,4 +132,22 @@
 
 .flex-column {
   flex-direction: column;
+}
+.badge {
+  &-success {
+    background: rgba(2, 161, 18, 0.15);
+    color: var(--green);
+  }
+  &-warning {
+    background: rgba(255, 102, 0, 0.15);
+    color: var(--orange);
+  }
+  &-primary {
+    background: rgba(67, 171, 240, 0.15);
+    color: var(--primary);
+  }
+  &-intermediate {
+    background: rgba(149, 31, 222, 0.15);
+    color: var(--purple);
+  }
 }

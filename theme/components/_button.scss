@@ -1,6 +1,8 @@
 button {
   box-shadow: none;
   background: none;
+  box-sizing: border-box;
+  cursor: pointer;
   border: none;
   .button-sm {
     padding: rem(10) rem(22);

@@ -1,6 +1,6 @@
 $font-size-base: 1rem;
 $font-family-base: var(--ion-font-family);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -136,7 +136,10 @@ p {
   font-size: rem(20);
   line-height: rem(24);
 }
-
+.f20-h27 {
+  font-size: rem(20);
+  line-height: rem(27);
+}
 .f22-h27 {
   font-size: rem(22);
   line-height: rem(27);
@@ -167,6 +170,16 @@ p {
     @media screen and (max-width: breakpoint-max(xxl)) {
       font-size: rem(35);
       line-height: rem(42);
+    }
+  }
+}
+.f48-h65 {
+  font-size: rem(48);
+  line-height: rem(65);
+  &-sm {
+    @media screen and (max-width: breakpoint-max(xxl)) {
+      font-size: rem(48);
+      line-height: rem(65);
     }
   }
 }

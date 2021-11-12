@@ -13,6 +13,14 @@
     height: 50px;
     width: 50px;
   }
+  &-20 {
+    height: 20px;
+    width: 20px;
+  }
+  &-32 {
+    height: 32px;
+    width: 22px;
+  }
   &-13 {
     height: 13px;
     width: 13px;
@@ -22,9 +30,44 @@
       content: url(/assets/icons/user.png);
     }
   }
+  &-services {
+    &::after {
+      content: url(/assets/icons/CirclesThree.png);
+    }
+  }
+  &-keyboard {
+    &::after {
+      content: url(/assets/icons/Keyboard.png);
+    }
+  }
+  &-mail {
+    &::after {
+      content: url(/assets/icons/EnvelopeOpen.png);
+    }
+  }
+  &-house {
+    &::after {
+      content: url(/assets/icons/HouseLine.png);
+    }
+  }
+  &-user-group {
+    &::after {
+      content: url(/assets/icons/user-group.png);
+    }
+  }
+  &-payment {
+    &::after {
+      content: url(/assets/icons/Ticket.png);
+    }
+  }
   &-plus {
     &::after {
       content: url(/assets/icons/plus.png);
+    }
+  }
+  &-crosschair {
+    &::after {
+      content: url(/assets/icons/Crosshair.png);
     }
   }
   &-notification {

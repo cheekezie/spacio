@@ -23,6 +23,15 @@
 .w-160 {
   width: 160px;
 }
+.max-w-174 {
+  max-width: 174px;
+}
+.min-h-349 {
+  min-height: rem(249);
+}
+canvas#dashboardSummaryChart {
+  min-height: rem(249);
+}
 .max-content {
   width: max-content;
 }

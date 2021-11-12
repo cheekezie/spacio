@@ -9,11 +9,72 @@
       rel="icon"
       type="image/x-icon"
       href="/assets/images/spacio-logo-trans2.png"
-    />
+      />
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
     <navigation></navigation>
-    <script src="../js/page-loader.js"></script>
-  </body>
-</html>
+    <div class="page-outlet">
+      <div class="row mx-n11">
+        <div class="size-sm-12 size-md-3 mb-23">
+          <div class="px-md-11">
+            <div class="px-40 py-30 radius-sm bg-white">
+              <div class="flex-x-between flex-wrap align-items-center">
+                <h1 class="mb-0 f24-h33 text-dark text-weight-bold">Revenue</h1>
+                <a href="#" class="mb-0 f18-h24 text-blue">Details</a>
+              </div>
+              <div class="flex-y-center-center h-100">
+                <h1 class="f48-65 text-dark m-0">$827k</h1>
+                <p class="m-0 text-green">10% Growth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="size-sm-12 size-md-3 mb-23">
+          <div class="px-md-11">
+            <div class="px-40 py-30 radius-sm bg-white">
+              <div class="flex-x-between flex-wrap align-items-center">
+                <h1 class="m-0 f24-h33 text-dark text-weight-bold">In-Flow
+                  status</h1>
+                <a href="#" class="mb-0 f18-h24 text-blue">Details</a>
+              </div>
+              <ul class="p-0 mt-58">
+                <li class="list-unstyled mb-30 flex-x-between align-items-center">
+                  <span class="f20-h24">Total Transaction(s)</span>
+                  <span class="f18-h24 badge-success radius-20 px-12 py-3">600</span>
+                </li>
+                <li class="list-unstyled mb-30 flex-x-between align-items-center">
+                  <span class="f20-h24">Sucessful Transaction(s)</span>
+                  <span class="f18-h24 badge-primary radius-20 px-12 py-3">80</span>
+                </li>
+                <li class="list-unstyled mb-30 flex-x-between align-items-center">
+                  <span class="f20-h24">Failed Transaction(s)</span>
+                  <span class="f18-h24 badge-warning radius-20 px-12 py-3">46</span>
+                </li>
+                <li class="list-unstyled flex-x-between align-items-center">
+                  <span class="f20-h24">Pending Transaction(s)</span>
+                  <span class="f18-h24 badge-intermediate radius-20 px-12 py-3">76</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="size-sm-12 size-md-6 mb-23">
+          <div class="px-md-11">
+            <div class="px-40 py-30 radius-sm bg-white">
+              <div class="flex-x-between flex-wrap align-items-center">
+                <h1 class="mt-0 mb-29 f24-h33 text-dark text-weight-bold">Revenue chart</h1>
+                <a href="#" class="mb-0 f18-h24 text-blue">Details</a>
+              </div>
+              <div>
+                <canvas id="dashboardSummaryChart"  height="222px"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../js/page-loader.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="/js/chart.js"></script>
+    </body>
+  </html>
