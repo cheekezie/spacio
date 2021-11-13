@@ -1,7 +1,7 @@
 .onboarding-bg {
-  //   background: url(/assets/Onboarding-stage-1.svg);
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
+  background: url(/assets/images/Onboarding-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow-x: hidden;
   height: 100vh;
   @include responsive-max(height, auto, sm);
