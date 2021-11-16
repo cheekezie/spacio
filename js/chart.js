@@ -14,14 +14,6 @@ const myChart = new Chart(ctx, {
                 'rgba(27, 117, 188, 0.35)',
                 '#1B75BC'
             ],
-            // borderColor: [
-            //     'rgba(27, 117, 188, 0.35)',
-            //     'rgba(27, 117, 188, 0.35)',
-            //     'rgba(27, 117, 188, 0.35)',
-            //     'rgba(27, 117, 188, 0.35)',
-            //     'rgba(27, 117, 188, 0.35)',
-            //     '#1B75BC'
-            // ],
             borderWidth: 0
         }]
     },
@@ -45,10 +37,12 @@ const myChart = new Chart(ctx, {
             y: {
                 beginAtZero: true,
                 grid: {
-                    display: false
+                    display: false,
+                    tickColor: 'red'
                 },
                 ticks: {
                     color: '#888888',
+                    stepSize: 250
                 }
             },
         }

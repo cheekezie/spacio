@@ -6,17 +6,24 @@
   --yellow: rgba(230, 208, 10, 0.925);
   --black: #000;
   --orange: #fec545;
+  --coral: rgb(241, 76, 16);
   --light-green: #02a11226;
   --green: #02a112;
   --blue: #43abf0;
+  --blue2: #1565d8;
   --light-blue: #43abf026;
   --dark-grey: #888888;
+  --dark-light: #eeeeee;
+  --grey2: #696f79;
   --black: #000000;
   --dark: #4d4d4d;
   --outlet: #e5e5e5;
   --purple: #951fde;
   --grey: #8692a6;
   --light-grey: #f5f5f5f5;
+  --light-grey-2: #bdbdbd;
+  --grey3: #c4c4c4;
+  --grey4: #adadad;
 }
 
 $baseFontSizePx: 16px;
@@ -92,6 +99,7 @@ $spacers: (
   16: 16px,
   18: 18px,
   20: 20px,
+  21: 21px,
   22: 22px,
   24: 24px,
   25: 25px,
@@ -114,6 +122,7 @@ $spacers: (
   48: 48px,
   49: 49px,
   51: 51px,
+  55: 55px,
   56: 56px,
   58: 58px,
   60: 60px,
@@ -123,6 +132,7 @@ $spacers: (
   68: 68px,
   69: 69px,
   72: 72px,
+  74: 74px,
   79: 79px,
   80: 80px,
   82: 82px,
@@ -133,11 +143,14 @@ $spacers: (
   93: 93px,
   96: 96px,
   100: 100px,
+  108: 108px,
   140: 140px,
   148: 148px,
   154: 154px,
   158: 158px,
   210: 210px,
-  364: 364px,
+  321: 321px,
   331: 331px,
+  364: 364px,
+  451: 451px,
 ) !default;

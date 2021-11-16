@@ -25,9 +25,18 @@
     height: 13px;
     width: 13px;
   }
+  &-10 {
+    height: auto;
+    width: 10px;
+  }
   &-user {
     &::after {
       content: url(/assets/icons/user.png);
+    }
+  }
+  &-caret-left {
+    &::after {
+      content: url(/assets/icons/caret-left.png);
     }
   }
   &-services {

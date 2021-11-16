@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacio | Sign In</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/spacio-logo-trans2.png"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div
+      class="
+        onboarding-bg
+        flex-x-center
+        px-16 px-md-24 px-lg-0
+        py-64 py-lg-0
+        position-relative
+      "
+    >
+      <img
+        src="/assets/images/spacio-logo-trans2.png"
+        class="logo hidden-sm"
+        alt="spacio logo"
+      />
+      <div class="form-container position-relative-sm">
+        <div class="form-wrapper2">
+          <form
+            action=""
+            class="bg-white pt-79 px-32 px-md-64 pb-34"
+            id="form-panel"
+          >
+            <div class="mb-48">
+              <div>
+                <a
+                  href="/onboarding/managers-signup.html"
+                  class="text-grey-2 f16-h22 flex"
+                >
+                  <span class="icon-caret-left icon-10 mr-14 mt-7"></span>
+                  Back
+                </a>
+              </div>
+            </div>
+            <div class="mb-44">
+              <h1 class="f30-h41 text-black mb-7 text-weight-bold">
+                Verification
+              </h1>
+              <p class="f18-h28 text-dark mb-0">
+                Please enter the 6-digit code sent to the email address you
+                provided.
+              </p>
+            </div>
+            <hr class="mb-96" />
+            <div class="mb-55">
+              <div class="flex-x-between mb-28 otp-container">
+                <input type="number" class="otp" />
+                <input type="number" class="otp" />
+                <input type="number" class="otp" />
+                <input type="number" class="otp" />
+                <input type="number" class="otp" />
+                <input type="number" class="otp" />
+              </div>
+
+              <div class="text-center">
+                <p class="text-grey-4 f14-h19">
+                  Didn’t get a code?
+                  <a
+                    href="#"
+                    class="text-coral cursor-pointer text-weight-bold"
+                  >
+                    Send again</a
+                  >
+                </p>
+              </div>
+              <button
+                class="
+                  btn
+                  py-21
+                  bg-primary
+                  radius-md
+                  text-center text-white
+                  w-100
+                  mt-321
+                  f16-h21
+                "
+              >
+                <a href="/onboarding/success.html">Authenticate</a>
+              </button>
+            </div>
+
+            <!-- <p class="f14-h28 mb-0 flex">
+              <a href="#" class="text-primary">Privacy Policy Terms & Conditions</span>
+              <span class="text-dark ml-2">| © 2021 Spacio Systems</span>
+            </p> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/otp.js"></script>
+  </body>
+</html>

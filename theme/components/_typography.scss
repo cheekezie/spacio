@@ -1,9 +1,7 @@
 $font-size-base: 1rem;
-$font-family-base: var(--ion-font-family);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
 }
 a {
   text-decoration: none;
@@ -18,9 +16,7 @@ h5,
 h6 {
   font-weight: normal;
 }
-p {
-  font-family: Open Sans;
-}
+
 .sr-only {
   display: none;
 }
@@ -52,14 +48,21 @@ p {
   font-weight: 800;
 }
 .text-weight-bold {
-  font-weight: 700;
+  font-weight: bold;
   &-sm {
     @media screen and (max-width: 768px) {
       font-weight: 700;
     }
   }
 }
-
+.text-weight-bolder {
+  font-weight: bolder;
+  &-sm {
+    @media screen and (max-width: 768px) {
+      font-weight: 700;
+    }
+  }
+}
 .f10-h13 {
   font-size: rem(10);
   line-height: rem(13);
@@ -88,7 +91,10 @@ p {
   font-size: rem(14);
   line-height: rem(28);
 }
-
+.f14-h19 {
+  font-size: rem(14);
+  line-height: rem(19);
+}
 .f15-h24 {
   font-size: rem(15);
   line-height: rem(24);
@@ -99,9 +105,13 @@ p {
     }
   }
 }
-.ff6-h21 {
+.f16-h21 {
   font-size: rem(16);
   line-height: rem(21);
+}
+.f16-h22 {
+  font-size: rem(16);
+  line-height: rem(22);
 }
 .f17-h24 {
   font-size: rem(17);
