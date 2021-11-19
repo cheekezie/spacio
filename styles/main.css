@@ -79495,7 +79495,8 @@ h6 {
   margin: 0;
 }
 
-button {
+button,
+.btn {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: none;
@@ -79503,9 +79504,11 @@ button {
           box-sizing: border-box;
   cursor: pointer;
   border: none;
+  text-decoration: none;
 }
 
-button .button-sm {
+button.button-sm,
+.btn.button-sm {
   padding: 0.625rem 1.375rem;
 }
 
