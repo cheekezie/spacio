@@ -49,7 +49,7 @@ hr {
   top: rem(79);
 }
 form {
-  margin-top: 10vh;
+  margin-top: 7.2vh;
   @include responsive-max(margin-top, 0, 'sm');
   //   @media screen and (max-width: breakpoint(sm)) {
   //     position: relative;

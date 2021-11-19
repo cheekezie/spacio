@@ -3,6 +3,7 @@
   --primary: #1b75bc;
   --secondary: #52506e;
   --white: #fff;
+  --off-white: #f9ffff;
   --yellow: rgba(230, 208, 10, 0.925);
   --black: #000;
   --orange: #fec545;
@@ -24,6 +25,7 @@
   --light-grey-2: #bdbdbd;
   --grey3: #c4c4c4;
   --grey4: #adadad;
+  --border: #dadada;
 }
 
 $baseFontSizePx: 16px;
@@ -133,6 +135,7 @@ $spacers: (
   69: 69px,
   72: 72px,
   74: 74px,
+  77: 77px,
   79: 79px,
   80: 80px,
   82: 82px,
@@ -145,10 +148,14 @@ $spacers: (
   100: 100px,
   108: 108px,
   140: 140px,
+  144: 144px,
   148: 148px,
   154: 154px,
+  156: 156px,
   158: 158px,
+  168: 168px,
   210: 210px,
+  308: 308px,
   321: 321px,
   331: 331px,
   364: 364px,

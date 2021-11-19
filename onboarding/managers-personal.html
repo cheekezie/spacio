@@ -44,18 +44,20 @@
               </p>
             </div>
             <div class="mb-18">
-              <h1 class="f30-h41 text-black mb-7 text-weight-bolder pr-40">Create A
-                Manager’s
-                Account to Get Started</h1>
+              <h1 class="f30-h41 text-black mb-7 text-weight-bolder pr-40">Authorized Staff Details</h1>
               <p class="f18-h28 text-grey-2 mb-0">
-                For the purpose of industry regulation, these details are
-                required.
+                For the purpose of industry regulation, these details are required.
               </p>
             </div>
             <div class="mb-55">
               <div class="form-group">
-                <label for="name" class="f16-h21 text-grey-2">Your fullname*</label>
-                <input type="text" placeholder="Tactical Deen" id="name"
+                <label for="name" class="f16-h21 text-grey-2">First Name*</label>
+                <input type="text" placeholder="Mubarak" id="name"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="lastname" class="f16-h21 text-grey-2">Last Name*</label>
+                <input type="text" placeholder="Sharafadeen" id="lastname"
                   required>
               </div>
               <div class="form-group">
@@ -64,12 +66,27 @@
               </div>
 
               <div class="form-group">
-                <label for="email" class="f16-h21 text-grey-2">Company Email
-                  address*</label>
+                <label for="email" class="f16-h21 text-grey-2">Official email*</label>
                 <input type="text" placeholder="Enter email address" id="email"
                   required>
               </div>
-
+              <div class="form-group">
+                <label for="designation" class="f16-h21 text-grey-2">Designation</label>
+                <input type="text" placeholder="Product Manager" id="designation"
+                  required>
+              </div>
+              <div class="form-group ">
+                <label for="email" class="f16-h21 text-grey-2">Upload valid ID*</label>
+                <div class="upload-progress bg-off-white py-32 px-16 border-dashed-grey radius-md">
+                  <div class="progress-group">
+                    <div class="flex-x-between progress-status mb-8">
+                      <span class="f12-h13 text-grey-2">Doc.jpg</span>
+                      <span class="f12-h13 text-grey-2">80%</span>
+                    </div>
+                    <div class="progress-bar progress-80"></div>
+                  </div>
+                </div>
+              </div>
               <div class="form-group">
                 <label for="cpwd" class="f16-h21 text-grey-2">Create password*</label>
                 <div class="position-relative">
@@ -96,14 +113,14 @@
                 <label for="facility" class="f16-h21 text-grey-2">Primary
                   estate/facility</label>
                 <select name="facility" id="facility">
-                  <option value="">Pls select</option>
+                  <option value="">--Pls select--</option>
                 </select>
               </div>
 
               <button class="btn py-21 bg-primary text-center text-white w-100
                 mt-68 mb-10 radius-md
                 f16-h21">
-                <a href="/onboarding/otp.html">Register Account</a>
+                <a href="/onboarding/otp.html">Save & Proceed Verification</a>
               </button>
               <!-- <div class="text-center">
                 <a href="#" class="f14-h19 text-grey-2">Forgot
