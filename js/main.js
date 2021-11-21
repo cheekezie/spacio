@@ -27,6 +27,10 @@ $("#onboardResidents").click(function(){
     window.location.href =
     '/onboarding/managers-signup.html';
 });
+$("#success").click(function(){
+    window.location.href =
+    '/onboarding/otp.html';
+});
 // var input = document.querySelector("#telephone");
 // window.intlTelInput(input, {
 //     allowDropdown:true,

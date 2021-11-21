@@ -19,3 +19,6 @@
   $vw-context: (1000 * 0.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }
+@function vh($px) {
+  @return ($px / 19.2) + vh;
+}

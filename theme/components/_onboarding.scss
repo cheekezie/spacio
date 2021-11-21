@@ -22,26 +22,36 @@ hr {
   margin: 0 0 rem(24) 0;
 }
 .form-container {
-  position: absolute;
-  padding-bottom: 10vh;
-  padding-right: 5%;
+  position: fixed;
   @include responsive-max(padding, 0, sm);
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  //   margin-left: 10%;
+  right: 5%;
+  top: 8vh;
+  bottom: 6vh;
+  @extend .hide-scrollbar;
   overflow-y: auto;
   transform: translateX(150%);
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
   animation: slide 0.5s forwards;
   -webkit-animation: slide 1.5s forwards;
-}
-.form-wrapper2 {
   width: rem(570);
   @include responsive-max(width, rem(480), 'xxl');
   @include responsive-max(width, 100%, sm);
+}
+.field-wrapper {
+  // max-height: vh(647);
+  max-height: 45.5vh;
+  overflow-y: auto;
+  @extend .hide-scrollbar;
+}
+.hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.form-wrapper2 {
   margin-left: auto;
 }
 .ellipse {
@@ -49,12 +59,6 @@ hr {
   top: rem(79);
 }
 form {
-  margin-top: 7.2vh;
-  @include responsive-max(margin-top, 0, 'sm');
-  //   @media screen and (max-width: breakpoint(sm)) {
-  //     position: relative;
-  //     width: 100%;
-  //   }
   .category-card {
     &:hover,
     &:active {
