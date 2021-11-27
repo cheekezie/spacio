@@ -21,6 +21,7 @@ hr {
   border-top: 1px solid var(--grey3);
   margin: 0 0 rem(24) 0;
 }
+
 .form-container {
   position: fixed;
   @include responsive-max(padding, 0, sm);
@@ -35,8 +36,8 @@ hr {
   animation: slide 0.5s forwards;
   -webkit-animation: slide 1.5s forwards;
   width: rem(570);
-  @include responsive-max(width, rem(480), 'xxl');
-  @include responsive-max(width, 100%, sm);
+  // @include responsive-max(width, rem(480), 'xxl');
+  // @include responsive-max(width, 100%, sm);
 }
 .field-wrapper {
   // max-height: vh(647);

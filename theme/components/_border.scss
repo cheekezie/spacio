@@ -1,0 +1,39 @@
+.border-grey {
+  border-color: 1px solid var(--grey);
+}
+.border-1x {
+  border-width: 1px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-grey {
+  border: 1px solid var(--grey);
+}
+.border-primary {
+  border: 1px solid var(--primary);
+}
+.radius-sm {
+  border-radius: 3px;
+}
+.radius-md {
+  border-radius: 6px;
+}
+.radius-lg {
+  border-radius: 12px;
+}
+.radius-20 {
+  border-radius: 20px;
+}
+.radius-15 {
+  border-radius: 15px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.rounded {
+  border-radius: 50%;
+}
+.border-dashed-grey {
+  border: 1px dashed var(--light-grey-2);
+}

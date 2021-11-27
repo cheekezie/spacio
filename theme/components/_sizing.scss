@@ -41,6 +41,9 @@ canvas#dashboardSummaryChart {
 .min-h-full {
   min-height: 100vh;
 }
+.min-122 {
+  min-width: rem(122);
+}
 .h-full {
   height: 100vh;
   &-lg {
@@ -48,6 +51,9 @@ canvas#dashboardSummaryChart {
       height: auto;
     }
   }
+}
+.w-100-sm {
+  @include responsive-max(width, 100%, sm);
 }
 .h-auto {
   height: auto;

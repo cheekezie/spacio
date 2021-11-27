@@ -48,6 +48,27 @@ input.otp {
   background: var(--dark-light);
 }
 
+.filter-inputs {
+  input,
+  select {
+    padding: rem(14) rem(16) rem(14) rem(62);
+  }
+  input.search {
+    min-width: rem(372);
+    background-image: url('/assets/icons/search.png');
+    background-repeat: no-repeat;
+    background-position-x: rem(14);
+    background-position-y: 50%;
+  }
+  input.filter {
+    max-width: rem(123);
+    background-image: url('/assets/icons/filter.png');
+    background-repeat: no-repeat;
+    background-position-x: rem(23);
+    background-position-y: 50%;
+  }
+}
+
 // to remove arrows in input type number
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

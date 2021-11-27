@@ -6,12 +6,15 @@
   --off-white: #f9ffff;
   --yellow: rgba(230, 208, 10, 0.925);
   --black: #000;
+  --black-alt: #494949;
   --orange: #fec545;
   --coral: rgb(241, 76, 16);
+  --danger: #ff0000;
   --light-green: #02a11226;
   --green: #02a112;
   --blue: #43abf0;
   --blue2: #1565d8;
+  --blue3: #0057ff;
   --light-blue: #43abf026;
   --dark-grey: #888888;
   --dark-light: #eeeeee;
@@ -23,8 +26,10 @@
   --grey: #8692a6;
   --light-grey: #f5f5f5f5;
   --light-grey-2: #bdbdbd;
+  --grey-lighter: #fafafa;
   --grey3: #c4c4c4;
   --grey4: #adadad;
+  --grey5: #d6d6d6;
   --border: #dadada;
 }
 
@@ -103,6 +108,7 @@ $spacers: (
   20: 20px,
   21: 21px,
   22: 22px,
+  23: 23px,
   24: 24px,
   25: 25px,
   26: 26px,
@@ -119,6 +125,7 @@ $spacers: (
   40: 40px,
   42: 42px,
   44: 44px,
+  45: 45px,
   46: 46px,
   47: 47px,
   48: 48px,
