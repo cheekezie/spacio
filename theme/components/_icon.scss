@@ -13,6 +13,10 @@
     height: 50px;
     width: 50px;
   }
+  &-17 {
+    height: auto;
+    width: 18px;
+  }
   &-20 {
     height: 20px;
     width: 20px;
@@ -33,9 +37,14 @@
     height: auto;
     width: 10px;
   }
-  &-user {
+  &-user-white {
     &::after {
-      content: url(/assets/icons/user.png);
+      content: url(/assets/icons/user-white.svg);
+    }
+  }
+  &-user-black {
+    &::after {
+      content: url(/assets/icons/user-black.svg);
     }
   }
   &-download {
@@ -55,29 +64,64 @@
       content: url(/assets/icons/caret-left.png);
     }
   }
-  &-services {
+  &-services-white {
     &::after {
-      content: url(/assets/icons/CirclesThree.png);
+      content: url(/assets/icons/CirclesThree-white.svg);
     }
   }
-  &-keyboard {
+  &-services-black {
     &::after {
-      content: url(/assets/icons/Keyboard.png);
+      content: url(/assets/icons/CirclesThree-black.svg);
     }
   }
-  &-mail {
+  &-keyboard-white {
     &::after {
-      content: url(/assets/icons/EnvelopeOpen.png);
+      content: url(/assets/icons/Keyboard-white.svg);
     }
   }
-  &-house {
+  &-keyboard-black {
     &::after {
-      content: url(/assets/icons/HouseLine.png);
+      content: url(/assets/icons/keyboard-black.svg);
     }
   }
-  &-user-group {
+  &-layer-white {
     &::after {
-      content: url(/assets/icons/user-group.png);
+      content: url(/assets/icons/layer-white.svg);
+    }
+  }
+  &-layer-black {
+    &::after {
+      content: url(/assets/icons/layer-black.svg);
+    }
+  }
+  &-mail-white {
+    &::after {
+      content: url(/assets/icons/mail-white.svg);
+    }
+  }
+  &-mail-black {
+    &::after {
+      content: url(/assets/icons/mail-black.svg);
+    }
+  }
+  &-home-white {
+    &::after {
+      content: url(/assets/icons/home-white.svg);
+    }
+  }
+  &-home-black {
+    &::after {
+      content: url(/assets/icons/home-black.svg);
+    }
+  }
+  &-user-group-white {
+    &::after {
+      content: url(/assets/icons/user-group-white.svg);
+    }
+  }
+  &-user-group-black {
+    &::after {
+      content: url(/assets/icons/user-group-black.svg);
     }
   }
   &-payment {

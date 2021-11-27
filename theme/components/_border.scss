@@ -1,5 +1,8 @@
 .border-grey {
-  border-color: 1px solid var(--grey);
+  border-color: var(--grey) !important;
+}
+.border-grey6 {
+  border-color: var(--grey6) !important;
 }
 .border-1x {
   border-width: 1px;
@@ -12,6 +15,9 @@
 }
 .border-primary {
   border: 1px solid var(--primary);
+}
+.b-b-s-1x {
+  border-bottom: 1px solid;
 }
 .radius-sm {
   border-radius: 3px;

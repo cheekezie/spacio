@@ -17,23 +17,26 @@
       alt=""
     />
   </div>
-  <button
-    class="
-      btn
-      radius-md
-      px-34
-      py-20
-      bg-primary
-      mr-45
-      ml-24
-      flex-x-center-center
-      text-white
-      f18-h24
-    "
-  >
-    <span class="icon-plus mr-26 icon-20"></span>
-    Add New
-  </button>
+  <div class="position-relative">
+    <button
+      class="
+        btn
+        radius-md
+        px-34
+        py-20
+        bg-primary
+        mr-45
+        ml-24
+        flex-x-center-center
+        text-white
+        f18-h24
+      "
+      id="addNewBtn"
+    >
+      <span class="icon-plus mr-26 icon-20"></span>
+      Add New
+    </button>
+  </div>
   <ul class="ml-47 mr-33 mt-62 p-0">
     <li class="list-unstyled mb-44">
       <a href="/pages/dashboard-summary.html" class="flex">
@@ -49,31 +52,31 @@
     </li>
     <li class="list-unstyled mb-44">
       <a href="/pages/demand-notice.html" class="flex">
-        <span class="icon-mail icon-32"></span>
+        <span class="icon-mail-white icon-32"></span>
         <span class="ml-33 text-white mb-2">Demand Notice</span>
       </a>
     </li>
     <li class="list-unstyled mb-44">
       <a href="/pages/services.html" class="flex">
-        <span class="icon-services icon-32"></span>
+        <span class="icon-services-white icon-32"></span>
         <span class="ml-33 text-white mb-2">Services</span>
       </a>
     </li>
     <li class="list-unstyled mb-44">
       <a href="/pages/users.html" class="flex">
-        <span class="icon-user-group icon-32"></span>
+        <span class="icon-user-group-white icon-32"></span>
         <span class="ml-33 text-white mb-2">Users</span>
       </a>
     </li>
     <li class="list-unstyled mb-44">
       <a href="/pages/work-order.html" class="flex">
-        <span class="icon-keyboard icon-32"></span>
+        <span class="icon-keyboard-white icon-32"></span>
         <span class="ml-33 text-white mb-2">Work Order</span>
       </a>
     </li>
     <li class="list-unstyled">
       <a href="/pages/estates.html" class="flex">
-        <span class="icon-house icon-32"></span>
+        <span class="icon-home-white icon-32"></span>
         <span class="ml-33 text-white mb-2">Estate</span>
       </a>
     </li>
@@ -84,3 +87,6 @@
     </button>
   </div>
 </div>
+
+<!-- dialog box to add new items (full html in partials folder)-->
+<new-item-popup-component></new-item-popup-component>

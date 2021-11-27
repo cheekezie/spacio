@@ -21,6 +21,7 @@
   --grey2: #696f79;
   --black: #000000;
   --dark: #4d4d4d;
+  --dark-alt: #52506e;
   --outlet: #e5e5e5;
   --purple: #951fde;
   --grey: #8692a6;
@@ -30,6 +31,7 @@
   --grey3: #c4c4c4;
   --grey4: #adadad;
   --grey5: #d6d6d6;
+  --grey6: #c6c6c69a;
   --border: #dadada;
 }
 
@@ -121,7 +123,9 @@ $spacers: (
   33: 33px,
   34: 34px,
   36: 36px,
+  37: 37px,
   38: 38px,
+  39: 39px,
   40: 40px,
   42: 42px,
   44: 44px,
@@ -140,6 +144,7 @@ $spacers: (
   61: 61px,
   62: 62px,
   64: 64px,
+  65: 65px,
   68: 68px,
   69: 69px,
   72: 72px,
