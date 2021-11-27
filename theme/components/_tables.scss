@@ -32,6 +32,9 @@ table {
       border-bottom: 1px solid var(--grey5);
     }
   }
+  tr {
+    cursor: pointer;
+  }
   tbody {
     td {
       color: var(--grey2);

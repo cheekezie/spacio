@@ -32,8 +32,17 @@
 .min-h-349 {
   min-height: rem(249);
 }
-canvas#dashboardSummaryChart {
-  min-height: rem(249);
+
+canvas {
+  max-height: rem(222);
+  // min-height: rem(100);
+  // #paymentSummaryChart,
+  // #dashboardSummaryChart {
+  //   min-height: rem(249);
+  // }
+  // #userSummaryChart {
+  //   min-height: rem(222);
+  // }
 }
 .max-content {
   width: max-content;

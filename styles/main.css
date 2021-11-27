@@ -84924,19 +84924,23 @@ button.button-sm,
 }
 
 .summary-listing li {
-  padding-bottom: 2.0625rem;
   margin-bottom: 1.875rem;
+}
+
+.summary-listing.list-border-bottom li {
+  padding: 1.0625rem 0 2.0625rem 0;
+  margin-bottom: 0;
   border-bottom: 1px solid var(--border);
+}
+
+.summary-listing li:first-of-type {
+  padding-top: 0;
 }
 
 .summary-listing li:last-of-type {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
-}
-
-canvas #dashboardSummaryChart {
-  max-height: 13.875rem;
 }
 
 .form-group {
@@ -85215,8 +85219,8 @@ input[type='number'] {
   min-height: 15.5625rem;
 }
 
-canvas#dashboardSummaryChart {
-  min-height: 15.5625rem;
+canvas {
+  max-height: 13.875rem;
 }
 
 .max-content {
@@ -85293,6 +85297,10 @@ table thead th {
   padding: 1rem 1.375rem 0.5rem 1.375rem;
   border-top: 1px solid var(--grey5);
   border-bottom: 1px solid var(--grey5);
+}
+
+table tr {
+  cursor: pointer;
 }
 
 table tbody td {
@@ -85849,6 +85857,15 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .icon-download::after {
   content: url(/assets/icons/download.png);
+}
+
+.icon-arrow-left {
+  height: 22px;
+  width: 18px;
+}
+
+.icon-arrow-left::after {
+  content: url(/assets/icons/arrow-left.png);
 }
 
 .icon-caret-left::after {

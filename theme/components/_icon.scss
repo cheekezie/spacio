@@ -43,6 +43,13 @@
       content: url(/assets/icons/download.png);
     }
   }
+  &-arrow-left {
+    height: 22px;
+    width: 18px;
+    &::after {
+      content: url(/assets/icons/arrow-left.png);
+    }
+  }
   &-caret-left {
     &::after {
       content: url(/assets/icons/caret-left.png);

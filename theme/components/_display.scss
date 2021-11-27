@@ -146,18 +146,23 @@
 
 .summary-listing {
   li {
-    padding-bottom: rem(33);
     margin-bottom: rem(30);
-    border-bottom: 1px solid var(--border);
+  }
+  &.list-border-bottom {
+    li {
+      padding: rem(17) 0 rem(33) 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid var(--border);
+    }
+  }
+  li {
+    &:first-of-type {
+      padding-top: 0;
+    }
     &:last-of-type {
       margin-bottom: 0;
       padding-bottom: 0;
       border-bottom: none;
     }
-  }
-}
-canvas {
-  #dashboardSummaryChart {
-    max-height: rem(222);
   }
 }

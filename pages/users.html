@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spacio | Payment Summary</title>
+    <title>Spacio | Users</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -16,79 +16,74 @@
     <navigation></navigation>
     <div class="page-outlet">
       <div class="row mx-n11">
-        <div class="size-sm-12 size-md-3 mb-23">
-          <div class="px-md-11 h-100">
-            <div class="h-100 bg-white radius-sm">
-              <div class="px-40 py-30 h-100">
-                <div class="flex-x-between flex-wrap align-items-center">
-                  <h1 class="mb-0 f24-h33 text-dark text-weight-bold">Revenue</h1>
-                  <a href="#" class="mb-0 f18-h24 text-blue">Details</a>
-                </div>
-                <div class="flex-y-center-center h-100">
-                  <h1 class="f48-65 text-dark m-0">$827k</h1>
-                  <p class="m-0 text-green">10% Growth</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="size-sm-12 size-md-3 mb-23">
+
+        <div class="size-sm-12 size-md-5 mb-23">
           <div class="px-md-11 h-100">
             <div class="h-100 bg-white radius-sm">
               <div class="px-40 py-30">
                 <div class="flex-x-between flex-wrap align-items-center">
-                  <h1 class="m-0 f24-h33 text-dark text-weight-bold">In-Flow
-                    status</h1>
+                  <h1 class="m-0 f24-h33 text-dark text-weight-bold">User Analysis</h1>
                   <a href="#" class="mb-0 f18-h24 text-blue">Details</a>
                 </div>
                 <ul class="p-0 mt-58 summary-listing">
                   <li class="list-unstyled flex-x-between
                     align-items-center">
-                    <span class="f20-h24">Total Transaction(s)</span>
-                    <span class="f18-h24 badge-success radius-20 px-12 py-3">600</span>
+                    <span class="f20-h24">Total</span>
+                    <span class="f18-h24 badge-intermediate radius-20 px-12 py-3">600</span>
                   </li>
                   <li class="list-unstyled flex-x-between
                     align-items-center">
-                    <span class="f20-h24">Sucessful Transaction(s)</span>
+                    <span class="f20-h24">New Today</span>
                     <span class="f18-h24 badge-primary radius-20 px-12 py-3">80</span>
                   </li>
                   <li class="list-unstyled flex-x-between
                     align-items-center">
-                    <span class="f20-h24">Failed Transaction(s)</span>
+                    <span class="f20-h24">Yesterday</span>
                     <span class="f18-h24 badge-warning radius-20 px-12 py-3">46</span>
-                  </li>
-                  <li class="list-unstyled flex-x-between align-items-center">
-                    <span class="f20-h24">Pending Transaction(s)</span>
-                    <span class="f18-h24 badge-intermediate radius-20 px-12
-                      py-3">76</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="size-sm-12 size-md-6 mb-23">
+        <div class="size-sm-12 size-md-7 mb-23">
           <div class="px-md-11 h-100">
             <div class="h-100 bg-white radius-sm">
               <div class="px-40 py-30">
                 <div class="flex-x-between flex-wrap align-items-center">
-                  <h1 class="mt-0 mb-29 f24-h33 text-dark text-weight-bold">Revenue
+                  <h1 class="mt-0 mb-29 f24-h33 text-dark text-weight-bold">User
                     chart</h1>
                   <a href="#" class="mb-0 f18-h24 text-blue">Details</a>
                 </div>
                 <div>
-                  <canvas id="paymentSummaryChart" ></canvas>
+                  <canvas id="userSummaryChart"></canvas>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- <div class="size-sm-12 size-md-7 mb-23">
+          <div class="px-md-11 h-100">
+            <div class="h-100 bg-white radius-sm">
+              <div class="px-40 py-30">
+                <div class="flex-x-between flex-wrap align-items-center">
+                  <h1 class="mt-0 mb-29 f24-h33 text-dark text-weight-bold">User
+                    chart</h1>
+                  <a href="#" class="mb-0 f18-h24 text-blue">Details</a>
+                </div>
+                <div>
+                  <canvas id="userSummaryChart" height="222px"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
 
       <div class="filter-panel pt-11 pl-45 pb-13 pr-26 bg-white flex-x-between
         flex-wrap align-items-center">
         <div>
-          <h6 class="text-black-alt f24-h33 mb-sm-10">Transaction History</h6>
+          <h6 class="text-black-alt f24-h33 mb-sm-10">User list</h6>
         </div>
         <div class="filter-inputs flex flex-wrap">
           <input type="text" placeholder="search" class="search mr-26 radius-md
@@ -108,13 +103,15 @@
           <thead>
             <tr>
               <th></th>
-              <th>DATE</th>
-              <th>AMOUNT</th>
-              <th>USER NAME</th>
-              <th>USER TYPE/ID</th>
-              <th>DESCRIPTION</th>
-              <th>STATUS</th>
-              <th>PAYMENT METHOD</th>
+              <th>DATE CREATED</th>
+              <th>USERNAME</th>
+              <th>PHONE No.</th>
+              <th>EMAIL</th>
+              <th>PRI. FACILITY</th>
+              <th>ADDRESS</th>
+              <th>USER TYPE</th>
+              <th>CATEGORY</th>
+              <th>CREATOR</th>
             </tr>
           </thead>
           <tbody>
@@ -122,79 +119,66 @@
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td class="text-weight-600 f24-h33">$32.5</td>
               <td>Badmus Saka</td>
-              <td>Resident/Ajao/003</td>
-              <td>Monthly Subscription</td>
-              <td>
-                <span class="f18-h24 badge-border-primary">Successful</span>
-              </td>
-              <td>VISA **** 5432</td>
+              <td>09012345678</td>
+              <td>saka@spacio.com</td>
+              <td>AJao Int’l Estate - Lagos</td>
+              <td>No 8. Aliyu street off 36...</td>
+              <td>Resident</td>
+              <td>spacio - elite</td>
+              <td>Tactical</td>
             </tr>
             <tr>
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td class="text-weight-600 f24-h33">$32.5</td>
               <td>Badmus Saka</td>
-              <td>Resident/Ajao/003</td>
-              <td>Monthly Subscription</td>
-              <td>
-                <span class="f18-h24 badge-border-danger ">Failed</span>
-              </td>
-              <td>VISA **** 5432</td>
+              <td>09012345678</td>
+              <td>saka@spacio.com</td>
+              <td>AJao Int’l Estate - Lagos</td>
+              <td class="text-truncated-single-line ">No 8. Aliyu street off 36...</td>
+              <td>Resident</td>
+              <td>spacio - elite</td>
+              <td>Tactical</td>
             </tr>
             <tr>
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td class="text-weight-600 f24-h33">$32.5</td>
               <td>Badmus Saka</td>
-              <td>Resident/Ajao/003</td>
-              <td>Monthly Subscription</td>
-              <td>
-                <span class="f18-h24 badge-border-primary">Successful</span>
-              </td>
-              <td>GTbank transfer</td>
+              <td>09012345678</td>
+              <td>saka@spacio.com</td>
+              <td>AJao Int’l Estate - Lagos</td>
+              <td class="text-truncated-single-line ">No 8. Aliyu street off 36...</td>
+              <td>Resident</td>
+              <td>spacio - elite</td>
+              <td>Tactical</td>
             </tr>
             <tr>
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td class="text-weight-600 f24-h33">$32.5</td>
               <td>Badmus Saka</td>
-              <td>Resident/Ajao/003</td>
-              <td>Monthly Subscription</td>
-              <td>
-                <span class="f18-h24 badge-border-danger">Failed</span>
-              </td>
-              <td>GTbank transfer</td>
+              <td>09012345678</td>
+              <td>saka@spacio.com</td>
+              <td>AJao Int’l Estate - Lagos</td>
+              <td class="text-truncated-single-line ">No 8. Aliyu street off 36...</td>
+              <td>Resident</td>
+              <td>spacio - elite</td>
+              <td>Tactical</td>
             </tr>
             <tr>
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td class="text-weight-600 f24-h33">$32.5</td>
               <td>Badmus Saka</td>
-              <td>Resident/Ajao/003</td>
-              <td>Monthly Subscription</td>
-              <td>
-                <span class="f18-h24 badge-border-danger">Failed</span>
-              </td>
-              <td>GTbank transfer</td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <input type="checkbox" name="" id=""></td>
-              <td>12/09/202</td>
-              <td class="text-weight-600 f24-h33">$32.5</td>
-              <td>Badmus Saka</td>
-              <td>Resident/Ajao/003</td>
-              <td>Monthly Subscription</td>
-              <td>
-                <span class="f18-h24 badge-border-danger">Failed</span>
-              </td>
-              <td>VISA **** 5432</td>
+              <td>09012345678</td>
+              <td>saka@spacio.com</td>
+              <td>AJao Int’l Estate - Lagos</td>
+              <td class="text-truncated-single-line ">No 8. Aliyu street off 36...</td>
+              <td>Resident</td>
+              <td>spacio - elite</td>
+              <td>Tactical</td>
             </tr>
           </tbody>
         </table>
@@ -202,6 +186,6 @@
 
       <script src="../js/page-loader.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      <script src="/js/charts/payment-chart.js"></script>
+      <script src="/js/charts/user-chart.js"></script>
     </body>
   </html>

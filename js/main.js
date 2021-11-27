@@ -31,6 +31,16 @@ $("#success").click(function(){
     window.location.href =
     '/onboarding/otp.html';
 });
+$(".propertyDetail").click(function(){
+    window.location.href =
+    '/pages/property-listings.html';
+});
+$(".noticeDetails").click(function(){
+    console.log('kkkk');
+    window.location.href =
+    '/pages/demand-notice-listings.html';
+});
+
 // var input = document.querySelector("#telephone");
 // window.intlTelInput(input, {
 //     allowDropdown:true,
