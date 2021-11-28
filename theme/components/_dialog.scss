@@ -9,11 +9,57 @@
   width: 100%;
   height: 100%;
   overflow: auto;
+  &.side-dialog {
+    .dialog-content {
+      margin: 16.5vh 0 0 rem(240);
+      border-radius: 0px 15px 15px 15px;
+    }
+  }
+  &.central-dialog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .dialog-content {
-  width: rem(364);
-  border-radius: 0px 15px 15px 15px;
-  &.add-new-popup {
-    margin: 17vh 0 0 rem(240);
+  hr {
+    border-top: 1px solid var(--grey6);
+    margin: rem(39) 0 rem(39);
+  }
+  .form-content-scroll {
+    max-height: rem(410);
+    overflow-y: auto;
+    @include hide-scrollbar;
+  }
+
+  &.dialog-xsm {
+    max-width: rem(364);
+  }
+  &.dialog-sm {
+    max-width: rem(518);
+  }
+  &.dialog-md {
+    max-width: rem(570);
+    @include responsive-max(max-width, 95%, sm);
+  }
+}
+.property-select {
+  &.active {
+    background: var(--primary);
+    p {
+      color: var(--white) !important;
+    }
+  }
+  &:hover,
+  &.active {
+    .icon-suitcase-black {
+      @extend .icon-suitcase-white;
+    }
+    .icon-house-black {
+      @extend .icon-house-white;
+    }
+    .icon-flag-black {
+      @extend .icon-flag-white;
+    }
   }
 }

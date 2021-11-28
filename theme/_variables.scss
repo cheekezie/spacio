@@ -5,16 +5,18 @@
   --white: #fff;
   --off-white: #f9ffff;
   --yellow: rgba(230, 208, 10, 0.925);
-  --black: #000;
   --black-alt: #494949;
   --orange: #fec545;
   --coral: rgb(241, 76, 16);
   --danger: #ff0000;
   --light-green: #02a11226;
   --green: #02a112;
+  --success: #10d318;
   --blue: #43abf0;
   --blue2: #1565d8;
   --blue3: #0057ff;
+  --primary-trans: rgba(27, 117, 188, 0.15);
+  --primary-trans-light: #f1f5fa;
   --light-blue: #43abf026;
   --dark-grey: #888888;
   --dark-light: #eeeeee;
@@ -99,6 +101,7 @@ $spacers: (
   6: 6px,
   7: 7px,
   8: 8px,
+  9: 9px,
   10: 10px,
   11: 11px,
   13: 13px,
@@ -106,6 +109,7 @@ $spacers: (
   14: 14px,
   15: 15px,
   16: 16px,
+  17: 17px,
   18: 18px,
   20: 20px,
   21: 21px,
@@ -127,7 +131,9 @@ $spacers: (
   38: 38px,
   39: 39px,
   40: 40px,
+  41: 41px,
   42: 42px,
+  43: 43px,
   44: 44px,
   45: 45px,
   46: 46px,
@@ -147,6 +153,7 @@ $spacers: (
   65: 65px,
   68: 68px,
   69: 69px,
+  71: 71px,
   72: 72px,
   74: 74px,
   77: 77px,
@@ -162,6 +169,7 @@ $spacers: (
   100: 100px,
   104: 104px,
   108: 108px,
+  122: 122px,
   140: 140px,
   144: 144px,
   148: 148px,

@@ -1,0 +1,116 @@
+<div class="dialog side-dialog" id="addResidntDialog">
+    <div class="dialog-content bg-white dialog-md">
+        <div class="px-30 px-md-71 pt-25 pb-42 pt-md-65">
+            <form action="">
+                <div class="mb-40 mb-md-84 pr-0 pr-md-50">
+                    <h1 class="f30-h41 text-black-alt mb-8 text-weight-bolder">
+                        Add the basic
+                        user information
+                    </h1>
+                    <p class="f18-h24 text-grey-2">
+                        For the purpose of industry regulation, these details
+                        are
+                        required.
+                    </p>
+                </div>
+                <div class="form-content-scroll mb-20">
+                    <div class="form-group mb-31">
+                        <label for="name" class="f16-h21 text-grey-2">Add User
+                            Name</label>
+                        <input
+                            type="text"
+                            placeholder="Tactical Paradise Estate"
+                            id="name"
+                            required
+                            />
+                    </div>
+
+                    <div class="form-group mb-20">
+                        <label for="number" class="f16-h21 text-grey-2">Add
+                            Phone number</label>
+                        <input
+                            type="number"
+                            placeholder="090912345567"
+                            id="number"
+                            required
+                            />
+                    </div>
+
+                    <div class="form-group mb-0">
+                        <label for="email" class="f16-h21 text-grey-2">Email
+                            address*</label>
+                        <input
+                            type="text"
+                            placeholder="Enter email address"
+                            id="email"
+                            required
+                            />
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group mb-9">
+                        <label for="estate" class="f16-h21 text-grey-2">Add
+                            Primary Facility/Estate Address</label>
+                        <input
+                            type="text"
+                            placeholder="Some awesome location in an expensive
+                            area in Abuja"
+                            id="estate"
+                            required
+                            />
+                    </div>
+
+                    <div class="row mx-n5">
+                        <div class="size-md-7">
+                            <div class="form-group px-0 px-md-5 mb-31 mb-md-0">
+                                <select name="facility" id="facility">
+                                    <option value="">Select Facility/Estate</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="size-md-5">
+                            <div class="form-group px-0 px-md-5 mb-0">
+                                <input type="text" placeholder="Zip code"
+                                    id="zip" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="position-relative pr-0 pr-md-108 mb-10">
+                        <div id="triggerUpload" class="cursor-pointer flex-x-center">
+                            <span class="py-17 px-20 bg-primary-trans
+                                radius-md">
+                                <span class="icon-file-upload icon-22"></span>
+                            </span>
+                            <div class="ml-10">
+                                <p class="f18-h24 text-black-alt
+                                    text-weight-600">Upload bulk users</p>
+                                <p class="f13-h18 text-grey-2">Short description
+                                    of
+                                    the process</label>
+                            </div>
+                        </div>
+                        <span class="text-primary f12-h13 position-absolute
+                            right-0 top-15">Download complete</span>
+                    </div>
+                </div>
+                <button
+                    class="btn
+                    py-16
+                    bg-primary
+                    text-center text-white
+                    w-100
+                    radius-md
+                    f16-h21
+                    flex-x-center-center" id="saveResident"
+                    type="submit">
+                    <span class="icon-plus-white icon-20 mr-26"></span>
+                    Add Facility/Estate
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -26,6 +26,11 @@ select {
   padding: rem(22) rem(30);
   box-sizing: border-box;
   border-radius: 6px;
+  color: var(--black-alt);
+  &::placeholder,
+  option {
+    color: var(--black-alt);
+  }
   &:hover,
   &:active,
   &.focus-visible {

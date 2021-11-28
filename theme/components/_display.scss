@@ -70,6 +70,15 @@
   margin-left: rem(266);
   padding: rem(62) rem(28) rem(62) rem(14);
 }
+.hover-primary {
+  cursor: pointer;
+  &:hover {
+    background: var(--primary) !important;
+    p {
+      color: var(--white) !important;
+    }
+  }
+}
 .hover-zoom {
   img,
   h2 {
@@ -130,6 +139,10 @@
     border: 1px solid var(--blue3);
     color: var(--blue3);
   }
+  &-border-success {
+    border: 1px solid var(--success);
+    color: var(--success);
+  }
   &-warning {
     background: rgba(255, 102, 0, 0.15);
     color: var(--orange);
@@ -165,4 +178,12 @@
       border-bottom: none;
     }
   }
+}
+
+.drag-drop {
+  border: 1px dashed var(primary);
+  border-radius: 7px;
+  padding: rem(46) rem(20);
+  @extend .flex-y-center-center;
+  background: var(--primary-trans-light);
 }

@@ -1,6 +1,12 @@
 .bg-primary {
   background: var(--primary);
 }
+.bg-primary-trans {
+  background: var(--primary-trans);
+}
+.bg-primary-trans-light {
+  background: var(--primary-trans-light);
+}
 .bg-secondary {
   background: var(--secondary);
 }
@@ -36,6 +42,9 @@
 }
 .text-black {
   color: var(--black);
+}
+.text-black-alt {
+  color: var(--black-alt);
 }
 .text-green {
   color: var(--green);

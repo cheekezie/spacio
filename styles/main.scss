@@ -10,6 +10,12 @@ body {
   padding: 0;
   margin: 0;
   background: var(--outlet);
+  @media screen and (max-width: 1600px) {
+    zoom: 78%;
+  }
+  @media screen and (max-width: 768px) {
+    zoom: 100%;
+  }
 }
 
 html {

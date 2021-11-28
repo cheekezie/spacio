@@ -1,5 +1,6 @@
 'use strict';
 $(document).ready(function () {
+
   $('#signin').click(function () {
     window.location.href = '/pages/dashboard-summary.html';
   });
@@ -32,18 +33,20 @@ $(document).ready(function () {
   });
 
 
-  // ClICK OUTSIDE TO HIDE SIDEMENU AND OVERLAY
+  // ClICK OUTSIDE tO HIDE ALL INSTANCES OF DIALOG MODAL AND OVERLAY
   $(document).mouseup((e) => {
-    const container = $('#dialog');
-    const toggler = $('.dialog-content');
+    const container = $('.dialog-content');
+    const addNewBtn = $('#addNewBtn');
     // If the target of the click isn't the dialog container and content
     if (
       !container.is(e.target) &&
-      !toggler.is(e.target) &&
+      !addNewBtn.is(e.target) &&
       container.has(e.target).length === 0
     ) {
-      const dialog = document.getElementById("myDialog");
-      dialog.style.display = "none";
+      const dialog = document.getElementsByClassName("dialog");
+      for (let index = 0; index < dialog.length; index++) {
+        dialog[index].style.display = "none"; 
+      }
     }
   });
 });

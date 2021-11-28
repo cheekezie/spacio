@@ -1,0 +1,91 @@
+<div class="dialog side-dialog " id="addUserDialog">
+  <div class="dialog-content bg-white dialog-md">
+    <div class="px-30 px-md-71 pt-25 pb-42 pt-md-65">
+      <form action="" class="form-scroll">
+        <div class="mb-40 mb-md-84 pr-0 pr-md-50">
+          <h1 class="f30-h41 text-black-alt mb-8 text-weight-bolder">
+            Add the basic user information
+          </h1>
+          <p class="f18-h24 text-grey-2">
+            Add a name and the contact details for the new User to be able to
+            find them on the spacio system.
+          </p>
+        </div>
+        <div class="form-content-scroll mb-20">
+          <div class="form-group mb-31">
+            <label for="name" class="f16-h21 text-grey-2">Add User Name</label>
+            <input
+              type="text"
+              placeholder="Tactical Paradise Estate"
+              id="name"
+              required
+            />
+          </div>
+
+          <div class="form-group mb-20">
+            <label for="number" class="f16-h21 text-grey-2"
+              >Add Phone number</label
+            >
+            <input
+              type="number"
+              placeholder="090912345567"
+              id="number"
+              required
+            />
+          </div>
+
+          <div class="form-group mb-0">
+            <label for="email" class="f16-h21 text-grey-2"
+              >Email address*</label
+            >
+            <input
+              type="text"
+              placeholder="Enter email address"
+              id="email"
+              required
+            />
+          </div>
+
+          <hr />
+
+          <div class="form-group mb-0">
+            <label for="title" class="f16-h21 text-grey-2">Usre Title </label>
+            <input
+              type="text"
+              placeholder="Give the user a title"
+              id="title"
+              required
+            />
+          </div>
+
+          <hr />
+
+          <div class="form-group px-0 px-md-5">
+            <label for="estate" class="f16-h21 text-grey-2">Permission</label>
+            <select name="facility" id="facility">
+              <option value="">--Please Select--</option>
+            </select>
+          </div>
+        </div>
+
+        <button
+          class="
+            btn
+            py-16
+            bg-primary
+            text-center text-white
+            w-100
+            radius-md
+            f16-h21
+            flex-x-center-center"
+          "
+          id="saveUser"
+          type="submit"
+        >
+          <span class="icon-plus-white icon-20 mr-26"></span>
+          Add New User
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

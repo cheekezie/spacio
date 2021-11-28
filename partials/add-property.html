@@ -1,0 +1,121 @@
+<div class="dialog side-dialog" id="addPropertyDialog">
+  <div class="dialog-content bg-white dialog-md">
+    <div class="px-30 px-md-71 pt-25 pb-40 pt-md-65">
+      <form action="">
+        <div class="mb-43 pr-0 pr-md-50">
+          <h1 class="f30-h41 text-black-alt mb-8 text-weight-bolder">
+            Add general Property details
+          </h1>
+          <p class="f18-h24 text-grey-2">
+            Add a name and the address for the new property to be able to locate
+            it on the spacio system.
+          </p>
+        </div>
+        <hr class="mb-21" />
+        <div class="form-content-scroll mb-20">
+          <div>
+            <label for="estate" class="f16-h21 text-grey-2"
+              >Choose Property type</label
+            >
+            <div class="flex-x-between mt-22">
+              <div
+                class="
+                  pt-32
+                  pb-17
+                  px-20
+                  bg-primary-trans-light
+                  radius-md
+                  hover-primary
+                  property-select
+                "
+              >
+                <div class="flex-x-center-center">
+                  <span class="icon-suitcase-black icon-32"></span>
+                </div>
+                <p class="f14-h19 text-grey-2 pt-14">Commercial</p>
+              </div>
+              <div
+                class="
+                  pt-32
+                  pb-17
+                  px-20
+                  bg-primary-trans-light
+                  radius-md
+                  hover-primary
+                  property-select
+                  active
+                "
+              >
+                <div class="flex-x-center-center">
+                  <span class="icon-house-black icon-32"></span>
+                </div>
+                <p class="f14-h19 text-grey-2 pt-14">Residential</p>
+              </div>
+              <div
+                class="
+                  pt-32
+                  pb-17
+                  px-20
+                  bg-primary-trans-light
+                  radius-md
+                  hover-primary
+                  property-select
+                "
+              >
+                <div class="flex-x-center-center">
+                  <span class="icon-flag-black icon-32"></span>
+                </div>
+
+                <p class="f14-h19 text-grey-2 pt-14">Vacant Land</p>
+              </div>
+            </div>
+          </div>
+          <hr class="mt-43 mb-24" />
+          <div class="form-group mb-9">
+            <label for="estate" class="f16-h21 text-grey-2"
+              >Add Primary Facility/Estate Address</label
+            >
+            <input
+              type="text"
+              placeholder="Some awesome location in an expensive area in Abuja"
+              id="estate"
+              required
+            />
+          </div>
+
+          <div class="row mx-n5">
+            <div class="size-md-7">
+              <div class="form-group px-0 px-md-5 mb-31 mb-md-0">
+                <select name="facility" id="facility">
+                  <option value="">Select Facility/Estate</option>
+                </select>
+              </div>
+            </div>
+            <div class="size-md-5">
+              <div class="form-group px-0 px-md-5 mb-11">
+                <input type="text" placeholder="Zip code" id="zip" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="
+            btn
+            py-16
+            bg-primary
+            text-center text-white
+            w-100
+            radius-md
+            f16-h21
+            flex-x-center-center
+          "
+          id="saveResident"
+          type="submit"
+        >
+          <span class="icon-plus-white icon-20 mr-26"></span>
+          Add Facility/Estate
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

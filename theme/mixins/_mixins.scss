@@ -8,6 +8,13 @@
   margin-left: -$gutter / 2;
 }
 
+@mixin hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 @mixin flex {
   display: flex !important;
 }

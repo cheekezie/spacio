@@ -1,5 +1,6 @@
 [class^='icon'] {
   @extend .flex-x-center-center;
+  position: relative;
   &::after {
     position: absolute;
   }
@@ -28,6 +29,10 @@
   &-32 {
     height: 32px;
     width: 22px;
+  }
+  &-38 {
+    height: 38px;
+    width: 38px;
   }
   &-13 {
     height: 13px;
@@ -132,6 +137,51 @@
   &-plus {
     &::after {
       content: url(/assets/icons/plus.png);
+    }
+  }
+  &-plus-white {
+    &::after {
+      content: url(/assets/icons/plus-white.svg);
+    }
+  }
+  &-folder {
+    &::after {
+      content: url(/assets/icons/folder-black.svg);
+    }
+  }
+  &-file-upload {
+    &::after {
+      content: url(/assets/icons/FileArrowUp.svg);
+    }
+  }
+  &-house-white {
+    &::after {
+      content: url(/assets/icons/house-white.svg);
+    }
+  }
+  &-house-black {
+    &::after {
+      content: url(/assets/icons/house-black.svg);
+    }
+  }
+  &-flag-white {
+    &::after {
+      content: url(/assets/icons/flag-white.svg);
+    }
+  }
+  &-flag-black {
+    &::after {
+      content: url(/assets/icons/flag-black.svg);
+    }
+  }
+  &-suitcase-white {
+    &::after {
+      content: url(/assets/icons/suitcase-white.svg);
+    }
+  }
+  &-suitcase-black {
+    &::after {
+      content: url(/assets/icons/suitcase-black.svg);
     }
   }
   &-crosschair {
