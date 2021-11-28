@@ -93913,6 +93913,10 @@ button.button-sm,
   color: var(--grey4);
 }
 
+.no-bg {
+  background: none !important;
+}
+
 .hidden {
   display: none;
 }
@@ -94160,8 +94164,12 @@ button.button-sm,
   border-bottom: none;
 }
 
+.no-padding {
+  padding: none !important;
+}
+
 .drag-drop {
-  border: 1px dashed var(primary);
+  border: 1px dashed var(--primary);
   border-radius: 7px;
   padding: 2.875rem 1.25rem;
   background: var(--primary-trans-light);
@@ -94330,12 +94338,24 @@ input[type='number'] {
   top: 10px;
 }
 
+.top-12 {
+  top: 12px;
+}
+
 .top-15 {
   top: 15px;
 }
 
 .right-0 {
   right: 0;
+}
+
+.left-15 {
+  left: 15px;
+}
+
+.right-15 {
+  right: 15px;
 }
 
 .bottom-0 {
@@ -95118,6 +95138,11 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   width: 10px;
 }
 
+.icon.icon-23-28 {
+  height: 28px;
+  width: 23px;
+}
+
 .icon-user-white::after {
   content: url(/assets/icons/user-white.svg);
 }
@@ -95211,6 +95236,14 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   content: url(/assets/icons/FileArrowUp.svg);
 }
 
+.icon-file::after {
+  content: url(/assets/icons/file.svg);
+}
+
+.icon-check-green::after {
+  content: url(/assets/icons/CheckCircle-green.svg);
+}
+
 .icon-house-white::after, .property-select:hover .icon-house-black::after, .property-select.active .icon-house-black::after {
   content: url(/assets/icons/house-white.svg);
 }
@@ -95271,6 +95304,10 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .border-1x {
   border-width: 1px;
+}
+
+.border-none {
+  border: none !important;
 }
 
 .border-solid {
@@ -95358,6 +95395,12 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .dialog-content {
+    max-width: 95% !important;
+  }
+}
+
 .dialog-content hr {
   border-top: 1px solid var(--grey6);
   margin: 2.4375rem 0 2.4375rem;
@@ -95381,17 +95424,24 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 }
 
 .dialog-content.dialog-sm {
-  max-width: 32.375rem;
+  width: 32.375rem;
 }
 
 .dialog-content.dialog-md {
   max-width: 35.625rem;
 }
 
-@media screen and (max-width: 768px) {
-  .dialog-content.dialog-md {
-    max-width: 95% !important;
-  }
+.max-h-115 {
+  max-height: 7.1875rem;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.max-h-115::-webkit-scrollbar {
+  display: none;
 }
 
 .property-select.active {

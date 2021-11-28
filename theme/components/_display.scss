@@ -179,9 +179,11 @@
     }
   }
 }
-
+.no-padding {
+  padding: none !important;
+}
 .drag-drop {
-  border: 1px dashed var(primary);
+  border: 1px dashed var(--primary);
   border-radius: 7px;
   padding: rem(46) rem(20);
   @extend .flex-y-center-center;

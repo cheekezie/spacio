@@ -22,6 +22,7 @@
   }
 }
 .dialog-content {
+  @include responsive-max(max-width, 95%, sm);
   hr {
     border-top: 1px solid var(--grey6);
     margin: rem(39) 0 rem(39);
@@ -36,12 +37,16 @@
     max-width: rem(364);
   }
   &.dialog-sm {
-    max-width: rem(518);
+    width: rem(518);
   }
   &.dialog-md {
     max-width: rem(570);
-    @include responsive-max(max-width, 95%, sm);
   }
+}
+.max-h-115 {
+  max-height: rem(115);
+  overflow-y: auto;
+  @include hide-scrollbar;
 }
 .property-select {
   &.active {

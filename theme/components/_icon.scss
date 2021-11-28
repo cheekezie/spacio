@@ -42,6 +42,10 @@
     height: auto;
     width: 10px;
   }
+  &.icon-23-28 {
+    height: 28px;
+    width: 23px;
+  }
   &-user-white {
     &::after {
       content: url(/assets/icons/user-white.svg);
@@ -152,6 +156,16 @@
   &-file-upload {
     &::after {
       content: url(/assets/icons/FileArrowUp.svg);
+    }
+  }
+  &-file {
+    &::after {
+      content: url(/assets/icons/file.svg);
+    }
+  }
+  &-check-green {
+    &::after {
+      content: url(/assets/icons/CheckCircle-green.svg);
     }
   }
   &-house-white {
