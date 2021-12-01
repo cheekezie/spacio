@@ -53,6 +53,26 @@ input.otp {
   background: var(--dark-light);
 }
 input {
+  &[class*='calendar'] {
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+  &.calendar {
+    &-blue {
+      background-image: url('/assets/icons/calendar-blue.svg');
+    }
+    &-black {
+      background-image: url('/assets/icons/CalendarBlack.svg');
+    }
+    &-right {
+      background-position-x: calc(100% - 12px);
+    }
+    &-left {
+      background-position-x: rem(12);
+    }
+  }
+}
+input {
   &[class*='search'] {
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -158,8 +178,8 @@ input {
 
 // Style the checkbox-marker/indicator */
 .custom-checkbox .checkbox-marker:after {
-  left: 7px;
-  top: 4px;
+  left: 7.8px;
+  top: 3.5px;
   width: 5px;
   height: 11px;
   border: solid var(--white);
@@ -183,4 +203,11 @@ input[type='number'] {
 }
 .show-pwd {
   right: rem(23);
+}
+
+/* Hide Calendar Icon In Chrome */
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }

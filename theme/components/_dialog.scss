@@ -45,9 +45,11 @@
   &.dialog-md {
     max-width: rem(570);
   }
-  &.search-dropdown {
+  &.search-dropdown,
+  &.option-dropdown {
     width: rem(426);
     .form-content-scroll {
+      padding-top: 1px;
       max-height: rem(269) !important;
       border-bottom: 0.6px solid var(--grey6);
     }

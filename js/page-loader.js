@@ -47,12 +47,17 @@ class NewResident extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#triggerUpload').click(function () {
-          const upload = document.getElementById("uploadDialog");
-          upload.style.display = "flex";
-        });
+        openUplodModal();
       });
   }
+}
+
+// to open file upload dialog box
+function openUplodModal(){
+  $('#triggerUpload').click(function () {
+    const upload = document.getElementById("uploadDialog");
+    upload.style.display = "flex";
+  });
 }
 class NewUser extends HTMLElement {
   constructor() {
@@ -146,13 +151,13 @@ class EstateDropdown extends HTMLElement {
   }
 }
 
-class ServiceDropdown extends HTMLElement {
+class ServiceTypeDropdown extends HTMLElement {
   constructor() {
     super();
   }
   connectedCallback() {
     // To get the popup component and attach to current page
-    fetch('../partials/service-dropdown.html')
+    fetch('../partials/service-type-dropdown.html')
       .then((response) => {
         return response.text();
       })
@@ -182,6 +187,59 @@ class CityDropdown extends HTMLElement {
   }
 }
 
+class NewTenure extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/add-tenure.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
+class TenureDropdown extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/tenure-dropdown.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+        $('#addTenure').click(function () {
+          const tenure = document.getElementById("addTenureDialog");
+          tenure.style.display = "flex";
+        });
+      });
+  }
+}
+
+class NewCategory extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/add-category.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+        openUplodModal();
+      });
+  }
+}
+
 class NewService extends HTMLElement {
   constructor() {
     super();
@@ -194,6 +252,26 @@ class NewService extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
+        $('#selectServiceType').click(function () {
+          const serviceType = document.getElementById("serviceTypeDropdown");
+          serviceType.style.display = "flex";
+        });
+        $('#selectTenure').click(function () {
+          const tenure = document.getElementById("tenureDropdown");
+          tenure.style.display = "flex";
+        });
+        $('#selectServiceGroup').click(function () {
+          const serviceGroup = document.getElementById("estateDropwonDialog");
+          serviceGroup.style.display = "flex";
+        });
+        $('#selectCategory').click(function () {
+          const category = document.getElementById("categoryDropdown");
+          category.style.display = "flex";
+        });
+        $('#addCategory').click(function () {
+          const category = document.getElementById("addCategoryDialog");
+          category.style.display = "flex";
+        });
       });
   }
 }
@@ -211,8 +289,12 @@ class NewEstate extends HTMLElement {
       .then((data) => {
         this.innerHTML = data;
         $('#selectCity').click(function () {
-          const serviceType = document.getElementById("cityDropdownDialog");
-          serviceType.style.display = "flex";
+          const city = document.getElementById("cityDropdownDialog");
+          city.style.display = "flex";
+        });
+        $('#estateSuccessBtn').click(function () {
+          const estate = document.getElementById("estateSuccessDialog");
+          estate.style.display = "flex";
         });
       });
   }
@@ -235,6 +317,38 @@ class NewServiceType extends HTMLElement {
   }
 }
 
+class CategoryDropdown extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/category-dropdown.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
+
+class EstateSuccess extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/add-estate-success.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 
 function loadModalActions(){
 
@@ -258,6 +372,12 @@ function loadModalActions(){
     const facility = document.getElementById("addPropertyDialog");
     facility.style.display = "block";
   });
+  $('#newService').click(function () {
+    removeAddPopup();
+    const facility = document.getElementById("addServiceDialog");
+    facility.style.display = "block";
+  });
+  
 }
 
 function removeAddPopup(){
@@ -277,6 +397,12 @@ customElements.define('new-estate-component', NewEstate);
 customElements.define('new-service-type-component', NewServiceType);
 customElements.define('new-service-component', NewService);
 customElements.define('city-dropdown-component', CityDropdown);
+customElements.define('add-estate-success-component', EstateSuccess);
+customElements.define('new-tenure-component', NewTenure);
+customElements.define('tenure-dropdown-component', TenureDropdown);
+customElements.define('service-type-dropdown-component', ServiceTypeDropdown);
+customElements.define('category-dropdown-component', CategoryDropdown);
+customElements.define('new-category-component', NewCategory);
 
 
 function dragDrop(){
@@ -303,6 +429,5 @@ function dragDrop(){
   function unhighlight(e) {
     dropArea.classList.remove('highlight')
   }
-  
 
 }
