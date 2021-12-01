@@ -166,6 +166,22 @@ class ServiceDropdown extends HTMLElement {
   }
 }
 
+class CityDropdown extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/city-dropdown.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
 class NewService extends HTMLElement {
   constructor() {
     super();
@@ -194,6 +210,10 @@ class NewEstate extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
+        $('#selectCity').click(function () {
+          const serviceType = document.getElementById("cityDropdownDialog");
+          serviceType.style.display = "flex";
+        });
       });
   }
 }
@@ -256,6 +276,7 @@ customElements.define('estate-dropdown-component', EstateDropdown);
 customElements.define('new-estate-component', NewEstate);
 customElements.define('new-service-type-component', NewServiceType);
 customElements.define('new-service-component', NewService);
+customElements.define('city-dropdown-component', CityDropdown);
 
 
 function dragDrop(){
