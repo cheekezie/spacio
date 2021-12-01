@@ -31,6 +31,9 @@
     max-height: rem(410);
     overflow-y: auto;
     @include hide-scrollbar;
+    li {
+      @extend .flex-x-center;
+    }
   }
 
   &.dialog-xsm {
@@ -45,7 +48,7 @@
   &.search-dropdown {
     width: rem(426);
     .form-content-scroll {
-      max-height: rem(226) !important;
+      max-height: rem(269) !important;
       border-bottom: 0.6px solid var(--grey6);
     }
   }
