@@ -42,9 +42,16 @@
   &.dialog-md {
     max-width: rem(570);
   }
+  &.search-dropdown {
+    width: rem(426);
+    .form-content-scroll {
+      max-height: rem(226) !important;
+      border-bottom: 0.6px solid var(--grey6);
+    }
+  }
 }
-.max-h-115 {
-  max-height: rem(115);
+.max-h-120 {
+  max-height: rem(120);
   overflow-y: auto;
   @include hide-scrollbar;
 }

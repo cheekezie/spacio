@@ -1,8 +1,9 @@
 'use strict';
 $(document).ready(function () {
 
+  // acrion buttons routing
   $('#signin').click(function () {
-    window.location.href = '/pages/dashboard-summary.html';
+    window.location.href = '/facility-maanagers/pages/dashboard-summary.html';
   });
   $('#business').click(function () {
     window.location.href = '/onboarding/success.html';
@@ -26,10 +27,10 @@ $(document).ready(function () {
     window.location.href = '/onboarding/otp.html';
   });
   $('.propertyDetail').click(function () {
-    window.location.href = '/pages/property-listings.html';
+    window.location.href = '/facility-maanagers/pages/property-listings.html';
   });
   $('.noticeDetails').click(function () {
-    window.location.href = '/pages/demand-notice-listings.html';
+    window.location.href = '/facility-maanagers/pages/demand-notice-listings.html';
   });
 
 

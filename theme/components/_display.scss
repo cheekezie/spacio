@@ -189,3 +189,11 @@
   @extend .flex-y-center-center;
   background: var(--primary-trans-light);
 }
+.clearfix {
+  overflow: auto;
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}

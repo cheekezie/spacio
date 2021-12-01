@@ -16,7 +16,11 @@
   }
   &-17 {
     height: auto;
-    width: 18px;
+    width: 17px;
+  }
+  &-16 {
+    height: 16px;
+    width: 16px;
   }
   &-20 {
     height: 20px;
@@ -146,6 +150,11 @@
   &-plus-white {
     &::after {
       content: url(/assets/icons/plus-white.svg);
+    }
+  }
+  &-plus-blue {
+    &::after {
+      content: url(/assets/icons/plus-blue.svg);
     }
   }
   &-folder {

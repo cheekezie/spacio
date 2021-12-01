@@ -7,7 +7,15 @@
         </h1>
         <p class="f21-29 text-grey-2">Files should be Xls, Zip, Avi</p>
       </div>
-      <div class="drag-drop mb-34">
+      <div class="drag-drop mb-34" id="drop-area">
+        <input
+          type="file"
+          id="fileElem"
+          class="hidden"
+          multiple
+          accept="image/*"
+          onchange="handleFiles(this.files)"
+        />
         <span class="py-17 px-20 bg-primary-trans radius-md">
           <span class="icon-folder icon-38"></span>
         </span>
@@ -16,7 +24,7 @@
 
       <div>
         <label class="f16-h22 text-grey-2">Choose Property type</label>
-        <div class="pt-34 max-h-115">
+        <div class="pt-34 max-h-120">
           <div class="upload-progress position-relative px-50 mb-38">
             <div class="position-absolute left-15 top-12">
               <span class="icon-file icon-23-28"></span>

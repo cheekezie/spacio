@@ -1,0 +1,67 @@
+<div class="dialog central-dialog" id="addEstateDialog">
+  <div class="dialog-content bg-white dialog-md radius-15">
+    <div class="px-30 px-md-71 pt-25 pb-42 pt-md-65">
+      <form action="" class="form-scroll">
+        <div class="mb-40 mb-md-84 pr-0 pr-md-50">
+          <h1 class="f30-h41 text-black-alt mb-8 text-weight-bolder">
+            Add general facility/estate details
+          </h1>
+          <p class="f18-h24 text-grey-2">
+            Add a name and the address for the new facility/estate to be able to
+            locate it on the spacio system.
+          </p>
+        </div>
+        <div class="form-content-scroll mb-20">
+          <div class="form-group mb-31">
+            <label for="name" class="f16-h21 text-grey-2"
+              >Add Facility/Estate Name</label
+            >
+            <select name="facility" id="facility">
+              <option value="">Tactical Paradise Estate</option>
+            </select>
+          </div>
+
+          <div class="form-group mb-51">
+            <label for="name" class="f16-h21 text-grey-2"
+              >Add Facility/Estate Address</label
+            >
+            <div class="row mx-n5">
+              <div class="size-md-7">
+                <div class="form-group px-0 px-md-5 mb-31 mb-md-0">
+                  <select name="facility" id="estateOptions">
+                    <option value="" class="hidden">
+                      Select Facility/Estate
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="size-md-5">
+                <div class="form-group px-0 px-md-5 mb-11">
+                  <input type="text" placeholder="Zip code" id="zip" required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="
+            btn
+            py-16
+            bg-primary
+            text-center text-white
+            w-100
+            radius-md
+            f16-h21
+            flex-x-center-center
+          "
+          id="saveFacility"
+          type="submit"
+        >
+          <span class="icon-plus-white icon-20 mr-26"></span>
+          Save & Continue
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

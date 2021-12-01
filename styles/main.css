@@ -94175,6 +94175,16 @@ button.button-sm,
   background: var(--primary-trans-light);
 }
 
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -95105,7 +95115,12 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .icon-17 {
   height: auto;
-  width: 18px;
+  width: 17px;
+}
+
+.icon-16 {
+  height: 16px;
+  width: 16px;
 }
 
 .icon-20 {
@@ -95226,6 +95241,10 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .icon-plus-white::after {
   content: url(/assets/icons/plus-white.svg);
+}
+
+.icon-plus-blue::after {
+  content: url(/assets/icons/plus-blue.svg);
 }
 
 .icon-folder::after {
@@ -95351,7 +95370,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 }
 
 .cursor-pointer {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .rounded {
@@ -95431,8 +95450,17 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   max-width: 35.625rem;
 }
 
-.max-h-115 {
-  max-height: 7.1875rem;
+.dialog-content.search-dropdown {
+  width: 26.625rem;
+}
+
+.dialog-content.search-dropdown .form-content-scroll {
+  max-height: 14.125rem !important;
+  border-bottom: 0.6px solid var(--grey6);
+}
+
+.max-h-120 {
+  max-height: 7.5rem;
   overflow-y: auto;
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -95440,7 +95468,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   /* Firefox */
 }
 
-.max-h-115::-webkit-scrollbar {
+.max-h-120::-webkit-scrollbar {
   display: none;
 }
 
