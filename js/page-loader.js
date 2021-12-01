@@ -272,6 +272,7 @@ class NewService extends HTMLElement {
           const category = document.getElementById("addCategoryDialog");
           category.style.display = "flex";
         });
+        openUplodModal();
       });
   }
 }
