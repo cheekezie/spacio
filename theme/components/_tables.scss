@@ -45,4 +45,15 @@ table {
       border-bottom: 1px solid var(--grey5);
     }
   }
+  &.resident-table {
+    [class*='badge'] {
+      padding: initial;
+      min-width: initial;
+    }
+    thead {
+      th {
+        padding: rem(18) rem(19) rem(14) rem(19);
+      }
+    }
+  }
 }

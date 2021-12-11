@@ -30,6 +30,22 @@
     height: 22px;
     width: 22px;
   }
+  &-24 {
+    height: 24px;
+    width: 24px;
+  }
+  &-26 {
+    height: 26px;
+    width: auto;
+  }
+  &-29 {
+    height: 29px;
+    width: auto;
+  }
+  &-29-23 {
+    height: 29px;
+    width: 23px;
+  }
   &-32 {
     height: 32px;
     width: 22px;
@@ -55,6 +71,36 @@
       content: url(/assets/icons/user-white.svg);
     }
   }
+  &-anchor-down {
+    &::after {
+      content: url(/assets/icons/anchor-down.svg);
+    }
+  }
+  &-wallet-green {
+    &::after {
+      content: url(/assets/icons/wallet-green.svg);
+    }
+  }
+  &-info-warning {
+    &::after {
+      content: url(/assets/icons/warning.svg);
+    }
+  }
+  &-user-add {
+    &::after {
+      content: url(/assets/icons/user-add.svg);
+    }
+  }
+  &-overview-white {
+    &::after {
+      content: url(/assets/icons/overview-white.svg);
+    }
+  }
+  &-overview-yellow {
+    &::after {
+      content: url(/assets/icons/overview-yellow.svg);
+    }
+  }
   &-user-black {
     &::after {
       content: url(/assets/icons/user-black.svg);
@@ -63,6 +109,16 @@
   &-download {
     &::after {
       content: url(/assets/icons/download.png);
+    }
+  }
+  &-circle-left {
+    &::after {
+      content: url(/assets/icons/ArrowCircleleft.svg);
+    }
+  }
+  &-circle-right {
+    &::after {
+      content: url(/assets/icons/ArrowCircleRight.svg);
     }
   }
   &-arrow-left {
@@ -180,6 +236,11 @@
   &-house-white {
     &::after {
       content: url(/assets/icons/house-white.svg);
+    }
+  }
+  &-house-blue {
+    &::after {
+      content: url(/assets/icons/house-blue.svg);
     }
   }
   &-house-black {

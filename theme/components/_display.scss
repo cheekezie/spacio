@@ -36,6 +36,9 @@
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-between {
+  justify-content: space-between;
+}
 .flex-x-center {
   display: flex;
   align-items: center;
@@ -66,10 +69,6 @@
   list-style: none;
 }
 
-.page-outlet {
-  margin-left: rem(266);
-  padding: rem(62) rem(28) rem(62) rem(14);
-}
 .hover-primary {
   cursor: pointer;
   &:hover {
@@ -131,15 +130,18 @@
     background: rgba(2, 161, 18, 0.15);
     color: var(--green);
   }
-  &-border-danger {
+  &-border-danger,
+  &-outline-danger {
     border: 1px solid var(--danger);
     color: var(--danger);
   }
-  &-border-primary {
+  &-border-primary,
+  &-outline-primary {
     border: 1px solid var(--blue3);
     color: var(--blue3);
   }
-  &-border-success {
+  &-border-success,
+  &-outline-success {
     border: 1px solid var(--success);
     color: var(--success);
   }

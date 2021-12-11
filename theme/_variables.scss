@@ -15,7 +15,12 @@
   --blue: #43abf0;
   --blue2: #1565d8;
   --blue3: #0057ff;
+  --feed-panel: #e6e9ef;
   --primary-trans: rgba(27, 117, 188, 0.15);
+  --primary-trans-2: rgba(27, 117, 188, 0.2);
+  --warning-trans: rgba(188, 66, 27, 0.2);
+  --success-trans: rgba(79, 188, 27, 0.2);
+  --grey-trans: rgba(210, 210, 210, 0.2);
   --primary-trans-light: #f1f5fa;
   --light-blue: #43abf026;
   --dark-grey: #888888;
@@ -24,7 +29,7 @@
   --black: #000000;
   --dark: #4d4d4d;
   --dark-alt: #52506e;
-  --outlet: #e5e5e5;
+  --outlet: #eff1f3;
   --purple: #951fde;
   --grey: #8692a6;
   --light-grey: #f5f5f5f5;
@@ -34,6 +39,7 @@
   --grey4: #adadad;
   --grey5: #d6d6d6;
   --grey6: #c6c6c69a;
+  --grey7: #d2d2d2;
   --border: #dadada;
 }
 
@@ -104,8 +110,8 @@ $spacers: (
   9: 9px,
   10: 10px,
   11: 11px,
-  13: 13px,
   12: 12px,
+  13: 13px,
   14: 14px,
   15: 15px,
   16: 16px,
