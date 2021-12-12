@@ -28,9 +28,21 @@
   border-radius: 50%;
 }
 .message-menu {
+  padding-top: rem(63);
   li {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    &.active-message-action {
+      width: max-content;
+      border-radius: 6px;
+      background: var(--primary);
+      color: var(--white);
+      padding: 20px 22px;
+      margin-bottom: 35px;
+      @extend .f18-h24;
+      @extend .text-weight-700;
+    }
   }
 }
 .message-listing {

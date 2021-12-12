@@ -101003,7 +101003,7 @@ h6 {
   font-weight: 600;
 }
 
-.text-weight-700 {
+.text-weight-700, .message-menu li.active-message-action {
   font-weight: 700;
 }
 
@@ -101143,7 +101143,7 @@ h6 {
   line-height: auto;
 }
 
-.f18-h24 {
+.f18-h24, .message-menu li.active-message-action {
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
@@ -102263,6 +102263,10 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   border-radius: 50%;
 }
 
+.message-menu {
+  padding-top: 3.9375rem;
+}
+
 .message-menu li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102270,6 +102274,18 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+
+.message-menu li.active-message-action {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 6px;
+  background: var(--primary);
+  color: var(--white);
+  padding: 20px 22px;
+  margin-bottom: 35px;
 }
 
 .message-listing {
