@@ -50,6 +50,22 @@ class Feeds extends HTMLElement {
   }
 }
 
+class PaymentCard extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the menu component and attach to current page
+    fetch('../partials/payment-card.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
 function loadModalActions(){
 
   $('#newResident').click(function () {
@@ -89,6 +105,8 @@ function removeAddPopup(){
 customElements.define('navigation-component', Menu);
 customElements.define('calendar-component', Calendar);
 customElements.define('feeds-component', Feeds);
+customElements.define('payment-card-component', PaymentCard);
+
 
 
 

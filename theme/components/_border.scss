@@ -1,12 +1,11 @@
 .border-grey {
   border-color: var(--grey) !important;
 }
-.border-grey6 {
-  border-color: var(--grey6) !important;
-}
+.border-grey6,
 .border-grey-6 {
   border-color: var(--grey6) !important;
 }
+
 .border-1x {
   border-width: 1px;
 }
@@ -40,11 +39,20 @@
 .radius-7 {
   border-radius: 7px;
 }
+.radius-5 {
+  border-radius: 5px;
+}
+.radius-10 {
+  border-radius: 10px;
+}
 .radius-20 {
   border-radius: 7px;
 }
 .radius-15 {
   border-radius: 15px;
+}
+.radius-12 {
+  border-radius: 12px;
 }
 .cursor-pointer {
   cursor: pointer !important;

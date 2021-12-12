@@ -21,8 +21,8 @@ h6 {
   display: none;
 }
 
-.text-truncated-singleline {
-  display: -webkit-box;
+.text-truncated-singleline,
+.text-truncated-single-line {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -49,6 +49,11 @@ h6 {
 .text-weight-600 {
   font-weight: 600;
 }
+
+.text-weight-700 {
+  font-weight: 700;
+}
+
 .text-weight-800 {
   font-weight: 800;
 }
@@ -77,12 +82,22 @@ h6 {
   font-size: rem(12);
   line-height: rem(13);
 }
-
+.f12-h14 {
+  font-size: rem(12);
+  line-height: rem(14);
+}
+.f12-h15 {
+  font-size: rem(12);
+  line-height: rem(15);
+}
 .f12-h16 {
   font-size: rem(12);
   line-height: rem(16);
 }
-
+.f12-h18 {
+  font-size: rem(12);
+  line-height: rem(18);
+}
 .f13-h18 {
   font-size: rem(13);
   line-height: rem(18);
@@ -121,6 +136,10 @@ h6 {
 .f17-h24 {
   font-size: rem(17);
   line-height: rem(24);
+}
+.f18-h23 {
+  font-size: rem(18);
+  line-height: rem(23);
 }
 .f18-h28 {
   font-size: rem(18);
@@ -163,6 +182,10 @@ h6 {
   font-size: rem(22);
   line-height: rem(27);
 }
+.f23-h31 {
+  font-size: rem(23);
+  line-height: rem(31);
+}
 .f24-h33 {
   font-size: rem(24);
   line-height: rem(33);
@@ -175,6 +198,7 @@ h6 {
   font-size: rem(30);
   line-height: rem(42);
 }
+
 .f-85 {
   font-size: rem(85);
   line-height: auto;
@@ -202,11 +226,35 @@ h6 {
     }
   }
 }
+.f57-h77 {
+  font-size: rem(57);
+  line-height: rem(77);
+  @media screen and (max-width: breakpoint-max(xxl)) {
+    font-size: rem(50);
+    line-height: initial;
+  }
+}
+.f70-h95 {
+  font-size: rem(70);
+  line-height: rem(95);
+  @media screen and (max-width: breakpoint-max(xxl)) {
+    font-size: rem(50);
+    line-height: initial;
+  }
+}
 .f78-h98 {
   font-size: rem(78);
   line-height: rem(98);
   @media screen and (max-width: breakpoint-max(xxl)) {
-    font-size: rem(48);
+    font-size: rem(58);
+    line-height: initial;
+  }
+}
+.f88-h120 {
+  font-size: rem(88);
+  line-height: rem(120);
+  @media screen and (max-width: breakpoint-max(xxl)) {
+    font-size: rem(58);
     line-height: initial;
   }
 }
@@ -244,13 +292,6 @@ h6 {
   text-overflow: ellipsis;
 }
 
-.text-truncated-single-line {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .text-uppercase {
   text-transform: uppercase;
 }

@@ -1,6 +1,6 @@
 .side-menu {
   max-width: rem(266);
-  z-index: 1;
+  z-index: 11;
   overflow-y: auto;
   ul {
     a {
@@ -10,4 +10,8 @@
 }
 .top-menu {
   padding-left: rem(266);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 11;
 }

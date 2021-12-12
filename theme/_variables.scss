@@ -1,16 +1,21 @@
 /** Color Variables **/
 :root {
   --primary: #1b75bc;
+  --primary-light: #2b81c6;
   --secondary: #52506e;
   --white: #fff;
   --off-white: #f9ffff;
   --yellow: rgba(230, 208, 10, 0.925);
   --black-alt: #494949;
   --orange: #fec545;
+  --orange-ddep: #ff6600;
+  --warning: #ffb03a;
+  --warning-deep: #ff9900;
   --coral: rgb(241, 76, 16);
   --danger: #ff0000;
   --light-green: #02a11226;
   --green: #02a112;
+  --green-deep: #12ad22;
   --success: #10d318;
   --blue: #43abf0;
   --blue2: #1565d8;
@@ -18,6 +23,7 @@
   --feed-panel: #e6e9ef;
   --primary-trans: rgba(27, 117, 188, 0.15);
   --primary-trans-2: rgba(27, 117, 188, 0.2);
+  --primary-trans-3: rgba(255, 255, 255, 0.2);
   --warning-trans: rgba(188, 66, 27, 0.2);
   --success-trans: rgba(79, 188, 27, 0.2);
   --grey-trans: rgba(210, 210, 210, 0.2);
@@ -133,6 +139,7 @@ $spacers: (
   32: 32px,
   33: 33px,
   34: 34px,
+  35: 35px,
   36: 36px,
   37: 37px,
   38: 38px,
@@ -164,6 +171,7 @@ $spacers: (
   71: 71px,
   72: 72px,
   74: 74px,
+  75: 75px,
   77: 77px,
   79: 79px,
   80: 80px,

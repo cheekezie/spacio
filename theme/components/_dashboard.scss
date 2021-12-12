@@ -1,19 +1,26 @@
 .page-outlet {
   margin-left: rem(266);
-  padding: rem(62) rem(28) rem(62) rem(14);
+  padding: rem(190) rem(28) rem(62) rem(14);
 }
 .resident-page-outlet {
   margin-left: rem(266);
   background: var(--outlet);
+
   display: flex;
 }
 .main-panel {
   width: 78.7%;
   @include responsive-max(width, 100%, sm);
-  padding: rem(41) rem(79) rem(62) rem(75);
+  padding: rem(169) rem(79) rem(62) rem(75);
   &.full-width {
     width: 100% !important;
   }
+}
+.feed-panel {
+  width: 21.3%;
+  background: var(--feed-panel);
+  padding: rem(189) rem(38) rem(30) rem(30);
+  @include responsive-max(display, hidden, sm);
 }
 .summary-card {
   display: flex;
@@ -27,10 +34,19 @@
     padding: rem(7) rem(15) rem(7) rem(7);
   }
 }
-.feed-panel {
-  width: 21.3%;
-  background: var(--feed-panel);
-  padding: rem(61) rem(38) rem(30) rem(30);
+.payment-card-bg-blue {
+  background: url(/assets/icons/card-bg.svg);
+  border: 1px solid var(--grey7);
+  background-color: rgba(10, 96, 165, 0.9);
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+.payment-card-bg-white {
+  background: url(/assets/icons/card-bg-2.svg);
+  background-color: var(--white);
+  border: 1px solid var(--grey7);
+  background-position-x: right;
+  background-repeat: no-repeat;
 }
 
 .calendar {

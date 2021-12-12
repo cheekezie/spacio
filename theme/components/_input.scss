@@ -117,6 +117,13 @@ input {
     background-position-x: rem(23);
     background-position-y: 50%;
   }
+  &.resident-filter {
+    input.search {
+      min-width: initial;
+      max-width: rem(151);
+      padding: rem(11) rem(15) rem(13) rem(38);
+    }
+  }
 }
 
 .checkbox-width {

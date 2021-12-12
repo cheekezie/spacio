@@ -7,6 +7,12 @@
 .bg-primary-trans-2 {
   background: var(--primary-trans-2);
 }
+.bg-primary-trans-3 {
+  background: var(--primary-trans-3);
+}
+.bg-warning {
+  background: var(--warning);
+}
 .bg-warning-trans {
   background: var(--warning-trans);
 }
@@ -19,8 +25,26 @@
 .bg-primary-trans-light {
   background: var(--primary-trans-light);
 }
+.bg-grey-lighter {
+  background: var(--grey-lighter);
+}
 .bg-secondary {
   background: var(--secondary);
+}
+.bg-success {
+  background: var(--green);
+}
+.bg-success-deep {
+  background: var(--green-deep);
+}
+.bg-green-deep {
+  background: var(--green-deep);
+}
+.bg-primary-light {
+  background: var(--primary-light);
+}
+.bg-warning-deep {
+  background: var(--warning-deep);
 }
 .bg-black {
   background: var(--black);
