@@ -2,6 +2,9 @@
   padding-top: 128px !important;
   padding-right: 0;
   min-height: 100vh;
+  @media screen and (max-width: breakpoint-max(xxl)) {
+    padding-top: 86px !important;
+  }
 }
 .unread {
   &::before {
@@ -21,6 +24,7 @@
   width: 8px;
   height: 8px;
   left: 8px;
+  margin-top: 3px;
   border-radius: 50%;
 }
 .message-menu {
@@ -39,8 +43,18 @@
 }
 .message-detail {
   border-radius: 8.76099px;
+  &.read,
+  &.unread {
+    &::before {
+      left: 43px;
+    }
+  }
   .message-body {
-    max-height: rem(315);
+    height: rem(441);
     @include hide-scrollbar;
+  }
+  .message-doc {
+    border: 1px solid var(--grey8);
+    border-radius: 5px;
   }
 }
