@@ -102292,6 +102292,10 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   max-width: 21.375rem;
 }
 
+.message-listing input.search {
+  padding: 0.4375rem 0.5rem 1.3125rem 2.375rem;
+}
+
 .message-listing .message-item {
   padding: 33px 21px 17px 38px;
   margin-bottom: 8px;
