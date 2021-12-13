@@ -1,11 +1,12 @@
 .page-outlet {
   margin-left: rem(266);
   padding: rem(190) rem(28) rem(62) rem(14);
+  @extend .reset-margin;
 }
 .resident-page-outlet {
   margin-left: rem(266);
   background: var(--outlet);
-
+  @extend .reset-margin;
   display: flex;
 }
 .main-panel {
@@ -14,6 +15,11 @@
   padding: rem(169) rem(79) rem(62) rem(75);
   &.full-width {
     width: 100% !important;
+  }
+}
+.reset-margin {
+  @media screen and (max-width: breakpoint-max(md)) {
+    margin-left: 0;
   }
 }
 .feed-panel {

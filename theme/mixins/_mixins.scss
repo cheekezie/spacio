@@ -7,6 +7,20 @@
   margin-right: -$gutter / 2;
   margin-left: -$gutter / 2;
 }
+@mixin shadow-md {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top !important;
+  right: $right !important;
+  bottom: $bottom;
+  left: $left !important;
+}
+@mixin property-animation($property) {
+  transition-property: $property;
+  transition-duration: 7000ms;
+}
 
 @mixin hide-scrollbar {
   &::-webkit-scrollbar {
@@ -52,9 +66,9 @@
   }
 }
 
-@mixin device($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media screen and (min-width: breakpoint-min($breakpoint)) {
+@mixin device-content-max($breakpoint) {
+  @if map-has-key($grid-breakpoints-down, $breakpoint) {
+    @media screen and (max-width: breakpoint-max($breakpoint)) {
       @content;
     }
   } @else {

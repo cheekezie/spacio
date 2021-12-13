@@ -101930,12 +101930,64 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
           align-items: center;
 }
 
+.side-menu .menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .side-menu {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+  }
+  .side-menu .mobile {
+    display: block;
+  }
+  .side-menu .sidemenu-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem !important;
+    right: 20% !important;
+    bottom: "";
+    left: "" !important;
+  }
+}
+
 .top-menu {
   padding-left: 16.625rem;
   position: fixed;
   right: 0;
   left: 0;
   z-index: 11;
+}
+
+@media screen and (max-width: 992px) {
+  .top-menu {
+    overflow: hidden;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0;
+  left: 0 !important;
+  z-index: 5;
+  display: none;
+  -webkit-transition-property: display;
+  transition-property: display;
+  -webkit-transition-duration: 7000ms;
+          transition-duration: 7000ms;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.motion-in {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
 }
 
 .border-grey {
@@ -102151,6 +102203,12 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   width: 100% !important;
 }
 
+@media screen and (max-width: 992px) {
+  .reset-margin, .page-outlet, .resident-page-outlet {
+    margin-left: 0;
+  }
+}
+
 .feed-panel {
   width: 21.3%;
   background: var(--feed-panel);
@@ -102293,7 +102351,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 }
 
 .message-listing input.search {
-  padding: 0.4375rem 0.5rem 1.3125rem 2.375rem;
+  padding: 0.4375rem 0.5rem 1.3125rem 2.625rem;
 }
 
 .message-listing .message-item {

@@ -7,6 +7,21 @@
       align-items: center;
     }
   }
+  .menu-toggle {
+    display: none;
+    // @include responsive(display, block, ipad);
+  }
+  @media screen and (max-width: breakpoint-max(md)) {
+    .mobile {
+      display: block;
+    }
+    .sidemenu-toggle {
+      display: block;
+      @include position(absolute, 1rem, 20%, '', '');
+    }
+    transform: translateX(-150%);
+    transition: transform 700ms ease-in-out;
+  }
 }
 .top-menu {
   padding-left: rem(266);
@@ -14,4 +29,20 @@
   right: 0;
   left: 0;
   z-index: 11;
+  @media screen and (max-width: breakpoint-max(md)) {
+    // padding: 0;
+    overflow: hidden;
+  }
+}
+// OVERLAY ON MENU TOGGLE
+.overlay {
+  @include position(fixed, 0, 0, 0, 0);
+  z-index: 5;
+  display: none;
+  @include property-animation(display);
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.motion-in {
+  transform: translateX(0) !important;
 }
