@@ -30,6 +30,7 @@ table {
       padding: rem(16) rem(22) rem(8) rem(22);
       // border-top: 1px solid var(--grey5);
       border-bottom: 1px solid var(--grey5);
+      @extend .align-cols;
     }
   }
   tr {
@@ -43,6 +44,7 @@ table {
       text-align: center;
       padding: rem(19) rem(22);
       border-bottom: 1px solid var(--grey5);
+      @extend .align-cols;
     }
   }
   &.resident-table {
@@ -54,6 +56,14 @@ table {
       th {
         padding: rem(18) rem(19) rem(14) rem(19);
       }
+    }
+  }
+  .align-cols {
+    &:first-of-type {
+      text-align: start;
+    }
+    &:last-of-type {
+      text-align: end;
     }
   }
 }
