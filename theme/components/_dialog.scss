@@ -19,10 +19,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include responsive-max(justify-content, flex-start, sm);
+    @include responsive-max(padding-top, 3rem, sm);
   }
 }
 .dialog-content {
   @include responsive-max(max-width, 95%, sm);
+  @include responsive-max(margin-bottom, 5rem, sm);
   hr {
     border-top: 1px solid var(--grey6);
     margin: rem(39) 0 rem(39);
@@ -47,9 +50,6 @@
   }
   &.dialog-lg {
     max-width: rem(1171);
-    @media screen and (max-width: breakpoint-max(lg)) {
-      width: 90%;
-    }
   }
   &.search-dropdown,
   &.option-dropdown {

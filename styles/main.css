@@ -103186,8 +103186,28 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 }
 
 @media screen and (max-width: 768px) {
+  .dialog.central-dialog {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dialog.central-dialog {
+    padding-top: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .dialog-content {
     max-width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dialog-content {
+    margin-bottom: 5rem !important;
   }
 }
 
@@ -103223,12 +103243,6 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .dialog-content.dialog-lg {
   max-width: 73.1875rem;
-}
-
-@media screen and (max-width: 1199px) {
-  .dialog-content.dialog-lg {
-    width: 90%;
-  }
 }
 
 .dialog-content.search-dropdown, .dialog-content.option-dropdown {
