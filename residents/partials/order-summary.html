@@ -1,10 +1,20 @@
 <div class="dialog central-dialog" id="orderSummaryDialog">
   <div class="dialog-content bg-white dialog-lg">
-    <div class="pr-40 position-relative flex-x-between pt-35 pb-26 pr-56 pl-80">
-      <h3 class="f36-h49 text-weight-600 text-black-alt mb-12">
-        Payment Invoice
-      </h3>
-      <span class="icon-35 icon-close-grey right-0 top-0 cursor-pointer"></span>
+    <div
+      class="
+        pr-40
+        position-relative
+        flex-x-between
+        align-items-center
+        pt-35
+        pb-26
+        pr-56
+        pl-80
+        mb-26
+      "
+    >
+      <h3 class="f36-h49 text-weight-600 text-black-alt">Payment Invoice</h3>
+      <span class="icon-35 icon-close-grey cursor-pointer"></span>
     </div>
     <div class="bg-grey-lighter px-25 pb-84">
       <div class="table-responsive">
@@ -55,30 +65,33 @@
               </td>
             </tr>
             <tr>
-              <td colspan="3" class="f18-h24 text-grey">Sub Total:</td>
+              <td colspan="3" class="f18-h24 text-grey text-end">Sub Total:</td>
               <td class="f18-h24 text-weight-600">$500.24</td>
             </tr>
             <tr>
-              <td colspan="3" class="f18-h24 text-grey">
+              <td colspan="3" class="f18-h24 text-grey text-end">
                 Grand Total VAT (7,5%) inclusive::
               </td>
               <td class="f18-h24 text-weight-600">$500.24</td>
             </tr>
             <tr>
-              <td colspan="4">
-                <button
-                  class="
-                    btn
-                    bg-primary
-                    py-13
-                    px-58
-                    radius-md
-                    text-white
-                    f18-h24
-                  "
-                >
-                  Pay Grand Total
-                </button>
+              <td colspan="3"></td>
+              <td>
+                <div class="flex justify-content-center">
+                  <button
+                    class="
+                      btn
+                      bg-primary
+                      py-13
+                      px-58
+                      radius-md
+                      text-white
+                      f18-h24
+                    "
+                  >
+                    Pay Grand Total
+                  </button>
+                </div>
               </td>
             </tr>
           </tbody>
