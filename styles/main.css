@@ -101177,6 +101177,12 @@ button.button-sm,
           justify-content: center;
 }
 
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .justify-content-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -102245,6 +102251,11 @@ h6 {
   line-height: 2.8125rem;
 }
 
+.f36-h49 {
+  font-size: 2.25rem;
+  line-height: 3.0625rem;
+}
+
 .f-85 {
   font-size: 5.3125rem;
   line-height: auto;
@@ -103242,7 +103253,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 }
 
 .dialog-content.dialog-lg {
-  max-width: 73.1875rem;
+  width: 73.1875rem;
 }
 
 .dialog-content.search-dropdown, .dialog-content.option-dropdown {

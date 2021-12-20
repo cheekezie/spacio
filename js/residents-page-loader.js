@@ -6,6 +6,12 @@ $(document).ready(function () {
     const dialog = document.getElementById("changePlanDialog");
     dialog.style.display = "flex";
   });
+
+  $('#makePaymentBtn').click(function () {
+    const dialog = document.getElementById("orderSummaryDialog");
+    dialog.style.display = "flex";
+  });
+
 })
 class Menu extends HTMLElement {
   constructor() {
@@ -73,7 +79,21 @@ class ChangePlan extends HTMLElement {
       });
   }
 }
-
+class OrderSummary extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the change plan modal
+    fetch('../partials/order-summary.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 
 class PaymentCard extends HTMLElement {
   constructor() {
@@ -132,7 +152,7 @@ customElements.define('calendar-component', Calendar);
 customElements.define('feeds-component', Feeds);
 customElements.define('payment-card-component', PaymentCard);
 customElements.define('change-plan-component', ChangePlan);
-
+customElements.define('order-summary-component', OrderSummary);
 
 
 
