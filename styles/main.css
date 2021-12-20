@@ -101700,12 +101700,39 @@ table.resident-table thead th {
   padding: 1.125rem 1.1875rem 0.875rem 1.1875rem;
 }
 
-table .align-cols:first-of-type, table thead th:first-of-type, table tbody td:first-of-type {
+table .align-cols:first-of-type, table.order-summary thead th:first-of-type, table.order-summary tbody td:first-of-type {
   text-align: start;
 }
 
-table .align-cols:last-of-type, table thead th:last-of-type, table tbody td:last-of-type {
+table .align-cols:last-of-type, table.order-summary thead th:last-of-type, table.order-summary tbody td:last-of-type {
   text-align: end;
+}
+
+table .align-first:first-of-type, table thead th:first-of-type, table tbody td:first-of-type {
+  text-align: start;
+}
+
+table.order-summary .pad-col:first-of-type, table.order-summary thead th:first-of-type, table.order-summary tbody td:first-of-type {
+  padding-left: 4.4375rem;
+}
+
+table.order-summary .pad-col:last-of-type, table.order-summary thead th:last-of-type, table.order-summary tbody td:last-of-type {
+  padding-right: 2.5rem;
+}
+
+table.order-summary thead th {
+  padding: 2.1875rem 0 1.5625rem 0;
+}
+
+table.order-summary tbody td {
+  color: var(--black-alt);
+  font-size: 18px;
+  padding: 2.875rem 0 3.375rem 0;
+}
+
+table.order-summary tbody tr:nth-last-child(-n + 3) td {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 * {

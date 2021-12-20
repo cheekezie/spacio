@@ -30,7 +30,7 @@ table {
       padding: rem(16) rem(22) rem(8) rem(22);
       // border-top: 1px solid var(--grey5);
       border-bottom: 1px solid var(--grey5);
-      @extend .align-cols;
+      @extend .align-first;
     }
   }
   tr {
@@ -44,7 +44,7 @@ table {
       text-align: center;
       padding: rem(19) rem(22);
       border-bottom: 1px solid var(--grey5);
-      @extend .align-cols;
+      @extend .align-first;
     }
   }
   &.resident-table {
@@ -64,6 +64,43 @@ table {
     }
     &:last-of-type {
       text-align: end;
+    }
+  }
+  .align-first {
+    &:first-of-type {
+      text-align: start;
+    }
+  }
+  &.order-summary {
+    .pad-col {
+      &:first-of-type {
+        padding-left: rem(71);
+      }
+      &:last-of-type {
+        padding-right: rem(40);
+      }
+    }
+    thead {
+      th {
+        padding: rem(35) 0 rem(25) 0;
+        @extend .align-cols;
+        @extend .pad-col;
+      }
+    }
+    tbody {
+      td {
+        color: var(--black-alt);
+        font-size: 18px;
+        padding: rem(46) 0 rem(54) 0;
+        @extend .pad-col;
+        @extend .align-cols;
+      }
+      tr:nth-last-child(-n + 3) {
+        td {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+      }
     }
   }
 }
