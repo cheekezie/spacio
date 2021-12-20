@@ -1,4 +1,12 @@
 'use strict';
+
+
+$(document).ready(function () {
+  $('#changePlanBtn').click(function () {
+    const dialog = document.getElementById("changePlanDialog");
+    dialog.style.display = "flex";
+  });
+})
 class Menu extends HTMLElement {
   constructor() {
     super();
@@ -49,6 +57,23 @@ class Feeds extends HTMLElement {
       });
   }
 }
+
+class ChangePlan extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the change plan modal
+    fetch('../partials/change-plan.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
 
 class PaymentCard extends HTMLElement {
   constructor() {
@@ -106,6 +131,7 @@ customElements.define('navigation-component', Menu);
 customElements.define('calendar-component', Calendar);
 customElements.define('feeds-component', Feeds);
 customElements.define('payment-card-component', PaymentCard);
+customElements.define('change-plan-component', ChangePlan);
 
 
 

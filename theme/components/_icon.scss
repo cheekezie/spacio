@@ -10,6 +10,10 @@
     height: 45px;
     width: 45px;
   }
+  &-35 {
+    height: 35px;
+    width: 35px;
+  }
   &-50 {
     height: 50px;
     width: 50px;
@@ -141,6 +145,11 @@
   &-user-add {
     &::after {
       content: url(/assets/icons/user-add.svg);
+    }
+  }
+  &-close-grey {
+    &::after {
+      content: url(/assets/icons/close-grey.svg);
     }
   }
   &-overview-white {

@@ -3,7 +3,7 @@
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
@@ -44,6 +44,12 @@
   }
   &.dialog-md {
     max-width: rem(570);
+  }
+  &.dialog-lg {
+    max-width: rem(1171);
+    @media screen and (max-width: breakpoint-max(lg)) {
+      width: 90%;
+    }
   }
   &.search-dropdown,
   &.option-dropdown {

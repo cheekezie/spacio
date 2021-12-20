@@ -18,6 +18,16 @@
 .border-grey {
   border: 1px solid var(--grey);
 }
+
+.border-bottom-grey {
+  border-bottom: 1px solid var(--grey);
+}
+.border-bottom-white {
+  border-bottom: 1px solid var(--white);
+}
+.border-white {
+  border: 1px solid var(--white);
+}
 .border-primary {
   border: 1px solid var(--primary);
 }
