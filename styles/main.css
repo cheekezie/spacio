@@ -102187,6 +102187,10 @@ h6 {
   display: flex;
 }
 
+.d-block {
+  display: block !important;
+}
+
 .block {
   display: block;
 }
@@ -102363,6 +102367,11 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.toggle-open {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
 }
 
 .badge-success {
@@ -103034,7 +103043,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .side-menu {
   max-width: 16.625rem;
-  z-index: 2;
+  z-index: 3;
   overflow-y: auto;
 }
 
@@ -103044,7 +103053,11 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
           align-items: center;
 }
 
-.side-menu .menu-toggle {
+.side-menu .mobile {
+  display: none;
+}
+
+.side-menu .sidemenu-toggle {
   display: none;
 }
 
@@ -103078,10 +103091,17 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   z-index: 2;
 }
 
+.top-menu .mobile {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   .top-menu {
     padding: 0;
     overflow: hidden;
+  }
+  .top-menu .mobile {
+    display: block;
   }
 }
 
@@ -103091,7 +103111,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   right: 0 !important;
   bottom: 0;
   left: 0 !important;
-  z-index: 5;
+  z-index: 3;
   display: none;
   -webkit-transition-property: display;
   transition-property: display;
@@ -103249,6 +103269,10 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   }
 }
 
+.dialog.central-dialog-lg .dialog-content {
+  margin: 4rem auto;
+}
+
 @media screen and (max-width: 768px) {
   .dialog-content {
     max-width: 95% !important;
@@ -103344,7 +103368,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   padding: 10.5625rem 4.9375rem 3.875rem 4.6875rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .main-panel {
     width: 100% !important;
   }
@@ -103366,9 +103390,39 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   padding: 11.8125rem 2.375rem 1.875rem 1.875rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .feed-panel {
-    display: hidden !important;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out;
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+  }
+}
+
+.feed-gear {
+  display: none;
+  position: fixed;
+  top: 15rem;
+  color: #fff;
+  font-size: 20px;
+  z-index: 1;
+  cursor: pointer;
+  border: 3px #fff solid;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4) !important;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4) !important;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 0.5rem 1rem;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .feed-gear {
+    display: block;
   }
 }
 

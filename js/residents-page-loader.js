@@ -4,15 +4,20 @@
 $(document).ready(function () {
   $('#changePlanBtn').click(function () {
     const dialog = document.getElementById("changePlanDialog");
-    dialog.style.display = "flex";
+    dialog.style.display = "block";
   });
 
   $('#makePaymentBtn').click(function () {
     const dialog = document.getElementById("orderSummaryDialog");
-    dialog.style.display = "flex";
+    dialog.style.display = "block";
   });
 
 })
+
+function closeModal(dialogId){
+  const dialog = document.getElementById(dialogId);
+    dialog.style.display = "none";
+}
 class Menu extends HTMLElement {
   constructor() {
     super();
@@ -29,6 +34,18 @@ class Menu extends HTMLElement {
           const dialog = document.getElementById("adNewDialog");
           dialog.style.display = "block";
         });
+        $('#toggleMenu').click(function () {
+          let menu = document.getElementById('sideMenu');
+          menu.classList.toggle('toggle-open');
+          let overlay = document.getElementById('overlay');
+          overlay.classList.toggle('d-block');
+        });
+        $('#overlay').click(function () {
+          let menu = document.getElementById('sideMenu');
+          menu.classList.toggle('toggle-open');
+          let overlay = document.getElementById('overlay');
+          overlay.classList.toggle('d-block');
+        })
       });
   }
 }

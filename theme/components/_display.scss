@@ -19,6 +19,9 @@
 .flex {
   display: flex;
 }
+.d-block {
+  display: block !important;
+}
 .block {
   display: block;
   &-sm {
@@ -129,6 +132,9 @@
 
 .flex-column {
   flex-direction: column;
+}
+.toggle-open {
+  transform: translateX(0) !important;
 }
 .badge {
   &-success {

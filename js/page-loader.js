@@ -15,9 +15,24 @@ class Menu extends HTMLElement {
           const dialog = document.getElementById("adNewDialog");
           dialog.style.display = "block";
         });
+        $('#toggleMenu').click(function () {
+          let menu = document.getElementById('sideMenu');
+          menu.classList.toggle('toggle-open');
+          let overlay = document.getElementById('overlay');
+          overlay.classList.toggle('d-block');
+        });
+
+        $('#overlay').click(function () {
+          let menu = document.getElementById('sideMenu');
+          menu.classList.toggle('toggle-open');
+          let overlay = document.getElementById('overlay');
+          overlay.classList.toggle('d-block');
+        })
+
       });
   }
 }
+
 class AddPopup extends HTMLElement {
   constructor() {
     super();

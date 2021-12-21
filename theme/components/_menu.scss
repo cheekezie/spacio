@@ -1,13 +1,16 @@
 .side-menu {
   max-width: rem(266);
-  z-index: 2;
+  z-index: 3;
   overflow-y: auto;
   ul {
     a {
       align-items: center;
     }
   }
-  .menu-toggle {
+  .mobile {
+    display: none;
+  }
+  .sidemenu-toggle {
     display: none;
     // @include responsive(display, block, ipad);
   }
@@ -29,15 +32,21 @@
   right: 0;
   left: 0;
   z-index: 2;
+  .mobile {
+    display: none;
+  }
   @media screen and (max-width: breakpoint-max(md)) {
     padding: 0;
     overflow: hidden;
+    .mobile {
+      display: block;
+    }
   }
 }
 // OVERLAY ON MENU TOGGLE
 .overlay {
   @include position(fixed, 0, 0, 0, 0);
-  z-index: 5;
+  z-index: 3;
   display: none;
   @include property-animation(display);
   background: rgba(0, 0, 0, 0.4) !important;

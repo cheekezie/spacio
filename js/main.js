@@ -52,6 +52,12 @@ $(document).ready(function () {
   });
 });
 
+function slideFeed(){
+  let feed = document.getElementById('feedPanel');
+  feed.classList.toggle('toggle-open');
+}
+
+
 // var input = document.querySelector("#telephone");
 // window.intlTelInput(input, {
 //     allowDropdown:true,

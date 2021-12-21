@@ -22,6 +22,11 @@
     @include responsive-max(justify-content, flex-start, sm);
     @include responsive-max(padding-top, 3rem, sm);
   }
+  &.central-dialog-lg {
+    .dialog-content {
+      margin: 4rem auto;
+    }
+  }
 }
 .dialog-content {
   @include responsive-max(max-width, 95%, sm);

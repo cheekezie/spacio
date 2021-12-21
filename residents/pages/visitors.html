@@ -11,6 +11,10 @@
       href="/assets/images/spacio-logo-trans2.png"
     />
     <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
   </head>
   <body>
     <navigation-component></navigation-component>
@@ -233,9 +237,13 @@
         </div>
       </div>
 
-      <div class="feed-panel">
+      <div class="feed-panel" id="feedPanel">
         <calendar-component></calendar-component>
         <feeds-component></feeds-component>
+      </div>
+      <!-- to toggle field panel -->
+      <div class="feed-gear bg-primary" onclick="slideFeed()">
+        <i class="fas fa-cog fa-spin"></i>
       </div>
     </div>
 
