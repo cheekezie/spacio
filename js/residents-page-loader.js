@@ -1,5 +1,14 @@
 'use strict';
 
+function highestZIndex(){
+  const maxZ = Math.max.apply(null, 
+    $.map($('body *'), function(e,n) {
+      if ($(e).css('position') != 'static')
+        return parseInt($(e).css('z-index')) || 1;
+  }));
+  return maxZ;
+}
+
 
 $(document).ready(function () {
   $('#changePlanBtn').click(function () {
@@ -183,8 +192,10 @@ function openCategoryDropdown(){
 function openTagDropdown(){
   $('#tagDropdownBtn').click(function () {
     console.log(';tag clicked');
-    const resident = document.getElementById("tagDropdown");
-    resident.style.display = "flex";
+    const dialog = document.getElementById("tagDropdown");
+    dialog.style.display = "flex";
+
+    dialog.style.zIndex = highestZIndex() + 1;
   });
 }
 

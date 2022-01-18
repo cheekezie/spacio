@@ -108535,11 +108535,11 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 }
 
 .dialog-content.dialog-md {
-  max-width: 35.625rem;
+  width: 35.625rem;
 }
 
 .dialog-content.dialog-md-alt {
-  max-width: 53.5625rem;
+  width: 53.5625rem;
 }
 
 .dialog-content.dialog-lg {
