@@ -1,4 +1,19 @@
 'use strict';
+
+
+function highestZIndex(){
+  const maxZ = Math.max.apply(null, 
+    $.map($('body *'), function(e,n) {
+      if ($(e).css('position') != 'static')
+        return parseInt($(e).css('z-index')) || 1;
+  }));
+  return maxZ;
+}
+
+function applyDialogclass(dialog, display){
+  dialog.style.display = display;
+  dialog.style.zIndex = highestZIndex() + 1;
+}
 class Menu extends HTMLElement {
   constructor() {
     super();
@@ -69,8 +84,8 @@ class NewResident extends HTMLElement {
 // to open file upload dialog box
 function openUplodModal(){
   $('#triggerUpload').click(function () {
-    const upload = document.getElementById("uploadDialog");
-    upload.style.display = "flex";
+    const dialog = document.getElementById("uploadDialog");
+    applyDialogclass(dialog, 'flex');
   });
 }
 class NewUser extends HTMLElement {
@@ -120,8 +135,8 @@ class NewProperty extends HTMLElement {
       .then((data) => {
         this.innerHTML = data;
         $('#estateOptions').click(function () {
-          const estateOptionsDialog = document.getElementById("estateDropwonDialog");
-          estateOptionsDialog.style.display = "flex";
+          const dialog = document.getElementById("estateDropwonDialog");
+          applyDialogclass(dialog, 'flex');
         });
       });
   }
@@ -158,8 +173,8 @@ class EstateDropdown extends HTMLElement {
       .then((data) => {
         this.innerHTML = data;
         $('#addEstate').click(function () {
-          const serviceType = document.getElementById("addEstateDialog");
-          serviceType.style.display = "flex";
+          const dialog = document.getElementById("addEstateDialog");
+          applyDialogclass(dialog, 'flex');
         });
       });
   }
@@ -178,8 +193,8 @@ class ServiceTypeDropdown extends HTMLElement {
       .then((data) => {
         this.innerHTML = data;
         $('#addServiceType').click(function () {
-          const serviceType = document.getElementById("addServiceTypeDialog");
-          serviceType.style.display = "flex";
+          const dialog = document.getElementById("addServiceTypeDialog");
+          applyDialogclass(dialog, 'flex');
         });
       });
   }
@@ -230,8 +245,8 @@ class TenureDropdown extends HTMLElement {
       .then((data) => {
         this.innerHTML = data;
         $('#addTenure').click(function () {
-          const tenure = document.getElementById("addTenureDialog");
-          tenure.style.display = "flex";
+          const dialog = document.getElementById("addTenureDialog");
+          applyDialogclass(dialog, 'flex');
         });
       });
   }
@@ -268,23 +283,23 @@ class NewService extends HTMLElement {
         this.innerHTML = data;
         $('#selectServiceType').click(function () {
           const serviceType = document.getElementById("serviceTypeDropdown");
-          serviceType.style.display = "flex";
+          applyDialogclass(serviceType, 'flex');
         });
         $('#selectTenure').click(function () {
           const tenure = document.getElementById("tenureDropdown");
-          tenure.style.display = "flex";
+          applyDialogclass(tenure, 'flex');
         });
         $('#selectServiceGroup').click(function () {
           const serviceGroup = document.getElementById("estateDropwonDialog");
-          serviceGroup.style.display = "flex";
+          applyDialogclass(serviceGroup, 'flex');
         });
         $('#selectCategory').click(function () {
           const category = document.getElementById("categoryDropdown");
-          category.style.display = "flex";
+          applyDialogclass(category, 'flex');
         });
         $('#addCategory').click(function () {
-          const category = document.getElementById("addCategoryDialog");
-          category.style.display = "flex";
+          const addCategory = document.getElementById("addCategoryDialog");
+          applyDialogclass(addCategory, 'flex');
         });
       });
   }
@@ -304,11 +319,11 @@ class NewEstate extends HTMLElement {
         this.innerHTML = data;
         $('#selectCity').click(function () {
           const city = document.getElementById("cityDropdownDialog");
-          city.style.display = "flex";
+          applyDialogclass(city, 'flex');
         });
         $('#estateSuccessBtn').click(function () {
           const estate = document.getElementById("estateSuccessDialog");
-          estate.style.display = "flex";
+          applyDialogclass(estate, 'flex');
         });
       });
   }
@@ -369,27 +384,27 @@ function loadModalActions(){
   $('#newResident').click(function () {
     removeAddPopup();
     const resident = document.getElementById("addResidntDialog");
-    resident.style.display = "block";
+    applyDialogclass(resident, 'block');
   });
   $('#newUser').click(function () {
     removeAddPopup();
     const user = document.getElementById("addUserDialog");
-    user.style.display = "block";
+    applyDialogclass(user, 'block');
   });
   $('#newFacility').click(function () {
     removeAddPopup();
     const facility = document.getElementById("addFacilityDialog");
-    facility.style.display = "block";
+    applyDialogclass(facility, 'block');
   });
   $('#newProperty').click(function () {
     removeAddPopup();
-    const facility = document.getElementById("addPropertyDialog");
-    facility.style.display = "block";
+    const newProperty = document.getElementById("addPropertyDialog");
+    applyDialogclass(newProperty, 'block');
   });
   $('#newService').click(function () {
     removeAddPopup();
-    const facility = document.getElementById("addServiceDialog");
-    facility.style.display = "block";
+    const addService = document.getElementById("addServiceDialog");
+    applyDialogclass(addService, 'block');
   });
   
 }

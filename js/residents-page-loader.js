@@ -9,16 +9,20 @@ function highestZIndex(){
   return maxZ;
 }
 
+function applyDialogclass(dialog, display){
+  dialog.style.display = display;
+  dialog.style.zIndex = highestZIndex() + 1;
+}
 
 $(document).ready(function () {
   $('#changePlanBtn').click(function () {
     const dialog = document.getElementById("changePlanDialog");
-    dialog.style.display = "block";
+    applyDialogclass(dialog, 'block');
   });
 
   $('#makePaymentBtn').click(function () {
     const dialog = document.getElementById("orderSummaryDialog");
-    dialog.style.display = "block";
+    applyDialogclass(dialog, 'block');
   });
 
 })
@@ -26,7 +30,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('#scheduleVisitorBtn').click(function () {
     const dialog = document.getElementById("scheduleVisitorDialog");
-    dialog.style.display = "block";
+    applyDialogclass(dialog, 'block');
   });
 })
 
@@ -47,8 +51,8 @@ class Menu extends HTMLElement {
       .then((data) => {
         this.innerHTML = data;
         $('#newOrder').click(function () {
-          const resident = document.getElementById("newOrderDialog");
-          resident.style.display = "block";
+          const dialog = document.getElementById("newOrderDialog");
+          applyDialogclass(dialog, 'block');
         });
         $('#toggleMenu').click(function () {
           toggleMenu();
@@ -184,18 +188,15 @@ class TagDropdown extends HTMLElement {
 
 function openCategoryDropdown(){
   $('#openResidentCategory').click(function () {
-    const resident = document.getElementById("residentsCategoryDropdown");
-    resident.style.display = "flex";
+    const dialog = document.getElementById("residentsCategoryDropdown");
+    applyDialogclass(dialog, 'flex');
   });
 }
 
 function openTagDropdown(){
   $('#tagDropdownBtn').click(function () {
-    console.log(';tag clicked');
     const dialog = document.getElementById("tagDropdown");
-    dialog.style.display = "flex";
-
-    dialog.style.zIndex = highestZIndex() + 1;
+    applyDialogclass(dialog, 'flex');
   });
 }
 
