@@ -107496,7 +107496,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   max-width: 35.625rem;
 }
 
-.dialog-content .dialog-md-alt {
+.dialog-content.dialog-md-alt {
   max-width: 53.5625rem;
 }
 
