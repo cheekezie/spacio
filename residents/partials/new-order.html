@@ -1,0 +1,112 @@
+<div class="dialog central-dialog-lg" id="newOrderDialog">
+  <div class="dialog-content bg-white dialog-lg">
+    <div class="px-77 pb-55 pt-54 position-relative bg-pale-blue">
+      <h3 class="f48-h65 text-weight-700 text-black-alt">Create Order</h3>
+    </div>
+    <div class="pt-51 pb-47 px-34">
+      <form>
+        <div class="form-group position-relative mb-14">
+          <input
+            type="number"
+            placeholder="Order title"
+            id="charge"
+            class="border-none border-bottom-grey radius-none pr-170 pl-0 shadow-none"
+          />
+        </div>
+
+        <div
+          class="py-16 px-8 mb-61 radius-md bg-off-white-2 flex flex-x-between"
+        >
+          <div class="flex flex-wrap">
+            <span
+              class="px-14 py-6 bg-pale-blue-2 text-black-alt f14-h19 text-weight-600 flex radius-md cursor-pointer"
+            >
+              Plumbing
+              <span class="rounded icon-20 ml-12 flex-x-center-center">
+                <span class="icon-cancel-black icon-10"></span>
+              </span>
+            </span>
+            <span
+              class="px-14 py-6 bg-pale-blue-2 ml-4 text-black-alt f14-h19 text-weight-600 flex radius-md cursor-pointer"
+            >
+              Painting
+              <span class="rounded icon-20 ml-12 flex-x-center-center">
+                <span class="icon-cancel-black icon-10"></span>
+              </span>
+            </span>
+          </div>
+          <button
+            class="ml-17 flex-x-center-center cursor-pointer f14-h19 text-weight-600"
+          >
+            <span class="icon-plus-black icon-14 mr-16"></span>
+            Add category
+          </button>
+        </div>
+
+        <div class="form-group mb-17">
+          <textarea
+            name=""
+            id=""
+            class="min-h-247 border-grey radius-md py-22 px-30 form-control w-100"
+            placeholder="Enter description"
+          ></textarea>
+        </div>
+
+        <div class="form-group flex justify-content-end">
+          <span
+            class="radius-md bg-grey-trans-2 mr-17 flex-x-center-center p-22"
+          >
+            <span class="icon-attchment-black icon-20"></span>
+          </span>
+          <span
+            class="radius-md bg-grey-trans-2 flex flex-x-center-center p-22"
+          >
+            <span class="icon-calendar-alt icon-20"></span>
+          </span>
+        </div>
+
+        <div class="tags mb-44 flex flex-wrap align-items-center">
+          <div class="position-relative">
+            <img
+              src="/assets/images/ba.png"
+              class="fit-cover rounded tag-avatar"
+              alt=""
+            />
+            <button class="position-absolute right-n-14">
+              <span class="icon-cancel icon-20 rounded border-white"></span>
+            </button>
+          </div>
+          <div class="position-relative ml-17">
+            <img
+              src="/assets/images/ga.png"
+              class="fit-cover rounded tag-avatar ml-11"
+              alt=""
+            />
+            <button class="position-absolute right-n-14">
+              <span class="icon-cancel icon-20 rounded border-white"></span>
+            </button>
+          </div>
+          <button
+            class="ml-17 rounded bg-grey icon-35 flex flex-x-center-center cursor-pointer"
+          >
+            <span class="icon-plus-white icon-14"></span>
+          </button>
+        </div>
+
+        <div class="flex justify-content-end">
+          <button
+            class="btn f18-h24 text-black-alt px-34 py-13 radius-md border-grey"
+          >
+            Cancel
+          </button>
+          <button
+            class="btn f18-h24 px-34 py-13 radius-md bg-green-2 ml-22 flex-x-center text-white"
+          >
+            <span class="icon-plus-white mr-26 icon-20"></span>
+            Save & Create
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

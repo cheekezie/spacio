@@ -16,23 +16,22 @@ class Menu extends HTMLElement {
           dialog.style.display = "block";
         });
         $('#toggleMenu').click(function () {
-          let menu = document.getElementById('sideMenu');
-          menu.classList.toggle('toggle-open');
-          let overlay = document.getElementById('overlay');
-          overlay.classList.toggle('d-block');
+          toggleMenu();
         });
-
         $('#overlay').click(function () {
-          let menu = document.getElementById('sideMenu');
-          menu.classList.toggle('toggle-open');
-          let overlay = document.getElementById('overlay');
-          overlay.classList.toggle('d-block');
+          toggleMenu();
         })
 
       });
   }
 }
 
+function toggleMenu(){
+  let menu = document.getElementById('sideMenu');
+  menu.classList.toggle('toggle-open');
+  let overlay = document.getElementById('overlay');
+  overlay.classList.toggle('d-block');
+}
 class AddPopup extends HTMLElement {
   constructor() {
     super();

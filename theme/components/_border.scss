@@ -1,3 +1,9 @@
+.border-none {
+  border: none;
+}
+.radius-none {
+  border-radius: 0;
+}
 .border-grey {
   border-color: var(--grey) !important;
 }
@@ -9,9 +15,7 @@
 .border-1x {
   border-width: 1px;
 }
-.border-none {
-  border: none !important;
-}
+
 .border-solid {
   border-style: solid;
 }

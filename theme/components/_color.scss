@@ -10,6 +10,12 @@
 .bg-primary-trans-2 {
   background: var(--primary-trans-2);
 }
+.bg-pale-blue {
+  background: var(--pale-blue);
+}
+.bg-pale-blue-2 {
+  background: var(--pale-blue-2);
+}
 .bg-primary-trans-3 {
   background: var(--primary-trans-3);
 }
@@ -19,8 +25,14 @@
 .bg-warning-trans {
   background: var(--warning-trans);
 }
+.bg-grey {
+  background: var(--grey);
+}
 .bg-grey-trans {
   background: var(--grey-trans);
+}
+.bg-grey-trans-2 {
+  background: var(--grey-trans-2);
 }
 .bg-success-trans {
   background: var(--success-trans);
@@ -36,6 +48,9 @@
 }
 .bg-success {
   background: var(--green);
+}
+.bg-green-2 {
+  background: var(--green2);
 }
 .bg-success-deep {
   background: var(--green-deep);
@@ -57,6 +72,9 @@
 }
 .bg-off-white {
   background: var(--off-white);
+}
+.bg-off-white-2 {
+  background: var(--off-white-2);
 }
 .bg-light-blue {
   background: var(--light-blue);

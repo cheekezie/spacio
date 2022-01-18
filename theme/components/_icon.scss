@@ -6,6 +6,10 @@
   }
 }
 .icon {
+  &-9 {
+    height: 9px;
+    width: auto;
+  }
   &-45 {
     height: 45px;
     width: 45px;
@@ -94,6 +98,10 @@
     height: 13px;
     width: 13px;
   }
+  &-14 {
+    height: 14px;
+    width: 14px;
+  }
   &-10 {
     height: auto;
     width: 10px;
@@ -105,6 +113,11 @@
   &-user-white {
     &::after {
       content: url(/assets/icons/user-white.svg);
+    }
+  }
+  &-phone-call {
+    &::after {
+      content: url(/assets/icons/phone-call.svg);
     }
   }
   &-anchor-down {
@@ -294,6 +307,11 @@
       content: url(/assets/icons/plus-blue.svg);
     }
   }
+  &-plus-black {
+    &::after {
+      content: url(/assets/icons/plus-black.svg);
+    }
+  }
   &-folder {
     &::after {
       content: url(/assets/icons/folder-black.svg);
@@ -387,6 +405,11 @@
   &-cancel {
     &::after {
       content: url(/assets/icons/cancel.svg);
+    }
+  }
+  &-cancel-black {
+    &::after {
+      content: url(/assets/icons/cancel-black.svg);
     }
   }
   &-flag-white {

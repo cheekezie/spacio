@@ -14,6 +14,13 @@ $(document).ready(function () {
 
 })
 
+$(document).ready(function () {
+  $('#scheduleVisitorBtn').click(function () {
+    const dialog = document.getElementById("scheduleVisitorDialog");
+    dialog.style.display = "block";
+  });
+})
+
 function closeModal(dialogId){
   const dialog = document.getElementById(dialogId);
     dialog.style.display = "none";
@@ -30,24 +37,25 @@ class Menu extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#addNewBtn').click(function () {
-          const dialog = document.getElementById("adNewDialog");
-          dialog.style.display = "block";
+        $('#newOrder').click(function () {
+          const resident = document.getElementById("newOrderDialog");
+          resident.style.display = "block";
         });
         $('#toggleMenu').click(function () {
-          let menu = document.getElementById('sideMenu');
-          menu.classList.toggle('toggle-open');
-          let overlay = document.getElementById('overlay');
-          overlay.classList.toggle('d-block');
+          toggleMenu();
         });
         $('#overlay').click(function () {
-          let menu = document.getElementById('sideMenu');
-          menu.classList.toggle('toggle-open');
-          let overlay = document.getElementById('overlay');
-          overlay.classList.toggle('d-block');
+          toggleMenu();
         })
       });
   }
+}
+
+function toggleMenu(){
+  let menu = document.getElementById('sideMenu');
+  menu.classList.toggle('toggle-open');
+  let overlay = document.getElementById('overlay');
+  overlay.classList.toggle('d-block');
 }
 
 class Calendar extends HTMLElement {
@@ -96,6 +104,38 @@ class ChangePlan extends HTMLElement {
       });
   }
 }
+
+class ScheduleVisitors extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the change plan modal
+    fetch('../partials/schedule-visitors.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
+class NewOrder extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the change plan modal
+    fetch('../partials/new-order.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 class OrderSummary extends HTMLElement {
   constructor() {
     super();
@@ -128,35 +168,6 @@ class PaymentCard extends HTMLElement {
   }
 }
 
-function loadModalActions(){
-
-  $('#newResident').click(function () {
-    removeAddPopup();
-    const resident = document.getElementById("addResidntDialog");
-    resident.style.display = "block";
-  });
-  $('#newUser').click(function () {
-    removeAddPopup();
-    const user = document.getElementById("addUserDialog");
-    user.style.display = "block";
-  });
-  $('#newFacility').click(function () {
-    removeAddPopup();
-    const facility = document.getElementById("addFacilityDialog");
-    facility.style.display = "block";
-  });
-  $('#newProperty').click(function () {
-    removeAddPopup();
-    const facility = document.getElementById("addPropertyDialog");
-    facility.style.display = "block";
-  });
-  $('#newService').click(function () {
-    removeAddPopup();
-    const facility = document.getElementById("addServiceDialog");
-    facility.style.display = "block";
-  });
-  
-}
 
 function removeAddPopup(){
   const dialog = document.getElementById("adNewDialog");
@@ -170,6 +181,7 @@ customElements.define('feeds-component', Feeds);
 customElements.define('payment-card-component', PaymentCard);
 customElements.define('change-plan-component', ChangePlan);
 customElements.define('order-summary-component', OrderSummary);
-
+customElements.define('schedule-visitors-component', ScheduleVisitors);
+customElements.define('new-order-component', NewOrder);
 
 

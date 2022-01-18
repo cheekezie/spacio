@@ -1,0 +1,108 @@
+<div class="dialog central-dialog-lg" id="scheduleVisitorDialog">
+  <div class="dialog-content bg-white dialog-md">
+    <div class="pl-43 pb-25 pt-62 pr-73 position-relative bg-pale-blue">
+      <h3 class="f48-h65 text-weight-700 text-black-alt mb-11">
+        Create Schedule
+      </h3>
+      <p class="f18-h24 text-grey text-weight-600">
+        For the security reasons it is important to give accurate details of
+        your guest(s)
+      </p>
+    </div>
+    <div class="pt-51 pb-47 px-34">
+      <form>
+        <div class="form-group position-relative mb-51">
+          <input
+            type="number"
+            placeholder="Enter Vistor name"
+            id="charge"
+            class="border-none border-bottom-grey radius-none pr-170 pl-0 shadow-none"
+          />
+          <span
+            class="radius-md bg-pale-blue-2 px-20 py-13 text-primary cursor position-absolute flex flex-x-center-center right-0 top-0"
+          >
+            <span class="icon-plus-blue mr-26 icon-20"></span>
+            Pesron(s)
+            <span class="icon-anchor-down ml-26 icon-9"></span>
+          </span>
+        </div>
+        <div class="form-group flex mb-51">
+          <div class="w-100">
+            <label for="name" class="f16-h21 text-grey-2"
+              >Set Due Date & Time</label
+            >
+            <input
+              type="datetime"
+              placeholder="Feb 6, 2020 08:30"
+              id="charge"
+            />
+          </div>
+          <div class="flex align-items-end">
+            <span
+              class="radius-md bg-grey-trans-2 ml-11 flex flex-x-center-center p-22"
+            >
+              <span class="icon-calendar-alt icon-20"></span>
+            </span>
+          </div>
+        </div>
+        <div class="form-group flex mb-51">
+          <div class="w-100">
+            <label for="name" class="f16-h21 text-grey-2"
+              >Add Phone number</label
+            >
+            <input type="number" placeholder="090912345567" id="charge" />
+          </div>
+          <div class="flex align-items-end">
+            <span
+              class="radius-md bg-grey-trans-2 ml-11 flex flex-x-center-center p-22"
+            >
+              <span class="icon-phone-call icon-20"></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="tags mb-44 flex flex-wrap align-items-center">
+          <div class="position-relative">
+            <img
+              src="/assets/images/ba.png"
+              class="fit-cover rounded tag-avatar"
+              alt=""
+            />
+            <button class="position-absolute right-n-14">
+              <span class="icon-cancel icon-20 rounded border-white"></span>
+            </button>
+          </div>
+          <div class="position-relative ml-17">
+            <img
+              src="/assets/images/ga.png"
+              class="fit-cover rounded tag-avatar ml-11"
+              alt=""
+            />
+            <button class="position-absolute right-n-14">
+              <span class="icon-cancel icon-20 rounded border-white"></span>
+            </button>
+          </div>
+          <button
+            class="ml-17 rounded bg-grey icon-35 flex flex-x-center-center cursor-pointer"
+          >
+            <span class="icon-plus-white icon-14"></span>
+          </button>
+        </div>
+
+        <div class="flex justify-content-end">
+          <button
+            class="btn f18-h24 text-black-alt px-34 py-13 radius-md border-grey"
+          >
+            Cancel
+          </button>
+          <button
+            class="btn f18-h24 px-34 py-13 radius-md bg-green-2 ml-22 flex-x-center text-white"
+          >
+            <span class="icon-plus-white mr-26 icon-20"></span>
+            Save & Create
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

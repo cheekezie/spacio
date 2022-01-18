@@ -5,17 +5,21 @@
   --secondary: #52506e;
   --white: #fff;
   --off-white: #f9ffff;
+  --off-white-2: #f9fbfc;
   --yellow: rgba(230, 208, 10, 0.925);
   --brown: #d1d1d1;
   --black-alt: #494949;
   --orange: #fec545;
   --orange-ddep: #ff6600;
   --warning: #ffb03a;
+  --pale-blue: #f3f8ff;
+  --pale-blue-2: #edf2ff;
   --warning-deep: #ff9900;
   --coral: rgb(241, 76, 16);
   --danger: #ff0000;
   --light-green: #02a11226;
   --green: #02a112;
+  --green2: #1bbc35;
   --green-deep: #12ad22;
   --success: #10d318;
   --blue: #43abf0;
@@ -28,6 +32,7 @@
   --warning-trans: rgba(188, 66, 27, 0.2);
   --success-trans: rgba(79, 188, 27, 0.2);
   --grey-trans: rgba(210, 210, 210, 0.2);
+  --grey-trans-2: rgba(134, 146, 166, 0.15);
   --primary-trans-light: #f1f5fa;
   --light-blue: #43abf026;
   --dark-grey: #888888;
@@ -172,6 +177,7 @@ $spacers: (
   69: 69px,
   71: 71px,
   72: 72px,
+  73: 73px,
   74: 74px,
   75: 75px,
   77: 77px,
@@ -190,6 +196,7 @@ $spacers: (
   108: 108px,
   113: 113px,
   122: 122px,
+  132: 132px,
   140: 140px,
   144: 144px,
   148: 148px,
@@ -197,6 +204,8 @@ $spacers: (
   156: 156px,
   158: 158px,
   168: 168px,
+  170: 170px,
+  177: 177px,
   210: 210px,
   308: 308px,
   321: 321px,

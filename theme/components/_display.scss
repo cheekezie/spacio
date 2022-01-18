@@ -61,6 +61,9 @@
   align-items: center;
   justify-content: center;
 }
+.align-items-end {
+  align-items: flex-end;
+}
 .flex-y-center {
   display: flex;
   flex-direction: column;
@@ -72,11 +75,16 @@
   flex-direction: column;
   justify-content: center;
 }
-
+.flex-x-end {
+  display: flex;
+  justify-content: flex-end;
+}
 .list-unstyled {
   list-style: none;
 }
-
+.shadow-none {
+  box-shadow: none;
+}
 .hover-primary {
   cursor: pointer;
   &:hover {
@@ -108,7 +116,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (max-width: breakpoint-max(sm)) {
+  @media screen and (max-width: 767.8px) {
     display: block;
   }
 }
