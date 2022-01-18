@@ -108564,7 +108564,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   border-bottom: 0.6px solid var(--grey6);
 }
 
-.dialog-content.search-dropdown .form-content-scroll.max-h-308, .dialog-content.option-dropdown .form-content-scroll.max-h-308 {
+.dialog-content.search-dropdown .form-content-scroll.max-h-312, .dialog-content.option-dropdown .form-content-scroll.max-h-312 {
   max-height: 19.25rem !important;
 }
 
