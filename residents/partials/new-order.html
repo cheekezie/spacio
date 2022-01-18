@@ -37,6 +37,8 @@
           </div>
           <button
             class="ml-17 flex-x-center-center cursor-pointer f14-h19 text-weight-600"
+            type="button"
+            id="openResidentCategory"
           >
             <span class="icon-plus-black icon-14 mr-16"></span>
             Add category
@@ -85,12 +87,14 @@
                 class="fit-cover rounded tag-avatar ml-11"
                 alt=""
               />
-              <button class="position-absolute right-n-14">
+              <button class="position-absolute right-n-14" type="button">
                 <span class="icon-cancel icon-20 rounded border-white"></span>
               </button>
             </div>
             <button
               class="ml-17 rounded bg-grey icon-35 flex flex-x-center-center cursor-pointer"
+              type="button"
+              id="tagDropdownBtn"
             >
               <span class="icon-plus-white icon-14"></span>
             </button>
@@ -114,3 +118,9 @@
     </div>
   </div>
 </div>
+
+<!-- category dropdown component -->
+<resident-category-dropdown-component></resident-category-dropdown-component>
+
+<!-- tag people dropdown component -->
+<tag-dropdown-component></tag-dropdown-component>

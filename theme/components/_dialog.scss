@@ -62,10 +62,19 @@
   &.search-dropdown,
   &.option-dropdown {
     width: rem(426);
+    &.search-dialog {
+      width: rem(589);
+      ul {
+        border-bottom: none !important;
+      }
+    }
     .form-content-scroll {
       padding-top: 1px;
       max-height: rem(269) !important;
       border-bottom: 0.6px solid var(--grey6);
+      &.max-h-308 {
+        max-height: rem(308) !important;
+      }
     }
   }
 }

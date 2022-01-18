@@ -33,8 +33,14 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+.flex-1 {
+  flex: 1;
+}
 .align-items-center {
   align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
 }
 .justify-content-center {
   justify-content: center;

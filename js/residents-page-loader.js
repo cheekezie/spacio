@@ -117,6 +117,7 @@ class ScheduleVisitors extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
+        openTagDropdown();
       });
   }
 }
@@ -133,9 +134,60 @@ class NewOrder extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
+        openCategoryDropdown();
+        openTagDropdown();
       });
   }
 }
+
+class CategoryDropdown extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the change plan modal
+    fetch('../partials/category-dropdown.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
+
+class TagDropdown extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the change plan modal
+    fetch('../partials/tag-dropdown.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
+function openCategoryDropdown(){
+  $('#openResidentCategory').click(function () {
+    const resident = document.getElementById("residentsCategoryDropdown");
+    resident.style.display = "flex";
+  });
+}
+
+function openTagDropdown(){
+  $('#tagDropdownBtn').click(function () {
+    console.log(';tag clicked');
+    const resident = document.getElementById("tagDropdown");
+    resident.style.display = "flex";
+  });
+}
+
 class OrderSummary extends HTMLElement {
   constructor() {
     super();
@@ -183,5 +235,7 @@ customElements.define('change-plan-component', ChangePlan);
 customElements.define('order-summary-component', OrderSummary);
 customElements.define('schedule-visitors-component', ScheduleVisitors);
 customElements.define('new-order-component', NewOrder);
+customElements.define('resident-category-dropdown-component', CategoryDropdown);
+customElements.define('tag-dropdown-component', TagDropdown);
 
 
