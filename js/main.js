@@ -38,19 +38,40 @@ $(document).ready(function () {
   $(document).mouseup((e) => {
     const container = $('.dialog-content');
     const addNewBtn = $('#addNewBtn');
-    // If the target of the click isn't the dialog container and content
+    const triggerDialog = $('.triggerDialog');
+    // If the target of the click isn't the dialog container,
+    // content and the button that triggers the dialog
     if (
       !container.is(e.target) &&
+      !triggerDialog.is(e.target) &&
       !addNewBtn.is(e.target) &&
       container.has(e.target).length === 0
     ) {
-      const dialog = document.getElementsByClassName("dialog");
-      for (let index = 0; index < dialog.length; index++) {
-        dialog[index].style.display = "none"; 
-      }
+      const dialog = getHighestElement();
+      const dialogParent = dialog.closest('div.dialog');
+      dialogParent.style.display = "none";
+      // for (let index = 0; index < dialog.length; index++) {
+      //   dialogParent.style.display = "none"; 
+      // }
     }
   });
 });
+
+function getHighestElement() {
+  // Return the element that matches selector having the largest z index
+  return Array.from(document.querySelectorAll('.dialog')).reduce((a, b) => getZIndex(a) >= getZIndex(b) ? a : b);
+}
+
+function getZIndex(el) {
+  // Return the z-index of el, or 0 if none is set.
+  return parseInt(getCssProperty(el, "z-index")) || 0;
+}
+
+function getCssProperty(el, prop) {
+  // Return the computed value of the css property prop for the element el
+  return document.defaultView.getComputedStyle(el, null).getPropertyValue(prop);
+}
+
 
 function slideFeed(){
   let feed = document.getElementById('feedPanel');
