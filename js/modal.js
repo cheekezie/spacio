@@ -3,7 +3,6 @@
 // ClICK OUTSIDE tO HIDE ALL INSTANCES OF DIALOG MODAL AND OVERLAY
 
 $(document).click((element) => {
-    element.stopPropagation();
     if(element.target.dataset && element.target.dataset.modalTarget){
         applyDialogclass(element)
     }
@@ -23,7 +22,8 @@ function applyDialogclass(element){
     || dialog.classList.contains('side-dialog')){
         dialog.style.display = 'block';
     } else if(dialog.classList.contains('dropdown-menu')){
-        dialog.style.top = targetHeight + 10;
+        dialog.style.top = targetHeight + 20;
+        console.log(';targetHeight:', targetHeight);
         dialog.style.display = 'block';
     }
     else{
