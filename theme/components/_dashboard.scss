@@ -17,6 +17,10 @@
   &.full-width {
     width: 100% !important;
   }
+  @media screen and (max-width: breakpoint-max(md)) {
+    width: 100%;
+    padding: rem(169) rem(40) rem(62) rem(40);
+  }
 }
 .reset-margin {
   @media screen and (max-width: breakpoint-max(md)) {
@@ -28,9 +32,10 @@
   background: var(--feed-panel);
   padding: rem(189) rem(38) rem(30) rem(30);
   @media screen and (max-width: breakpoint-max(md)) {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
+    top: 0;
     transform: translateX(150%);
     transition: transform 700ms ease-in-out;
   }

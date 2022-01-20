@@ -41,9 +41,6 @@ $(document).ready(function () {
     ) {
       const dialogParent = element.target.closest('div.dialog') || element.target.closest('div.dropdown-menu');
       dialogParent.style.display = "none";
-      // for (let index = 0; index < dialog.length; index++) {
-      //   dialogParent.style.display = "none"; 
-      // }
     }
   });
 });

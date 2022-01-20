@@ -34,6 +34,7 @@ function applyDialogclass(element){
     overlay.classList.add('dialog-overlay');
     overlay.style.zIndex = -1;
     dialog.style.zIndex = highestZIndex() + 1;
+    closeeMenu();
 }
 
 function closemModal(dialogId){
@@ -42,9 +43,16 @@ function closemModal(dialogId){
     dialog.style.zIndex = 0;
 }
 
+function closeeMenu(){
+    let menu = document.getElementById('sideMenu');
+    menu.classList.remove('toggle-open');
+    let overlay = document.getElementById('overlay');
+    overlay.classList.remove('d-block');
+}
+
 function toggleMenu(){
     let menu = document.getElementById('sideMenu');
     menu.classList.toggle('toggle-open');
     let overlay = document.getElementById('overlay');
     overlay.classList.toggle('d-block');
-  }
+}

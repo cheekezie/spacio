@@ -317,6 +317,10 @@
   &-plus-white {
     &::after {
       content: url(/assets/icons/plus-white.svg);
+      color: red;
+      fill: currentColor;
+      color: currentColor;
+      display: inline-block;
     }
   }
   &-plus-blue {
