@@ -28,14 +28,7 @@
             <div class="size-sm-12 size-md-6 mb-21">
               <div class="px-md-9 h-100">
                 <div
-                  class="
-                    payment-card-bg-blue
-                    position-relative
-                    radius-12
-                    px-35
-                    pt-34
-                    pb-36
-                  "
+                  class="payment-card-bg-blue position-relative radius-12 px-35 pt-34 pb-36"
                 >
                   <div class="flex-x-between mb-32">
                     <div class="text-white">
@@ -54,17 +47,9 @@
                   </div>
                   <div class="flex-x-between">
                     <button
-                      class="
-                        text-primary
-                        btn
-                        radius-md
-                        f18-h24
-                        bg-white
-                        px-12
-                        flex-x-center
-                        py-10
-                      "
-                      id="changePlanBtn"
+                      class="text-primary btn radius-md f18-h24 bg-white px-12 flex-x-center py-10"
+                      type="button"
+                      data-modal-target="changePlanDialog"
                     >
                       <span class="icon-22 icon-circle-down mr-20"></span>
                       Change Plan
@@ -80,14 +65,7 @@
             <div class="size-sm-12 size-md-6 mb-21">
               <div class="px-md-9 h-100">
                 <div
-                  class="
-                    payment-card-bg-white
-                    position-relative
-                    radius-12
-                    px-35
-                    pt-34
-                    pb-36
-                  "
+                  class="payment-card-bg-white position-relative radius-12 px-35 pt-34 pb-36"
                 >
                   <div class="flex-x-between mb-32">
                     <div class="text-black-alt">
@@ -104,17 +82,9 @@
                   </div>
                   <div class="flex-x-between">
                     <button
-                      class="
-                        text-white
-                        btn
-                        flex-x-center
-                        radius-md
-                        f18-h24
-                        bg-primary
-                        px-12
-                        py-10
-                      "
-                      id="makePaymentBtn"
+                      class="text-white btn flex-x-center radius-md f18-h24 bg-primary px-12 py-10"
+                      type="button"
+                      data-modal-target="orderSummaryDialog"
                     >
                       <span class="icon-22 icon-arrow-right-white mr-20"></span>
                       Make Payment
@@ -281,6 +251,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/js/charts/dashboard-chart.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/modal.js"></script>
     <script src="/js/calendar.js"></script>
   </body>
 </html>

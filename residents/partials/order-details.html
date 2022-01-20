@@ -1,0 +1,147 @@
+<div class="dialog central-dialog-lg" id="orderDetailDialog">
+  <div class="dialog-content bg-white dialog-md-alt">
+    <div
+      class="px-77 pb-55 pt-54 position-relative bg-pale-blue flex-x-center justify-content-between"
+    >
+      <h3 class="f48-h65 text-weight-700 text-black-alt">Order Summary</h3>
+      <button
+        class="btn f18-h24 px-34 py-13 radius-md bg-green-2 ml-22 flex-x-center text-white"
+        type="button"
+      >
+        <span class="icon-plus-white mr-26 icon-20"></span>
+        Save & Create
+      </button>
+    </div>
+
+    <!-- body area-->
+    <div class="pb-23 px-72 pt-37">
+      <div class="flex-x-center justify-content-between mb-34">
+        <div class="w-100 pr-md-40">
+          <p class="f15-h16 text-grey-2 mb-15 text-weight-400">Order title</p>
+          <h3
+            class="f36-h49 text-weight-700 text-grey mb-8 text-grey f36-h49 text-weight-400"
+          >
+            Renovation of septic tank
+          </h3>
+          <p class="f15-h16 text-grey-2 mb-15 text-weight-400">
+            Date Created: 12/09/2021
+          </p>
+          <div class="flex flex-wrap">
+            <span
+              class="px-17 py-7 bg-pale-blue-2 text-black-alt f14-h19 text-weight-600 flex radius-md cursor-pointer"
+            >
+              Plumbing
+            </span>
+            <span
+              class="px-17 py-7 bg-pale-blue-2 ml-11 text-black-alt f14-h19 text-weight-600 flex radius-md cursor-pointer"
+            >
+              Painting
+            </span>
+          </div>
+        </div>
+        <div class="">
+          <p class="f15-h16 text-grey-2 mb-15 text-weight-400">Tag People</p>
+          <div class="tags mb-44 flex flex-wrap align-items-center">
+            <div class="position-relative">
+              <img
+                src="/assets/images/ba.png"
+                class="fit-cover rounded tag-avatar"
+                alt=""
+              />
+              <button class="position-absolute right-n-14">
+                <span class="icon-cancel icon-20 rounded border-white"></span>
+              </button>
+            </div>
+            <div class="position-relative ml-17">
+              <img
+                src="/assets/images/ga.png"
+                class="fit-cover rounded tag-avatar ml-11"
+                alt=""
+              />
+              <button class="position-absolute right-n-14" type="button">
+                <span class="icon-cancel icon-20 rounded border-white"></span>
+              </button>
+            </div>
+            <button type="button" data-modal-target="tagDropdown" class="ml-17">
+              <span class="icon-add-grey icon-35 cursor-pointer"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-37">
+        <p class="f15-h16 text-grey-2 mb-15 text-weight-400">Description</p>
+        <p class="f18-h24 text-grey-2 mb-15 text-weight-400">
+          I need to do some repairs on my septic tank and it’s urgent, please be
+          availabe by Monday. Also want the street provost to take note.
+        </p>
+        <p class="f15-h16 text-grey-2 text-weight-400">Date due: 12/09/2021</p>
+      </div>
+    </div>
+
+    <div class="px-72 mb-24">
+      <p class="f15-h16 text-grey-2 mb-15 text-weight-400">Comment</p>
+    </div>
+    <div class="bg-light-brown px-72 pt-25 pb-33">
+      <div class="chat">
+        <div class="chat-item not-self">
+          <div class="flex-x-center mb-10 chat-user">
+            <div>
+              <img
+                src="/assets/images/passport.png"
+                class="radius-md chat-avatar"
+                alt=""
+              />
+            </div>
+            <div class="ml-7">
+              <p class="f10-h13 text-black-alt text-weight-600 mb-2">
+                Spacio Admin
+              </p>
+              <p class="f8-h10 text-grey text-weight-600">12m ago</p>
+            </div>
+          </div>
+          <div class="chat-message f14-h19 text-black-alt mb-10">
+            What’s your Fav ice cream flavour? Asking for a driver.
+          </div>
+          <div class="chat-message f14-h19 text-black-alt mb-10 self">
+            Just lemme know
+          </div>
+        </div>
+        <div class="chat-item self">
+          <p class="f8-h10 text-grey text-weight-600 mb-7">12m ago</p>
+          <div class="chat-message f14-h19 text-black-alt mb-10">
+            What’s your Fav ice cream flavour? Asking for a driver.
+          </div>
+          <div class="chat-message f14-h19 text-black-alt mb-10 self">
+            Just lemme know
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="flex pb-23 px-72 pt-22">
+      <div class="form-group position-relative w-100 mb-0">
+        <input
+          type="number"
+          placeholder="Write a message..."
+          id="charge"
+          class="bg-light-brown pr-40 py-17 pl-30 f12-h16 text-grey border-none radius-md"
+        />
+        <button class="position-absolute right-13 top-8">
+          <span class="icon-send-orange icon-32"></span>
+        </button>
+      </div>
+      <div class="flex-x-center ml-15">
+        <button>
+          <span class="icon-attchment-black icon-17"></span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- category dropdown component -->
+<resident-category-dropdown-component></resident-category-dropdown-component>
+
+<!-- tag people dropdown component -->
+<tag-dropdown-component></tag-dropdown-component>

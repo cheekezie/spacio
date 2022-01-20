@@ -33,22 +33,13 @@ $(document).ready(function () {
     window.location.href = '/facility-maanagers/pages/demand-notice-listings.html';
   });
 
-
-  // ClICK OUTSIDE tO HIDE ALL INSTANCES OF DIALOG MODAL AND OVERLAY
-  $(document).mouseup((e) => {
-    const container = $('.dialog-content');
-    const addNewBtn = $('#addNewBtn');
-    const triggerDialog = $('.triggerDialog');
-    // If the target of the click isn't the dialog container,
-    // content and the button that triggers the dialog
+  // ClICK OUTSIDE tO HIDE DIALOG MODAL INSTANCE AND OVERLAY
+  $(document).mouseup((element) => {
+    // If the target is on the overlay, close the modal associated to it
     if (
-      !container.is(e.target) &&
-      !triggerDialog.is(e.target) &&
-      !addNewBtn.is(e.target) &&
-      container.has(e.target).length === 0
+      element.target.classList.contains('dialog-overlay')
     ) {
-      const dialog = getHighestElement();
-      const dialogParent = dialog.closest('div.dialog');
+      const dialogParent = element.target.closest('div.dialog') || element.target.closest('div.dropdown-menu');
       dialogParent.style.display = "none";
       // for (let index = 0; index < dialog.length; index++) {
       //   dialogParent.style.display = "none"; 

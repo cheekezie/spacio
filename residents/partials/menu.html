@@ -26,7 +26,7 @@
   <div class="position-relative">
     <button
       class="btn radius-md px-34 py-20 bg-primary mr-19 ml-24 flex-x-center-center text-white f18-h24 triggerDialog"
-      id="newOrder"
+      data-modal-target="newOrderDialog"
     >
       <span class="icon-plus-white mr-26 icon-20"></span>
       New Order
@@ -71,7 +71,10 @@
     </li>
   </ul>
   <div class="list-unstyled mr-63 ml-36 mt-210 mb-91">
-    <button class="btn radius-md border-grey px-51 py-13 text-white f18-h24">
+    <button
+      class="btn radius-md border-grey px-51 py-13 text-white f18-h24"
+      type="button"
+    >
       Logout
     </button>
   </div>

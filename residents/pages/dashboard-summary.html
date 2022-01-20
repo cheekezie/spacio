@@ -37,15 +37,14 @@
                       46 Badmus Craft Ave.
                     </p>
                   </div>
-                  <span
-                    class="
-                      icon-17 icon-anchor-down
-                      position-absolute
-                      right-0
-                      cursor-pointer
-                      mr-21
-                    "
-                  ></span>
+                  <span class="position-absolute right-0 cursor-pointer">
+                    <span
+                      class="icon-17 icon-anchor-down mr-21"
+                      data-modal-target="houseMenuDialog"
+                    ></span>
+                  </span>
+                  <!-- house menu dropdown  -->
+                  <house-menu-component></house-menu-component>
                 </div>
               </div>
             </div>
@@ -288,6 +287,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/js/charts/dashboard-chart.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/modal.js"></script>
     <script src="/js/calendar.js"></script>
   </body>
 </html>

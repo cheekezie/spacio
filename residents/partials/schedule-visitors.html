@@ -87,9 +87,9 @@
             <button
               class="ml-17 rounded bg-grey icon-35 flex flex-x-center-center cursor-pointer"
               type="button"
-              id="tagDropdownBtn"
+              data-modal-target="tagDropdown"
             >
-              <span class="icon-plus-white icon-14"></span>
+              <span class="icon-add-grey icon-35 cursor-pointer"></span>
             </button>
           </div>
         </div>
@@ -97,6 +97,8 @@
         <div class="flex justify-content-end">
           <button
             class="btn f18-h24 text-black-alt px-34 py-13 radius-md border-grey"
+            type="button"
+            data-close-modal="scheduleVisitorDialog"
           >
             Cancel
           </button>

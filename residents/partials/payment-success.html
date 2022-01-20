@@ -1,16 +1,18 @@
-<div class="dialog central-dialog-lg" id="orderSummaryDialog">
+<div class="dialog central-dialog-lg" id="paymentSuccessfulDialog">
   <div class="dialog-content bg-white dialog-lg">
-    <div
-      class="pr-40 position-relative flex-x-end pt-35 pb-177 pr-56 pl-80 mb-132"
-    >
+    <div class="position-relative flex-x-end pt-35 pr-56 pl-80 mb-132">
       <span
         class="icon-35 icon-close-grey cursor-pointer"
-        onclick="closeModal('orderSummaryDialog')"
+        data-close-modal="paymentSuccessfulDialog"
       ></span>
     </div>
-    <div class="bg-grey-lighter px-25 pb-84">
-      <div class="text-center">
-        <span class="icon icon-success-blue mb-50"></span>
+    <div class="px-25 pb-117">
+      <div class="text-center max-w-594 mx-auto">
+        <img
+          src="/assets/images/CheckCircle.png"
+          class="icon-189 mx-auto mb-56"
+          alt="success avatar"
+        />
         <h6 class="f36-h49 text-weight-600 text-black-alt mb-19">
           Order Completed Succesfully!
         </h6>
@@ -22,3 +24,6 @@
     </div>
   </div>
 </div>
+
+<!-- payment success modal -->
+<payment-success-component></payment-success-component>

@@ -1,22 +1,12 @@
 <div class="dialog central-dialog-lg" id="orderSummaryDialog">
   <div class="dialog-content bg-white dialog-lg">
     <div
-      class="
-        pr-40
-        position-relative
-        flex-x-between
-        align-items-center
-        pt-35
-        pb-26
-        pr-56
-        pl-80
-        mb-26
-      "
+      class="pr-40 position-relative flex-x-between align-items-center pt-35 pb-26 pr-56 pl-80 mb-26"
     >
       <h3 class="f36-h49 text-weight-600 text-black-alt">Payment Invoice</h3>
       <span
         class="icon-35 icon-close-grey cursor-pointer"
-        onclick="closeModal('orderSummaryDialog')"
+        data-close-modal="orderSummaryDialog"
       ></span>
     </div>
     <div class="bg-grey-lighter px-25 pb-84">
@@ -83,10 +73,17 @@
         </table>
       </div>
       <div class="flex justify-content-end pr-40 mt-64">
-        <button class="btn bg-primary py-13 px-58 radius-md text-white f18-h24">
+        <button
+          class="btn bg-primary py-13 px-58 radius-md text-white f18-h24"
+          type="button"
+          data-modal-target="paymentSuccessfulDialog"
+        >
           Pay Grand Total
         </button>
       </div>
     </div>
   </div>
 </div>
+
+<!-- payment success modal -->
+<payment-success-component></payment-success-component>

@@ -74,6 +74,10 @@
     height: 25px;
     width: 24px;
   }
+  &-25 {
+    height: 25px;
+    width: 25px;
+  }
   &-26 {
     height: 26px;
     width: auto;
@@ -113,6 +117,10 @@
   &-icon-23-28 {
     height: 28px;
     width: 23px;
+  }
+  &-189 {
+    height: 189px;
+    width: 189px;
   }
   &-user-white {
     &::after {
@@ -157,6 +165,11 @@
   &-ellipse {
     &::after {
       content: url(/assets/icons/ellipse.svg);
+    }
+  }
+  &-icon-add-grey {
+    &::after {
+      content: url(/assets/icons/add.svg);
     }
   }
   &-user-add {
@@ -349,6 +362,11 @@
   &-send-black {
     &::after {
       content: url(/assets/icons/send-black.svg);
+    }
+  }
+  &-send-orange {
+    &::after {
+      content: url(/assets/icons/send-orange.svg);
     }
   }
   &-pencil-grey {

@@ -38,7 +38,7 @@
           <button
             class="ml-17 flex-x-center-center cursor-pointer f14-h19 text-weight-600"
             type="button"
-            id="openResidentCategory"
+            data-modal-target="residentsCategoryDropdown"
           >
             <span class="icon-plus-black icon-14 mr-16"></span>
             Add category
@@ -94,9 +94,9 @@
             <button
               class="ml-17 rounded bg-grey icon-35 flex flex-x-center-center cursor-pointer"
               type="button"
-              id="tagDropdownBtn"
+              data-modal-target="tagDropdown"
             >
-              <span class="icon-plus-white icon-14"></span>
+              <span class="icon-add-grey icon-35 cursor-pointer"></span>
             </button>
           </div>
         </div>
@@ -104,6 +104,8 @@
         <div class="flex justify-content-end">
           <button
             class="btn f18-h24 text-black-alt px-34 py-13 radius-md border-grey"
+            type="button"
+            data-close-modal="newOrderDialog"
           >
             Cancel
           </button>
