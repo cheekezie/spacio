@@ -14,7 +14,7 @@
         <div class="form-content-scroll mb-20">
           <div class="form-group mb-32">
             <label for="name" class="f16-h21 text-grey-2">Service Type</label>
-            <select name="facility" id="selectServiceType">
+            <select name="facility" data-modal-target="serviceTypeDropdown">
               <option value="" class="hidden">Estate Maintenance Due</option>
             </select>
             <label for="" class="text-primary f16-h21 mt-13"
@@ -24,7 +24,7 @@
 
           <div class="form-group mb-23">
             <label for="name" class="f16-h21 text-grey-2">Service Group</label>
-            <select name="facility" id="selectServiceGroup">
+            <select name="facility" data-modal-target="estateDropwonDialog">
               <option value="" class="hidden">Ajao Int’l Estate - Lagos</option>
             </select>
           </div>
@@ -34,12 +34,12 @@
               >Select Category</label
             >
             <div class="flex">
-              <select name="facility" id="selectCategory">
+              <select name="facility" data-modal-target="categoryDropdown">
                 <option value="" class="hidden">General</option>
               </select>
               <span
                 class="cursor-pointer p-16 radius-md bg-primary ml-10"
-                id="addCategory"
+                data-modal-target="addCategoryDialog"
               >
                 <span class="icon-plus-white icon-32"></span>
               </span>
@@ -53,7 +53,11 @@
                   <label for="name" class="f16-h21 text-grey-2"
                     >Choose Tenure</label
                   >
-                  <select name="facility" id="selectTenure">
+                  <select
+                    name="facility"
+                    id="selectTenure"
+                    data-modal-target="tenureDropdown"
+                  >
                     <option value="" class="hidden">30 Days</option>
                   </select>
                 </div>
@@ -80,17 +84,8 @@
         </div>
 
         <button
-          class="
-            btn
-            py-16
-            bg-primary
-            text-center text-white
-            w-100
-            radius-md
-            f16-h21
-            flex-x-center-center
-          "
-          id="saveFacility"
+          class="btn py-16 bg-primary text-center text-white w-100 radius-md f16-h21 flex-x-center-center"
+          data-close-modal="addServiceDialog"
           type="submit"
         >
           <span class="icon-plus-white icon-20 mr-26"></span>
@@ -100,3 +95,6 @@
     </div>
   </div>
 </div>
+
+<!-- tenure dropdown -->
+<tenure-dropdown-component></tenure-dropdown-component>

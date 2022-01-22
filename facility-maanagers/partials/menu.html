@@ -1,5 +1,12 @@
+<!-- do not remov - adds overlay to menu -->
+<div class="overlay" id="overlay"></div>
+
 <nav class="bg-white py-4 pr-46 top-menu flex-x-between align-items-center">
   <div class="pl-49">
+    <i
+      class="fas fa-bars menu-toggle mobile text-black-alt cursor-pointer mr-10"
+      id="toggleMenu"
+    ></i>
     <h1 class="text-light-grey f78-h98 text-weight-800 my-0">
       Facility Manager
     </h1>
@@ -9,7 +16,10 @@
     <span class="text-dark f24-h33 ml-100">Tactical Deen</span>
   </div>
 </nav>
-<div class="side-menu position-fixed top-0 bottom-0 left-0 bg-secondary pt-26">
+<div
+  class="side-menu position-fixed top-0 bottom-0 left-0 bg-secondary pt-26"
+  id="sideMenu"
+>
   <div class="text-center mb-69">
     <img
       src="/assets/images/Spacio-logo-alt2.png"
@@ -19,19 +29,9 @@
   </div>
   <div class="position-relative">
     <button
-      class="
-        btn
-        radius-md
-        px-34
-        py-20
-        bg-primary
-        mr-45
-        ml-24
-        flex-x-center-center
-        text-white
-        f18-h24
-      "
-      id="addNewBtn"
+      class="btn radius-md px-34 py-20 bg-primary mr-45 ml-24 flex-x-center-center text-white f18-h24"
+      type="button"
+      data-modal-target="adNewDialog"
     >
       <span class="icon-plus-white mr-26 icon-20"></span>
       Add New
@@ -102,7 +102,7 @@
 <city-dropdown-component></city-dropdown-component>
 <new-service-component></new-service-component>
 <add-estate-success-component></add-estate-success-component>
-<tenure-dropdown-component></tenure-dropdown-component>
+
 <new-tenure-component></new-tenure-component>
 <category-dropdown-component></category-dropdown-component>
 <new-category-component></new-category-component>

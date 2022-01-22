@@ -33,16 +33,6 @@ $(document).ready(function () {
     window.location.href = '/facility-maanagers/pages/demand-notice-listings.html';
   });
 
-  // ClICK OUTSIDE tO HIDE DIALOG MODAL INSTANCE AND OVERLAY
-  $(document).mouseup((element) => {
-    // If the target is on the overlay, close the modal associated to it
-    if (
-      element.target.classList.contains('dialog-overlay')
-    ) {
-      const dialogParent = element.target.closest('div.dialog') || element.target.closest('div.dropdown-menu');
-      dialogParent.style.display = "none";
-    }
-  });
 });
 
 function getHighestElement() {

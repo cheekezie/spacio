@@ -13,40 +13,39 @@
         </div>
         <div class="form-content-scroll mb-20">
           <div class="form-group mb-31">
-            <label for="name" class="f16-h21 text-grey-2"
+            <label for="facility" class="f16-h21 text-grey-2"
               >Add Facility/Estate Name</label
             >
-            <select name="facility" id="facility">
-              <option value="">Tactical Paradise Estate</option>
+            <select
+              name="facility"
+              id="facility"
+              data-modal-target="estateDropwonDialog"
+            >
+              <option value="" class="hidden">Tactical Paradise Estate</option>
             </select>
           </div>
 
           <div class="form-group mb-40 mb-md-122">
-            <label for="name" class="f16-h21 text-grey-2"
+            <label for="city" class="f16-h21 text-grey-2"
               >Add Facility/Estate Address</label
             >
-            <select name="facility" id="facility">
-              <option value="">Select City</option>
+            <select
+              name="facility"
+              id="city"
+              data-modal-target="cityDropdownDialog"
+            >
+              <option value="" class="hidden">Select City</option>
             </select>
           </div>
         </div>
 
         <button
-          class="
-            btn
-            py-16
-            bg-primary
-            text-center text-white
-            w-100
-            radius-md
-            f16-h21
-            flex-x-center-center
-          "
-          id="saveFacility"
-          type="submit"
+          class="btn py-16 bg-primary text-center text-white w-100 radius-md f16-h21 flex-x-center-center"
+          data-close-modal="addFacilityDialog"
+          type="button"
         >
           <span class="icon-plus-white icon-20 mr-26"></span>
-          Add New User
+          Add Facility/Estate
         </button>
       </form>
     </div>

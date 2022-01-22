@@ -64,7 +64,7 @@
                     <div class="row mx-n5">
                         <div class="size-md-7">
                             <div class="form-group px-0 px-md-5 mb-31 mb-md-0">
-                                <select name="facility" id="facility">
+                                <select name="facility" data-modal-target="estateDropwonDialog">
                                     <option value="">Select Facility/Estate</option>
                                 </select>
                             </div>
@@ -80,7 +80,7 @@
                     <hr>
 
                     <div class="position-relative pr-0 pr-md-108 mb-10">
-                        <div id="triggerUpload" class="cursor-pointer flex-x-center">
+                        <div class="cursor-pointer flex-x-center" data-modal-target="uploadDialog">
                             <span class="py-17 px-20 bg-primary-trans
                                 radius-md">
                                 <span class="icon-file-upload icon-22"></span>
@@ -102,13 +102,14 @@
                     py-16
                     bg-primary
                     text-center text-white
-                    w-100
+                    w-100 text-capitalize
                     radius-md
                     f16-h21
-                    flex-x-center-center" id="saveResident"
+                    flex-x-center-center"
+                    data-close-modal="addResidntDialog"
                     type="submit">
                     <span class="icon-plus-white icon-20 mr-26"></span>
-                    Add Facility/Estate
+                    Add new user
                 </button>
             </form>
         </div>

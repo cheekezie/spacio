@@ -1,19 +1,5 @@
 'use strict';
 
-
-function highestZIndex(){
-  const maxZ = Math.max.apply(null, 
-    $.map($('body *'), function(e,n) {
-      if ($(e).css('position') != 'static')
-        return parseInt($(e).css('z-index')) || 1;
-  }));
-  return maxZ;
-}
-
-function applyDialogclass(dialog, display){
-  dialog.style.display = display;
-  dialog.style.zIndex = highestZIndex() + 1;
-}
 class Menu extends HTMLElement {
   constructor() {
     super();
@@ -26,28 +12,9 @@ class Menu extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#addNewBtn').click(function () {
-          const dialog = document.getElementById("adNewDialog");
-          dialog.style.display = "block";
-        });
-        $('#toggleMenu').click(function () {
-          toggleMenu();
-        });
-        $('#overlay').click(function () {
-          toggleMenu();
-        })
-
       });
   }
 }
-
-function toggleMenu(){
-  let menu = document.getElementById('sideMenu');
-  menu.classList.toggle('toggle-open');
-  let overlay = document.getElementById('overlay');
-  overlay.classList.toggle('d-block');
-}
-
 
 class AddPopup extends HTMLElement {
   constructor() {
@@ -61,7 +28,6 @@ class AddPopup extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        loadModalActions();
       });
   }
 }
@@ -78,18 +44,10 @@ class NewResident extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        openUplodModal();
       });
   }
 }
 
-// to open file upload dialog box
-function openUplodModal(){
-  $('#triggerUpload').click(function () {
-    const dialog = document.getElementById("uploadDialog");
-    applyDialogclass(dialog, 'flex');
-  });
-}
 class NewUser extends HTMLElement {
   constructor() {
     super();
@@ -102,7 +60,6 @@ class NewUser extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        // add button actions for modal here
       });
   }
 }
@@ -136,10 +93,6 @@ class NewProperty extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#estateOptions').click(function () {
-          const dialog = document.getElementById("estateDropwonDialog");
-          applyDialogclass(dialog, 'flex');
-        });
       });
   }
 }
@@ -156,8 +109,6 @@ class UploadDialog extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        // dragDrop();
-         // add button actions for modal here
       });
   }
 }
@@ -174,10 +125,6 @@ class EstateDropdown extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#addEstate').click(function () {
-          const dialog = document.getElementById("addEstateDialog");
-          applyDialogclass(dialog, 'flex');
-        });
       });
   }
 }
@@ -194,10 +141,6 @@ class ServiceTypeDropdown extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#addServiceType').click(function () {
-          const dialog = document.getElementById("addServiceTypeDialog");
-          applyDialogclass(dialog, 'flex');
-        });
       });
   }
 }
@@ -246,10 +189,6 @@ class TenureDropdown extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#addTenure').click(function () {
-          const dialog = document.getElementById("addTenureDialog");
-          applyDialogclass(dialog, 'flex');
-        });
       });
   }
 }
@@ -266,7 +205,6 @@ class NewCategory extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        openUplodModal();
       });
   }
 }
@@ -283,26 +221,6 @@ class NewService extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#selectServiceType').click(function () {
-          const serviceType = document.getElementById("serviceTypeDropdown");
-          applyDialogclass(serviceType, 'flex');
-        });
-        $('#selectTenure').click(function () {
-          const tenure = document.getElementById("tenureDropdown");
-          applyDialogclass(tenure, 'flex');
-        });
-        $('#selectServiceGroup').click(function () {
-          const serviceGroup = document.getElementById("estateDropwonDialog");
-          applyDialogclass(serviceGroup, 'flex');
-        });
-        $('#selectCategory').click(function () {
-          const category = document.getElementById("categoryDropdown");
-          applyDialogclass(category, 'flex');
-        });
-        $('#addCategory').click(function () {
-          const addCategory = document.getElementById("addCategoryDialog");
-          applyDialogclass(addCategory, 'flex');
-        });
       });
   }
 }
@@ -319,14 +237,6 @@ class NewEstate extends HTMLElement {
       })
       .then((data) => {
         this.innerHTML = data;
-        $('#selectCity').click(function () {
-          const city = document.getElementById("cityDropdownDialog");
-          applyDialogclass(city, 'flex');
-        });
-        $('#estateSuccessBtn').click(function () {
-          const estate = document.getElementById("estateSuccessDialog");
-          applyDialogclass(estate, 'flex');
-        });
       });
   }
 }
@@ -379,36 +289,6 @@ class EstateSuccess extends HTMLElement {
         this.innerHTML = data;
       });
   }
-}
-
-function loadModalActions(){
-
-  $('#newResident').click(function () {
-    removeAddPopup();
-    const resident = document.getElementById("addResidntDialog");
-    applyDialogclass(resident, 'block');
-  });
-  $('#newUser').click(function () {
-    removeAddPopup();
-    const user = document.getElementById("addUserDialog");
-    applyDialogclass(user, 'block');
-  });
-  $('#newFacility').click(function () {
-    removeAddPopup();
-    const facility = document.getElementById("addFacilityDialog");
-    applyDialogclass(facility, 'block');
-  });
-  $('#newProperty').click(function () {
-    removeAddPopup();
-    const newProperty = document.getElementById("addPropertyDialog");
-    applyDialogclass(newProperty, 'block');
-  });
-  $('#newService').click(function () {
-    removeAddPopup();
-    const addService = document.getElementById("addServiceDialog");
-    applyDialogclass(addService, 'block');
-  });
-  
 }
 
 function removeAddPopup(){

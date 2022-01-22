@@ -35,7 +35,7 @@
                     </div>
 
                     <div class="position-relative pr-0 pr-md-108 mb-10">
-                        <div id="triggerUpload" class="cursor-pointer
+                        <div data-modal-target="uploadDialog" class="cursor-pointer
                             flex-x-center">
                             <span class="py-17 px-20 bg-primary-trans
                                 radius-md">
@@ -63,8 +63,9 @@
                     w-100
                     radius-md
                     f16-h21
-                    flex-x-center-center"id="saveCategory"
-                    type="submit">
+                    flex-x-center-center"
+                    data-close-modal="addCategoryDialog"
+                    type="button">
                     <span class="icon-plus-white icon-20 mr-26"></span>
                     Add New Category
                 </button>

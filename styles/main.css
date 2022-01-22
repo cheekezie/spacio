@@ -108307,7 +108307,8 @@ h6 {
   text-transform: uppercase;
 }
 
-.text-capitalise {
+.text-capitalise,
+.text-capitalize {
   text-transform: capitalize;
 }
 
@@ -109706,7 +109707,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   color: var(--white) !important;
 }
 
-.dialog-overlay {
+#dialog-overlay {
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);

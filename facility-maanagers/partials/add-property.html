@@ -19,15 +19,7 @@
             >
             <div class="flex-x-between mt-22">
               <div
-                class="
-                  pt-32
-                  pb-17
-                  px-20
-                  bg-primary-trans-light
-                  radius-md
-                  hover-primary
-                  property-select
-                "
+                class="pt-32 pb-17 px-20 bg-primary-trans-light radius-md hover-primary property-select"
               >
                 <div class="flex-x-center-center">
                   <span class="icon-suitcase-black icon-32"></span>
@@ -35,16 +27,7 @@
                 <p class="f14-h19 text-grey-2 pt-14">Commercial</p>
               </div>
               <div
-                class="
-                  pt-32
-                  pb-17
-                  px-20
-                  bg-primary-trans-light
-                  radius-md
-                  hover-primary
-                  property-select
-                  active
-                "
+                class="pt-32 pb-17 px-20 bg-primary-trans-light radius-md hover-primary property-select active"
               >
                 <div class="flex-x-center-center">
                   <span class="icon-house-black icon-32"></span>
@@ -52,15 +35,7 @@
                 <p class="f14-h19 text-grey-2 pt-14">Residential</p>
               </div>
               <div
-                class="
-                  pt-32
-                  pb-17
-                  px-20
-                  bg-primary-trans-light
-                  radius-md
-                  hover-primary
-                  property-select
-                "
+                class="pt-32 pb-17 px-20 bg-primary-trans-light radius-md hover-primary property-select"
               >
                 <div class="flex-x-center-center">
                   <span class="icon-flag-black icon-32"></span>
@@ -86,7 +61,7 @@
           <div class="row mx-n5">
             <div class="size-md-7">
               <div class="form-group px-0 px-md-5 mb-31 mb-md-0">
-                <select name="facility" id="estateOptions">
+                <select name="facility" data-modal-target="estateDropwonDialog">
                   <option value="" class="hidden">
                     Select Facility/Estate
                   </option>
@@ -101,18 +76,9 @@
           </div>
         </div>
         <button
-          class="
-            btn
-            py-16
-            bg-primary
-            text-center text-white
-            w-100
-            radius-md
-            f16-h21
-            flex-x-center-center
-          "
-          id="saveResident"
-          type="submit"
+          class="btn py-16 bg-primary text-center text-white w-100 radius-md f16-h21 flex-x-center-center"
+          data-close-modal="addPropertyDialog"
+          type="button"
         >
           <span class="icon-plus-white icon-20 mr-26"></span>
           Add Facility/Estate

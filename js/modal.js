@@ -3,47 +3,66 @@
 // ClICK OUTSIDE tO HIDE ALL INSTANCES OF DIALOG MODAL AND OVERLAY
 
 $(document).click((element) => {
+    closeModalOnClickOutside(element);
     if(element.target.dataset && element.target.dataset.modalTarget){
-        applyDialogclass(element)
+        applyDialogclass(element);
     }
     if(element.target.dataset && element.target.dataset.closeModal){
-        closemModal(element.target.dataset.closeModal)
+        closeModal(element.target.dataset.closeModal);
     }
     if(element.target.id === 'toggleMenu' || element.target.id === 'overlay'){
-        toggleMenu()
+        toggleMenu();
     }
 })
 
 function applyDialogclass(element){
-    const dialogId = element.target.dataset.modalTarget
+    const dialogId = element.target.dataset.modalTarget;
     const targetHeight = element.target.clientHeight;
     const dialog = document.getElementById(dialogId);
     if(dialog.classList.contains('central-dialog-lg')
     || dialog.classList.contains('side-dialog')){
         dialog.style.display = 'block';
     } else if(dialog.classList.contains('dropdown-menu')){
-        dialog.style.top = targetHeight + 20;
-        console.log(';targetHeight:', targetHeight);
+        dialog.style.top = targetHeight + 20; // to add spacing under the parent element
         dialog.style.display = 'block';
     }
     else{
         dialog.style.display = 'flex';
     }
+    checkParentModalForClose(element);
     const overlay = document.createElement("div");
     dialog.appendChild(overlay);
-    overlay.classList.add('dialog-overlay');
+    overlay.setAttribute('id', 'dialog-overlay');
     overlay.style.zIndex = -1;
     dialog.style.zIndex = highestZIndex() + 1;
-    closeeMenu();
+    closeMenu();
 }
 
-function closemModal(dialogId){
+// ClICK OUTSIDE tO HIDE DIALOG MODAL INSTANCE AND OVERLAY
+function closeModalOnClickOutside(element) {
+    if (
+        element.target.id === 'dialog-overlay'
+      ) {
+        const dialogParent = element.target.closest('div.dialog') || element.target.closest('div.dropdown-menu');
+        closeModal(dialogParent.id);
+      }
+}
+function checkParentModalForClose(element) {
+    const parentEl = element.target.closest('div.dialog');
+    if(parentEl && parentEl.dataset.modalStackable && parentEl.dataset.modalStackable === 'false'){
+        closeModal(parentEl.id)
+    }
+}
+
+function closeModal(dialogId){
     const dialog = document.getElementById(dialogId);
+    const backdrop = dialog.childNodes[dialog.childNodes.length - 1]; // to get the backdrop as last element in parent
     dialog.style.display = 'none';
     dialog.style.zIndex = 0;
+    dialog.removeChild(backdrop) // to remove backdrop to avoid stacking more to it;
 }
 
-function closeeMenu(){
+function closeMenu(){
     let menu = document.getElementById('sideMenu');
     menu.classList.remove('toggle-open');
     let overlay = document.getElementById('overlay');

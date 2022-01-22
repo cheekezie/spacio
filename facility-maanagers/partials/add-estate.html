@@ -28,7 +28,10 @@
             <div class="row mx-n5">
               <div class="size-md-7">
                 <div class="form-group px-0 px-md-5 mb-31 mb-md-0">
-                  <select name="facility" id="selectCity">
+                  <select
+                    name="facility"
+                    data-modal-target="cityDropdownDialog"
+                  >
                     <option value="" class="hidden">Select City</option>
                   </select>
                 </div>
@@ -43,18 +46,9 @@
         </div>
 
         <button
-          class="
-            btn
-            py-16
-            bg-primary
-            text-center text-white
-            w-100
-            radius-md
-            f16-h21
-            flex-x-center-center
-          "
-          id="estateSuccessBtn"
-          type="submit"
+          class="btn py-16 bg-primary text-center text-white w-100 radius-md f16-h21 flex-x-center-center"
+          data-close-modal="addEstateDialog"
+          type="button"
         >
           <span class="icon-plus-white icon-20 mr-26"></span>
           Save & Continue
