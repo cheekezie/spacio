@@ -4,14 +4,7 @@
       <input
         type="text"
         placeholder="search"
-        class="
-          search-right search-grey
-          mr-26
-          radius-md
-          border-grey-6 border-1x border-solid
-          text-grey
-          w-100
-        "
+        class="search-right search-grey mr-26 radius-md border-grey-6 border-1x border-solid text-grey w-100"
       />
     </div>
     <ul class="form-content-scroll px-20 px-md-42 pb-20 list-unstyled m-0">
@@ -51,12 +44,13 @@
       </li>
     </ul>
     <div class="px-20 px-md-42">
-      <span class="float-right flex-x-center mt-20 mb-22" id="addServiceType">
+      <button
+        class="float-right flex-x-center mt-20 mb-22 text-primary f16-h21 cursor-pointer"
+        data-modal-target="addServiceTypeDialog"
+      >
         <span class="icon-plus-blue icon-16 mr-13 cursor-pointer"></span>
-        <label class="text-primary f16-h21 cursor-pointer"
-          >Add Service Type</label
-        >
-      </span>
+        Add Service Type
+      </button>
       <div class="clearfix"></div>
     </div>
   </div>
