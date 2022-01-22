@@ -107091,6 +107091,10 @@ button.button-sm,
   background: var(--brown);
 }
 
+.bg-orange {
+  background: var(--orange);
+}
+
 .bg-primary-trans {
   background: var(--primary-trans);
 }
@@ -107810,6 +107814,10 @@ canvas {
   min-height: 15.125rem;
 }
 
+.min-h-152 {
+  min-height: 9.5rem;
+}
+
 .min-w-initial {
   min-width: initial;
 }
@@ -108458,7 +108466,8 @@ h6 {
           justify-content: space-between;
 }
 
-.flex-x-center, .dialog-content .form-content-scroll li {
+.flex-x-center, .dialog-content .form-content-scroll li,
+.dialog-content .form-content-scroll-long li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109631,17 +109640,24 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   margin: 2.4375rem 0 2.4375rem;
 }
 
-.dialog-content .form-content-scroll {
+.dialog-content .form-content-scroll,
+.dialog-content .form-content-scroll-long {
   max-height: 25.625rem;
-  overflow-y: auto;
+  overflow-y: auto !important;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
 }
 
-.dialog-content .form-content-scroll::-webkit-scrollbar {
+.dialog-content .form-content-scroll::-webkit-scrollbar,
+.dialog-content .form-content-scroll-long::-webkit-scrollbar {
   display: none;
+}
+
+.dialog-content .form-content-scroll-long,
+.dialog-content .form-content-scroll-long-long {
+  max-height: 29.0625rem;
 }
 
 .dialog-content.dialog-xsm {
@@ -109969,8 +109985,6 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 }
 
 .dropdown-menu {
-  width: 100%;
-  right: 0;
   left: 0;
   min-width: 19.0625rem;
   max-height: 21.875rem;
@@ -109986,6 +110000,16 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .dropdown-menu::-webkit-scrollbar {
   display: none;
+}
+
+.dropdown-menu.w-92 {
+  min-width: 18.25rem;
+}
+
+.dropdown-menu.parent-size {
+  min-width: 18.25rem;
+  right: 0;
+  width: 100%;
 }
 
 body {

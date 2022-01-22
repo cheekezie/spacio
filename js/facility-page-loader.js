@@ -47,6 +47,37 @@ class NewResident extends HTMLElement {
       });
   }
 }
+class NewWorkOrder extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/new-work-order.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
+class WorkOrderStatus extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/order-status.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 
 class NewUser extends HTMLElement {
   constructor() {
@@ -314,11 +345,13 @@ customElements.define('tenure-dropdown-component', TenureDropdown);
 customElements.define('service-type-dropdown-component', ServiceTypeDropdown);
 customElements.define('category-dropdown-component', CategoryDropdown);
 customElements.define('new-category-component', NewCategory);
+customElements.define('new-work-order-component', NewWorkOrder);
+customElements.define('order-status-component', WorkOrderStatus);
 
 
 function dragDrop(){
-  const dropArea = document.getElementById('drop-area')
-  ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+  const dropArea = document.getElementById('drop-area');
+  ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
     dropArea.addEventListener(eventName, preventDefaults, false)
   })
   function preventDefaults (e) {

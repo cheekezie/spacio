@@ -1,6 +1,4 @@
 .dropdown-menu {
-  width: 100%;
-  right: 0;
   left: 0;
   min-width: rem(305);
   max-height: rem(350);
@@ -9,4 +7,12 @@
   display: none;
   z-index: 3;
   @include hide-scrollbar;
+  &.w-92 {
+    min-width: rem(292);
+  }
+  &.parent-size {
+    min-width: rem(292);
+    right: 0;
+    width: 100%;
+  }
 }

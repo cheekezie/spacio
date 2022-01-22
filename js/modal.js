@@ -7,6 +7,7 @@ $(document).click((element) => {
     if(element.target.dataset && element.target.dataset.modalTarget){
         applyDialogclass(element);
     }
+    // implement selection of closest element with dstaset
     if(element.target.dataset && element.target.dataset.closeModal){
         closeModal(element.target.dataset.closeModal);
     }
@@ -23,8 +24,13 @@ function applyDialogclass(element){
     || dialog.classList.contains('side-dialog')){
         dialog.style.display = 'block';
     } else if(dialog.classList.contains('dropdown-menu')){
-        dialog.style.top = targetHeight + 20; // to add spacing under the parent element
         dialog.style.display = 'block';
+        if(dialog.classList.contains('stack-up')){
+            dialog.classList.add('stack-up');
+            dialog.style.top = targetHeight - 20; // to add spacing under the parent element
+        } else {
+            dialog.style.top = targetHeight + 20; // to add spacing under the parent element
+        }
     }
     else{
         dialog.style.display = 'flex';
