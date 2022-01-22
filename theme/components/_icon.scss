@@ -3,6 +3,10 @@
   position: relative;
   &::after {
     position: absolute;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    // bottom: 0;
   }
 }
 .icon {
@@ -317,10 +321,6 @@
   &-plus-white {
     &::after {
       content: url(/assets/icons/plus-white.svg);
-      color: red;
-      fill: currentColor;
-      color: currentColor;
-      display: inline-block;
     }
   }
   &-plus-blue {

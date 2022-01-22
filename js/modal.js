@@ -25,11 +25,12 @@ function applyDialogclass(element){
         dialog.style.display = 'block';
     } else if(dialog.classList.contains('dropdown-menu')){
         dialog.style.display = 'block';
+        console.log(dialog.classList.contains('stack-up'));
         if(dialog.classList.contains('stack-up')){
-            dialog.classList.add('stack-up');
-            dialog.style.top = targetHeight - 20; // to add spacing under the parent element
+            console.log('conatins', targetHeight);
+            dialog.style.bottom = `${targetHeight + 15}px`; // to add spacing atop the parent element
         } else {
-            dialog.style.top = targetHeight + 20; // to add spacing under the parent element
+            dialog.style.top = `${targetHeight + 15}px`; // to add spacing under the parent element
         }
     }
     else{
@@ -49,7 +50,7 @@ function closeModalOnClickOutside(element) {
     if (
         element.target.id === 'dialog-overlay'
       ) {
-        const dialogParent = element.target.closest('div.dialog') || element.target.closest('div.dropdown-menu');
+        const dialogParent =  element.target.closest('div.dropdown-menu') || element.target.closest('div.dialog');
         closeModal(dialogParent.id);
       }
 }

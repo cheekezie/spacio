@@ -79,6 +79,21 @@ class WorkOrderStatus extends HTMLElement {
   }
 }
 
+class NewTask extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/add-task.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 class NewUser extends HTMLElement {
   constructor() {
     super();
@@ -256,6 +271,22 @@ class NewService extends HTMLElement {
   }
 }
 
+class NewDemandNotice extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/add-demand-notice.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
 class NewEstate extends HTMLElement {
   constructor() {
     super();
@@ -347,7 +378,8 @@ customElements.define('category-dropdown-component', CategoryDropdown);
 customElements.define('new-category-component', NewCategory);
 customElements.define('new-work-order-component', NewWorkOrder);
 customElements.define('order-status-component', WorkOrderStatus);
-
+customElements.define('add-task-component', NewTask);
+customElements.define('new-demand-notice-component', NewDemandNotice);
 
 function dragDrop(){
   const dropArea = document.getElementById('drop-area');

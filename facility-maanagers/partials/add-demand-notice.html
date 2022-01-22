@@ -1,0 +1,55 @@
+<div class="dialog central-dialog" id="newDemandNoticeDialog">
+  <div class="dialog-content bg-white dialog-md radius-top-left-box">
+    <div class="px-30 px-md-71 pt-25 pb-42 pt-md-65">
+      <form action="" class="form-scroll">
+        <div class="mb-47">
+          <h1 class="f30-h41 text-black-alt mb-8 text-weight-600">
+            Add New Demand Notice Tracker Details
+          </h1>
+          <p class="f18-h24 text-grey-2">
+            Add some details for the User to be able to find them on the spacio
+            system.
+          </p>
+        </div>
+        <div class="form-content-scroll-long mb-20">
+          <div class="form-group mb-27">
+            <label for="name" class="f16-h21 text-grey-2"
+              >Add Notice Title</label
+            >
+            <input type="text" placeholder="Tactical Paradise Estate" />
+          </div>
+
+          <div class="form-group mb-27">
+            <label for="name" class="f16-h21 text-grey-2">Add Period</label>
+            <input
+              type="date"
+              class="calendar-black calendar-right"
+              placeholder="12/07/2021"
+            />
+          </div>
+          <div class="form-group mb-47">
+            <label for="name" class="f16-h21 text-grey-2">Description</label>
+            <textarea
+              name=""
+              id=""
+              class="min-h-107 border-grey radius-md py-22 px-30 form-control w-100"
+              placeholder="Short Info."
+            ></textarea>
+          </div>
+        </div>
+
+        <button
+          class="btn py-16 bg-primary text-center text-white w-100 radius-md f16-h21 flex-x-center-center"
+          data-close-modal="newDemandNoticeDialog"
+          type="button"
+        >
+          <span class="icon-plus-white icon-20 mr-26"></span>
+          Save & Continue
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- add task component -->
+<add-task-component></add-task-component>

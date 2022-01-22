@@ -5,7 +5,6 @@
   overflow: auto;
   position: absolute;
   display: none;
-  z-index: 3;
   @include hide-scrollbar;
   &.w-92 {
     min-width: rem(292);

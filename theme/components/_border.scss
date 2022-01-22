@@ -1,6 +1,9 @@
 .border-none {
   border: none;
 }
+.border-bottom-none {
+  border-bottom: none;
+}
 .radius-none {
   border-radius: 0;
 }
@@ -76,4 +79,7 @@
 }
 .border-dashed-grey {
   border: 1px dashed var(--light-grey-2);
+}
+.radius-top-left-box {
+  border-radius: 0px 15px 15px 15px;
 }

@@ -77,6 +77,9 @@
       &.max-h-312 {
         max-height: rem(308) !important;
       }
+      &.border-bottom-none {
+        border-bottom: none;
+      }
     }
   }
 }
