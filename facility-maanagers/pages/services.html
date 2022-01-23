@@ -73,6 +73,10 @@
           <h6 class="text-black-alt f24-h33 mb-sm-10">Service list</h6>
         </div>
         <div class="filter-inputs flex flex-wrap">
+          <button class="btn radius-md border-grey border-1x border-solid p-14 mr-26
+            text-grey f16-h21 flex w-100-sm mb-sm-10">
+            Generate Report
+          </button>
           <input type="text" placeholder="search" class="search mr-26 radius-md
             border-grey border-1x border-solid search-blue search-left text-grey
             f16-h21 w-100-sm
@@ -88,7 +92,7 @@
         </div>
       </div>
 
-      <div class="table-responsive bg-white">
+      <div class="table-responsive bg-white position-relative">
         <table class="table">
           <thead>
             <tr>
@@ -108,7 +112,23 @@
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td>General Maintenance</td>
+              <td data-modal-target="serviceActionsDialog">
+                General Maintenance
+                <service-actions-component></service-actions-component>
+              </td>
+              <td>SPACIO/TAC/2012</td>
+              <td>AJao Int’l Estate - Lagos</td>
+              <td>12/09/2021</td>
+              <td>N5000</td>
+              <td>General</td>
+              <td>Tactical</td>
+              
+            </tr>
+            <tr>
+              <td scope="row">
+                <input type="checkbox" name="" id=""></td>
+              <td>12/09/202</td>
+              <td  data-modal-target="serviceActionsDialog">General Maintenance</td>
               <td>SPACIO/TAC/2012</td>
               <td>AJao Int’l Estate - Lagos</td>
               <td>12/09/2021</td>
@@ -120,7 +140,7 @@
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td>General Maintenance</td>
+              <td  data-modal-target="serviceActionsDialog">General Maintenance</td>
               <td>SPACIO/TAC/2012</td>
               <td>AJao Int’l Estate - Lagos</td>
               <td>12/09/2021</td>
@@ -132,19 +152,7 @@
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td>General Maintenance</td>
-              <td>SPACIO/TAC/2012</td>
-              <td>AJao Int’l Estate - Lagos</td>
-              <td>12/09/2021</td>
-              <td>N5000</td>
-              <td>General</td>
-              <td>Tactical</td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <input type="checkbox" name="" id=""></td>
-              <td>12/09/202</td>
-              <td>General Maintenance</td>
+              <td data-modal-target="serviceActionsDialog">General Maintenance</td>
               <td>SPACIO/TAC/2012</td>
               <td>AJao Int’l Estate - Lagos</td>
               <td>12/09/2021</td>

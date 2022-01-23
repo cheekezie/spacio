@@ -191,6 +191,21 @@ class ServiceTypeDropdown extends HTMLElement {
   }
 }
 
+class ServiceActions extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/service-actions.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 class CityDropdown extends HTMLElement {
   constructor() {
     super();
@@ -413,6 +428,7 @@ customElements.define('add-task-component', NewTask);
 customElements.define('new-demand-notice-component', NewDemandNotice);
 customElements.define('demand-notice-detail-component', DemandNoticeDetail);
 customElements.define('demand-notice-status-component', DemandNoticeStatus);
+customElements.define('service-actions-component', ServiceActions);
 
 
 function dragDrop(){
