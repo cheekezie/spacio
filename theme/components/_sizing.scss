@@ -71,6 +71,9 @@ canvas {
 .min-w-initial {
   min-width: initial;
 }
+.w-250 {
+  width: rem(250);
+}
 .h-full {
   height: 100vh;
   &-lg {

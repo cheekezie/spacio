@@ -286,6 +286,37 @@ class NewDemandNotice extends HTMLElement {
       });
   }
 }
+class DemandNoticeDetail extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/demand-notice-detail.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
+
+class DemandNoticeStatus extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/demand-notice-status.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 
 class NewEstate extends HTMLElement {
   constructor() {
@@ -380,6 +411,9 @@ customElements.define('new-work-order-component', NewWorkOrder);
 customElements.define('order-status-component', WorkOrderStatus);
 customElements.define('add-task-component', NewTask);
 customElements.define('new-demand-notice-component', NewDemandNotice);
+customElements.define('demand-notice-detail-component', DemandNoticeDetail);
+customElements.define('demand-notice-status-component', DemandNoticeStatus);
+
 
 function dragDrop(){
   const dropArea = document.getElementById('drop-area');

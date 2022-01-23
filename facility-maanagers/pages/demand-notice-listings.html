@@ -57,11 +57,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr >
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td>Repayment Reminder</td>
+              <td data-modal-target="demandNoticeDetail">Repayment Reminder</td>
               <td class="text-primary text-underline">1002021</td>
               <td>Opened</td>
               <td class="text-primary text-underline">23 Services</td>
@@ -73,7 +73,19 @@
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td>Repayment Reminder</td>
+              <td data-modal-target="demandNoticeDetail">Repayment Reminder</td>
+              <td class="text-primary text-underline">1002021</td>
+              <td>Opened</td>
+              <td class="text-primary text-underline">23 Services</td>
+              <td class="text-truncated-single-line">Spacio street, off 3rd Ave.</td>
+              <td>12/09/202</td>
+              <td>Tactical</td>
+            </tr>
+            <tr >
+              <td scope="row">
+                <input type="checkbox" name="" id=""></td>
+              <td>12/09/202</td>
+              <td data-modal-target="demandNoticeDetail">Repayment Reminder</td>
               <td class="text-primary text-underline">1002021</td>
               <td>Opened</td>
               <td class="text-primary text-underline">23 Services</td>
@@ -85,19 +97,7 @@
               <td scope="row">
                 <input type="checkbox" name="" id=""></td>
               <td>12/09/202</td>
-              <td>Repayment Reminder</td>
-              <td class="text-primary text-underline">1002021</td>
-              <td>Opened</td>
-              <td class="text-primary text-underline">23 Services</td>
-              <td class="text-truncated-single-line">Spacio street, off 3rd Ave.</td>
-              <td>12/09/202</td>
-              <td>Tactical</td>
-            </tr>
-            <tr>
-              <td scope="row">
-                <input type="checkbox" name="" id=""></td>
-              <td>12/09/202</td>
-              <td>Repayment Reminder</td>
+              <td data-modal-target="demandNoticeDetail">Repayment Reminder</td>
               <td class="text-primary text-underline">1002021</td>
               <td>Opened</td>
               <td class="text-primary text-underline">23 Services</td>
@@ -108,6 +108,9 @@
           </tbody>
         </table>
       </div>
+
+      <!-- demand notice detail dialog -->
+      <demand-notice-detail-component></demand-notice-detail-component>
 
       <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

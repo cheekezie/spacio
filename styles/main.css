@@ -108846,6 +108846,10 @@ canvas {
   min-width: initial;
 }
 
+.w-250 {
+  width: 15.625rem;
+}
+
 .h-full {
   height: 100vh;
 }
@@ -110769,7 +110773,7 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 
 .page-outlet {
   margin-left: 16.625rem;
-  padding: 11.875rem 1.75rem 3.875rem 0.875rem;
+  padding: 9.625rem 1.75rem 3.875rem 0.875rem;
 }
 
 .resident-page-outlet {
@@ -111047,7 +111051,6 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
 .tabs {
   overflow-x: clip;
   border-bottom: 1px solid var(--grey3);
-  padding: 0 50px;
 }
 
 .tabs .tab-link {

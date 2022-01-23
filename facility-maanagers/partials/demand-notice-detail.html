@@ -1,0 +1,77 @@
+<div class="dialog central-dialog" id="demandNoticeDetail">
+  <div class="dialog-content bg-white dialog-md radius-top-left-box">
+    <div class="px-30 px-md-71 pt-25 pb-42 pt-md-65">
+      <form action="" class="form-scroll">
+        <div class="mb-47">
+          <h1 class="f30-h41 text-black-alt mb-8 text-weight-600">
+            Create a new Work Order
+          </h1>
+          <p class="f18-h24 text-grey-2">
+            This demand notice has been generated for this User with user ID:
+            <span class="text-primary text-underline">TokmanSpacio</span>
+          </p>
+        </div>
+        <div class="form-content-scroll-long mb-20">
+          <div class="mb-30">
+            <label class="f16-h21 text-grey-2">Date Created:</label>
+            <label class="f16-h21 text-grey"> 12/07/2021</label>
+          </div>
+          <div class="form-group mb-30">
+            <label for="name" class="f16-h21 text-grey-2">Username</label>
+            <input type="text" placeholder="Repayment Reminder" />
+          </div>
+
+          <div class="form-group mb-30">
+            <label for="name" class="f16-h21 text-grey-2">Phone No.</label>
+            <input type="text" placeholder="08012345678" />
+          </div>
+
+          <div class="form-group mb-30">
+            <label for="name" class="f16-h21 text-grey-2">Email</label>
+            <input type="text" placeholder="user@spacio.com" />
+          </div>
+
+          <div class="mb-30">
+            <label class="f16-h21 text-grey-2 text-capitalise"
+              >Last Modified:</label
+            >
+            <label class="f16-h21 text-grey"> 12/07/2021</label>
+          </div>
+          <div class="mb-30">
+            <label class="f16-h21 text-grey-2 text-capitalise"
+              >Curent Status:</label
+            >
+            <label class="f16-h21 text-grey"> Opened</label>
+          </div>
+
+          <div class="form-group position-relative">
+            <label for="status" class="f16-h21 text-grey-2 text-capitalise"
+              >Next Status</label
+            >
+            <select
+              name="status"
+              id="status"
+              data-modal-target="demandNoticeStatusDialog"
+            >
+              <option value="" class="hidden">None</option>
+            </select>
+            <!-- status component -->
+            <demand-notice-status-component></demand-notice-status-component>
+          </div>
+        </div>
+
+        <button
+          class="btn py-16 bg-primary text-center text-white w-100 radius-md f16-h21 flex-x-center-center"
+          data-close-modal="newWorkOrderDialog"
+          type="button"
+        >
+          <span class="icon-plus-white icon-20 mr-26"></span>
+          Save & Continue
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- add task component -->
+<add-task-component></add-task-component>
