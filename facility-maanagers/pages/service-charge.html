@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacio | Service Charge History</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/spacio-logo-trans2.png"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <navigation-component></navigation-component>
+    <div class="page-outlet">
+      <div
+        class="filter-panel pt-11 pl-45 pb-13 pr-26 bg-white flex-x-between flex-wrap align-items-center"
+      >
+        <div>
+          <h6 class="text-black-alt f24-h33 mb-sm-10 f24-h33 text-weight-700">
+            History
+          </h6>
+        </div>
+        <div class="filter-inputs flex flex-wrap">
+          <input
+            type="text"
+            placeholder="search"
+            class="search mr-26 radius-md border-grey border-1x border-solid search-blue search-left text-grey f16-h21 w-100-sm mb-sm-10"
+          />
+          <input
+            type="text"
+            placeholder="filter"
+            class="filter mr-26 radius-md border-grey border-1x border-solid text-grey f16-h21 w-100-sm mb-sm-10"
+          />
+          <button
+            class="btn radius-md border-grey border-1x border-solid p-14 text-grey f16-h21 flex w-100-sm mb-sm-10"
+          >
+            <span class="icon-download icon-22 mr-20"></span>
+            Export
+          </button>
+        </div>
+      </div>
+
+      <div class="table-responsive bg-white">
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>DATE</th>
+              <th>AMOUNT</th>
+              <th>USER NAME</th>
+              <th>USER ID</th>
+              <th>DESCRIPTION</th>
+              <th>STATUS</th>
+              <th>PAYMENT METHOD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>12/09/202</td>
+              <td class="text-weight-600 f24-h33">$32.5</td>
+              <td>Badmus Saka</td>
+              <td>Resident/Ajao/003</td>
+              <td>Monthly Subscription</td>
+              <td>
+                <span class="f18-h24 badge-border-primary">Successful</span>
+              </td>
+              <td>VISA **** 5432</td>
+            </tr>
+            <tr>
+              <td scope="row">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>12/09/202</td>
+              <td class="text-weight-600 f24-h33">$32.5</td>
+              <td>Badmus Saka</td>
+              <td>Resident/Ajao/003</td>
+              <td>Monthly Subscription</td>
+              <td>
+                <span class="f18-h24 badge-border-danger">Failed</span>
+              </td>
+              <td>VISA **** 5432</td>
+            </tr>
+            <tr>
+              <td scope="row">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>12/09/202</td>
+              <td class="text-weight-600 f24-h33">$32.5</td>
+              <td>Badmus Saka</td>
+              <td>Resident/Ajao/003</td>
+              <td>Monthly Subscription</td>
+              <td>
+                <span class="f18-h24 badge-border-primary">Successful</span>
+              </td>
+              <td>GTbank transfer</td>
+            </tr>
+            <tr>
+              <td scope="row">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>12/09/202</td>
+              <td class="text-weight-600 f24-h33">$32.5</td>
+              <td>Badmus Saka</td>
+              <td>Resident/Ajao/003</td>
+              <td>Monthly Subscription</td>
+              <td>
+                <span class="f18-h24 badge-border-danger">Failed</span>
+              </td>
+              <td>GTbank transfer</td>
+            </tr>
+            <tr>
+              <td scope="row">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>12/09/202</td>
+              <td class="text-weight-600 f24-h33">$32.5</td>
+              <td>Badmus Saka</td>
+              <td>Resident/Ajao/003</td>
+              <td>Monthly Subscription</td>
+              <td>
+                <span class="f18-h24 badge-border-danger">Failed</span>
+              </td>
+              <td>GTbank transfer</td>
+            </tr>
+            <tr>
+              <td scope="row">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>12/09/202</td>
+              <td class="text-weight-600 f24-h33">$32.5</td>
+              <td>Badmus Saka</td>
+              <td>Resident/Ajao/003</td>
+              <td>Monthly Subscription</td>
+              <td>
+                <span class="f18-h24 badge-border-danger">Failed</span>
+              </td>
+              <td>VISA **** 5432</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/facility-page-loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/charts/payment-chart.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/tab.js"></script>
+  </body>
+</html>

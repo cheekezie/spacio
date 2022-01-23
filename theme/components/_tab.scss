@@ -1,0 +1,41 @@
+/* Style the buttons inside the tab */
+.tabs {
+  overflow-x: clip;
+  border-bottom: 1px solid var(--grey3);
+  padding: 0 50px;
+  .tab-link {
+    position: relative;
+    @extend .f24-h33;
+    color: var(--grey3);
+    cursor: pointer;
+    padding: 0 25px 17px 25px;
+    &.active {
+      color: var(--black-alt);
+      padding: 0 170px 17px 25px;
+      @extend .text-weight-700;
+      &.link-sm {
+        padding: 0 25px 17px 25px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 13px;
+        background: var(--grey3);
+        bottom: -7px;
+      }
+    }
+  }
+}
+
+/* Style th{e tab content */
+.tab-outlet {
+  padding-top: 33px;
+}
+.tab-content {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

@@ -1,7 +1,7 @@
 'use strict';
 $(document).ready(function () {
 
-  // acrion buttons routing
+  // action buttons routing
   $('#signin').click(function () {
     window.location.href = '/facility-maanagers/pages/dashboard-summary.html';
   });

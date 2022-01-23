@@ -109016,7 +109016,7 @@ h6 {
   font-weight: 600;
 }
 
-.text-weight-700, .message-menu li.active-message-action {
+.text-weight-700, .message-menu li.active-message-action, .tabs .tab-link.active {
   font-weight: 700;
 }
 
@@ -109191,13 +109191,13 @@ h6 {
   line-height: 1.9375rem;
 }
 
-.f24-h33 {
+.f24-h33, .tabs .tab-link {
   font-size: 1.5rem;
   line-height: 2.0625rem;
 }
 
 @media screen and (max-width: 1600px) {
-  .f24-h33 {
+  .f24-h33, .tabs .tab-link {
     font-size: 1.25rem;
     line-height: initial;
   }
@@ -111041,6 +111041,52 @@ form .category-card:hover .arrow, form .category-card:active .arrow {
   min-width: 18.25rem;
   right: 0;
   width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tabs {
+  overflow-x: clip;
+  border-bottom: 1px solid var(--grey3);
+  padding: 0 50px;
+}
+
+.tabs .tab-link {
+  position: relative;
+  color: var(--grey3);
+  cursor: pointer;
+  padding: 0 25px 17px 25px;
+}
+
+.tabs .tab-link.active {
+  color: var(--black-alt);
+  padding: 0 170px 17px 25px;
+}
+
+.tabs .tab-link.active.link-sm {
+  padding: 0 25px 17px 25px;
+}
+
+.tabs .tab-link.active:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 13px;
+  background: var(--grey3);
+  bottom: -7px;
+}
+
+/* Style th{e tab content */
+.tab-outlet {
+  padding-top: 33px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 body {
