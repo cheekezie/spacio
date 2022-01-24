@@ -382,6 +382,21 @@ class CategoryDropdown extends HTMLElement {
   }
 }
 
+class CrudActions extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    // To get the popup component and attach to current page
+    fetch('../partials/crud-actions.html')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.innerHTML = data;
+      });
+  }
+}
 
 class EstateSuccess extends HTMLElement {
   constructor() {
@@ -429,6 +444,7 @@ customElements.define('new-demand-notice-component', NewDemandNotice);
 customElements.define('demand-notice-detail-component', DemandNoticeDetail);
 customElements.define('demand-notice-status-component', DemandNoticeStatus);
 customElements.define('service-actions-component', ServiceActions);
+customElements.define('crud-actions-component', CrudActions);
 
 
 function dragDrop(){
